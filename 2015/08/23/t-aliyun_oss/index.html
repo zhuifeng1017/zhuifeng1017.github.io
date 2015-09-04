@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>打开阿里云OSS图片URL直接下载 | 大风的博客</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="这几天用hexo搭建博客,为了加快速度,我将图片放在了阿里云OSS上,就是申请域名免费赠送的几G存储空间。因为博客网页上显示图片较小,我想右键在新标签页查看图片时，坑爹了，图片直接下载, 想在浏览器上看大图都不行,一图胜千言啊。然后查原因,抓包发现响应头里面">
+<meta property="og:type" content="article">
+<meta property="og:title" content="打开阿里云OSS图片URL直接下载">
+<meta property="og:url" content="http://www.yczmm.com/2015/08/23/t-aliyun_oss/index.html">
+<meta property="og:site_name" content="大风的博客">
+<meta property="og:description" content="这几天用hexo搭建博客,为了加快速度,我将图片放在了阿里云OSS上,就是申请域名免费赠送的几G存储空间。因为博客网页上显示图片较小,我想右键在新标签页查看图片时，坑爹了，图片直接下载, 想在浏览器上看大图都不行,一图胜千言啊。然后查原因,抓包发现响应头里面">
+<meta property="og:updated_time" content="2015-08-31T13:50:12.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="打开阿里云OSS图片URL直接下载">
+<meta name="twitter:description" content="这几天用hexo搭建博客,为了加快速度,我将图片放在了阿里云OSS上,就是申请域名免费赠送的几G存储空间。因为博客网页上显示图片较小,我想右键在新标签页查看图片时，坑爹了，图片直接下载, 想在浏览器上看大图都不行,一图胜千言啊。然后查原因,抓包发现响应头里面">
+  
+    <link rel="alternative" href="/atom.xml" title="大风的博客" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+</head>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img lazy-src="http://iid.oss-cn-hangzhou.aliyuncs.com/head1.jpg" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">大风</a></h1>
+		</hgroup>
+
+		
+		<p class="header-subtitle">生命不息,折腾不止</p>
+		
+
+		
+			<div class="switch-btn">
+				<div class="icon">
+					<div class="icon-ctn">
+						<div class="icon-wrap icon-house" data-idx="0">
+							<div class="birdhouse"></div>
+							<div class="birdhouse_holes"></div>
+						</div>
+						<div class="icon-wrap icon-ribbon hide" data-idx="1">
+							<div class="ribbon"></div>
+						</div>
+						
+						
+					</div>
+					
+				</div>
+				<div class="tips-box hide">
+					<div class="tips-arrow"></div>
+					<ul class="tips-inner">
+						<li>菜单</li>
+						<li>标签</li>
+						
+						
+					</ul>
+				</div>
+			</div>
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/">主页</a></li>
+				        
+							<li><a href="/archives">所有文章</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+								<a class="github" target="_blank" href="https://github.com/zhuifeng1017" title="github">github</a>
+					        
+								<a class="weibo" target="_blank" href="http://www.weibo.com/u/1302045177" title="weibo">weibo</a>
+					        
+						</div>
+					</nav>
+				</section>
+				
+				
+				<section class="switch-part switch-part2">
+					<div class="widget tagcloud" id="js-tagcloud">
+						<a href="/tags/EME/" style="font-size: 10px;">EME</a> <a href="/tags/OSS/" style="font-size: 10px;">OSS</a> <a href="/tags/hexo/" style="font-size: 20px;">hexo</a> <a href="/tags/markdown/" style="font-size: 10px;">markdown</a> <a href="/tags/vsftp/" style="font-size: 10px;">vsftp</a> <a href="/tags/多说/" style="font-size: 10px;">多说</a> <a href="/tags/股票/" style="font-size: 10px;">股票</a> <a href="/tags/财经/" style="font-size: 10px;">财经</a> <a href="/tags/阿里云/" style="font-size: 10px;">阿里云</a>
+					</div>
+				</section>
+				
+				
+				
+
+				
+			</div>
+		</div>
+	</header>				
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">大风</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+				<img lazy-src="http://iid.oss-cn-hangzhou.aliyuncs.com/head1.jpg" class="js-avatar">
+			</div>
+			<hgroup>
+			  <h1 class="header-author">大风</h1>
+			</hgroup>
+			
+			<p class="header-subtitle">生命不息,折腾不止</p>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/archives">所有文章</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="https://github.com/zhuifeng1017" title="github">github</a>
+			        
+						<a class="weibo" target="_blank" href="http://www.weibo.com/u/1302045177" title="weibo">weibo</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+      <div class="body-wrap"><article id="post-t-aliyun_oss" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/08/23/t-aliyun_oss/" class="article-date">
+  	<time datetime="2015-08-23T02:00:00.000Z" itemprop="datePublished">2015-08-23</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      打开阿里云OSS图片URL直接下载
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/OSS/">OSS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/阿里云/">阿里云</a></li></ul>
+	</div>
+
+        
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>这几天用<em>hexo</em>搭建博客,为了加快速度,我将图片放在了<em>阿里云OSS</em>上,就是申请域名免费赠送的几G存储空间。<br>因为博客网页上显示图片较小,我想右键在新标签页查看图片时，坑爹了，图片直接下载, 想在浏览器上看大图都不行,一图胜千言啊。<br>然后查原因,抓包发现响应头里面<br><a id="more"></a></p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Content-Disposition: attachment; filename=<span class="string">"markdown.png"</span> <span class="comment">// 阿里云oss返回的响应头</span></span><br><span class="line"><span class="preprocessor"># 尝试在阿里云上设置图片的HTTP头属性 </span></span><br><span class="line">Content-Disposition = <span class="keyword">inline</span>;</span><br></pre></td></tr></table></figure>
+<p>还是不行。后来上网查资料，在知乎上看到了解释:</p>
+<h2 id="怎么浏览器打开图片的url默认是下载?"><strong><em><a href="http://www.zhihu.com/question/23528976" target="_blank" rel="external">怎么浏览器打开图片的url默认是下载?</a></em></strong></h2><p>  通过OSS默认的域名来访问OSS的文件全部默认为下载，而HTTP头相关参数如Content-Disposition=inline的设置都是无效的；<br>  要直接显示而不是下载，需要绑定用户自己的域名即可；<br>  通过测试，总结如下： </p>
+<ol>
+<li>绑定了自己的域名： <ul>
+<li>图片显示：通过绑定域名访问图片文件，确实是直接显示； </li>
+<li>图片下载：如果有通过绑定域名而直接下载需求的话，可以设置HTTP头的Content-Disposition=attachement;filename=xxxx，即可实现文件另存为”xxxx”；Content-Disposition=attachement则按照原文件名另存为的下载模式，可以满足开发者的不同需求； </li>
+</ul>
+</li>
+<li>若使用OSS的默认域名：<br>则Content-Disposition的设置均会被系统默认的下载策略覆盖，都是图片下载；</li>
+</ol>
+<hr>
+<p>阿里云论坛上也找到了一篇资料：<br><strong><em><a href="http://bbs.aliyun.com/read/146012.html?spm=0.0.0.0.PL4CGj" target="_blank" rel="external">OSS学院：为什么我的图片会被下载？怎么在线播放影音？</a></em></strong></p>
+
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2015/08/24/t-data-thread-key/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          多说data-thread-key的设置
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2015/08/22/t-md_sample/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">markdown简明语法图示</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+<div class="share">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">分享到：</span>
+		<a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+		<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	</div>
+	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
+
+
+
+<!-- 多说评论框 start -->
+<div class="ds-thread" data-thread-key="_posts/t-aliyun_oss.md" data-title="打开阿里云OSS图片URL直接下载" data-url="http://www.yczmm.com/2015/08/23/t-aliyun_oss/"></div>
+<!-- 多说评论框 end -->
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+	var duoshuoQuery = {short_name:'zhuifeng'};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0]
+		|| document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+</script>
+<!-- 多说公共JS代码 end -->
+
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2015 大风
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+
+<script>
+	var yiliaConfig = {
+		fancybox: false,
+		mathjax: false,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false
+	}
+</script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="/js/main.js" type="text/javascript"></script>
+
+
+
+
+
+
+
+<script>
+	var _hmt = _hmt || [];
+	(function() {
+		var hm = document.createElement("script");
+		hm.src = "//hm.baidu.com/hm.js?0b6aeca070d56c3a67f3f0e90381a9e7";
+		var s = document.getElementsByTagName("script")[0];
+		s.parentNode.insertBefore(hm, s);
+	})();
+</script>
+  </div>
+</body>
+</html>
