@@ -11,7 +11,7 @@
 <meta property="og:url" content="http://www.yczmm.com/2015/08/23/t-aliyun_oss/index.html">
 <meta property="og:site_name" content="大风的博客">
 <meta property="og:description" content="这几天用hexo搭建博客,为了加快速度,我将图片放在了阿里云OSS上,就是申请域名免费赠送的几G存储空间。因为博客网页上显示图片较小,我想右键在新标签页查看图片时，坑爹了，图片直接下载, 想在浏览器上看大图都不行,一图胜千言啊。然后查原因,抓包发现响应头里面">
-<meta property="og:updated_time" content="2015-08-31T13:50:12.000Z">
+<meta property="og:updated_time" content="2015-09-06T03:04:56.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="打开阿里云OSS图片URL直接下载">
 <meta name="twitter:description" content="这几天用hexo搭建博客,为了加快速度,我将图片放在了阿里云OSS上,就是申请域名免费赠送的几G存储空间。因为博客网页上显示图片较小,我想右键在新标签页查看图片时，坑爹了，图片直接下载, 想在浏览器上看大图都不行,一图胜千言啊。然后查原因,抓包发现响应头里面">
@@ -170,7 +170,7 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>这几天用<em>hexo</em>搭建博客,为了加快速度,我将图片放在了<em>阿里云OSS</em>上,就是申请域名免费赠送的几G存储空间。<br>因为博客网页上显示图片较小,我想右键在新标签页查看图片时，坑爹了，图片直接下载, 想在浏览器上看大图都不行,一图胜千言啊。<br>然后查原因,抓包发现响应头里面<br><a id="more"></a></p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Content-Disposition: attachment; filename=<span class="string">"markdown.png"</span> <span class="comment">// 阿里云oss返回的响应头</span></span><br><span class="line"><span class="preprocessor"># 尝试在阿里云上设置图片的HTTP头属性 </span></span><br><span class="line">Content-Disposition = <span class="keyword">inline</span>;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Content-Disposition: attachment; filename=&#34;markdown.png&#34; // &#38463;&#37324;&#20113;oss&#36820;&#22238;&#30340;&#21709;&#24212;&#22836;&#10;# &#23581;&#35797;&#22312;&#38463;&#37324;&#20113;&#19978;&#35774;&#32622;&#22270;&#29255;&#30340;HTTP&#22836;&#23646;&#24615; &#10;Content-Disposition = inline;</span><br></pre></td></tr></table></figure>
 <p>还是不行。后来上网查资料，在知乎上看到了解释:</p>
 <h2 id="怎么浏览器打开图片的url默认是下载?"><strong><em><a href="http://www.zhihu.com/question/23528976" target="_blank" rel="external">怎么浏览器打开图片的url默认是下载?</a></em></strong></h2><p>  通过OSS默认的域名来访问OSS的文件全部默认为下载，而HTTP头相关参数如Content-Disposition=inline的设置都是无效的；<br>  要直接显示而不是下载，需要绑定用户自己的域名即可；<br>  通过测试，总结如下： </p>
 <ol>
