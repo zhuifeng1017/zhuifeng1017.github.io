@@ -2307,3 +2307,17 @@ pre .css ~ * .id {
   height: 100%;
   overflow: hidden;
 }
+.ds-thread-count {
+  font-size: 14px;
+  margin: 0.5em auto;
+  color: #222;
+  text-decoration: none;
+  border-bottom: 1px solid #999;
+}
+.ds-thread-count:hover {
+  color: #657b83;
+  border-bottom: 1px solid #657b83;
+}
+.ds-thread-count-ex {
+  font-size: 12px;
+}
