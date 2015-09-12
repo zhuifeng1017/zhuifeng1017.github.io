@@ -3,20 +3,40 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Hexo _posts目录, skip_render 的说明 | 大风的博客</title>
+  <title>hexo-theme-yilia主题 | 大风的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="source/_post使用hexo new xxxx.md创建的md文件位于source/_post 目录下,在执行hexo g后, 该目录下的文件会索引在public/index.html中。而source下其他目录虽然也会被生成,但是不会索引在public/index.html中, 也就是说打开主页的时候是看不到的,只能通过其url进行访问。">
+  <meta name="description" content="非常感谢litten/hexo-theme-yilia作者提供这么棒的主题，写起博客来更有劲了!  这几天, 为了yilia更完美和实现我个性化的需求，我做了一些改进。
+侧边栏的popup菜单改为了segment
+
+主页增加了显示评论数, 查看效果请点击我的博客
+
+
+
+有任何问题，欢迎大家留言！github地址: https://github.com/zhuifeng1017/hexo-theme">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo _posts目录, skip_render 的说明">
-<meta property="og:url" content="http://www.yczmm.com/2015/08/24/t-hexo-posts/index.html">
+<meta property="og:title" content="hexo-theme-yilia主题">
+<meta property="og:url" content="http://www.yczmm.com/yilia-主题.html">
 <meta property="og:site_name" content="大风的博客">
-<meta property="og:description" content="source/_post使用hexo new xxxx.md创建的md文件位于source/_post 目录下,在执行hexo g后, 该目录下的文件会索引在public/index.html中。而source下其他目录虽然也会被生成,但是不会索引在public/index.html中, 也就是说打开主页的时候是看不到的,只能通过其url进行访问。">
-<meta property="og:image" content="http://iid.oss-cn-hangzhou.aliyuncs.com/hexo_posts.png">
-<meta property="og:image" content="http://iid.oss-cn-hangzhou.aliyuncs.com/hexo_posts2.png">
-<meta property="og:updated_time" content="2015-08-31T13:50:12.000Z">
+<meta property="og:description" content="非常感谢litten/hexo-theme-yilia作者提供这么棒的主题，写起博客来更有劲了!  这几天, 为了yilia更完美和实现我个性化的需求，我做了一些改进。
+侧边栏的popup菜单改为了segment
+
+主页增加了显示评论数, 查看效果请点击我的博客
+
+
+
+有任何问题，欢迎大家留言！github地址: https://github.com/zhuifeng1017/hexo-theme">
+<meta property="og:image" content="http://iid.oss-cn-hangzhou.aliyuncs.com/hexo-gif.gif">
+<meta property="og:updated_time" content="2015-09-12T13:25:58.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo _posts目录, skip_render 的说明">
-<meta name="twitter:description" content="source/_post使用hexo new xxxx.md创建的md文件位于source/_post 目录下,在执行hexo g后, 该目录下的文件会索引在public/index.html中。而source下其他目录虽然也会被生成,但是不会索引在public/index.html中, 也就是说打开主页的时候是看不到的,只能通过其url进行访问。">
+<meta name="twitter:title" content="hexo-theme-yilia主题">
+<meta name="twitter:description" content="非常感谢litten/hexo-theme-yilia作者提供这么棒的主题，写起博客来更有劲了!  这几天, 为了yilia更完美和实现我个性化的需求，我做了一些改进。
+侧边栏的popup菜单改为了segment
+
+主页增加了显示评论数, 查看效果请点击我的博客
+
+
+
+有任何问题，欢迎大家留言！github地址: https://github.com/zhuifeng1017/hexo-theme">
   
     <link rel="alternative" href="/atom.xml" title="大风的博客" type="application/atom+xml">
   
@@ -64,7 +84,7 @@
 				        
 							<li><a href="/archives">所有文章</a></li>
 				        
-							<li><a href="/2015/09/06/yilia-md">Yilla主题</a></li>
+							<li><a href="/yilia-主题.html">Yilla主题</a></li>
 				        
 						</ul>
 					</nav>
@@ -84,7 +104,7 @@
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
-						<a href="/tags/EME/" style="font-size: 10px;">EME</a> <a href="/tags/OSS/" style="font-size: 10px;">OSS</a> <a href="/tags/hexo/" style="font-size: 20px;">hexo</a> <a href="/tags/markdown/" style="font-size: 10px;">markdown</a> <a href="/tags/vsftp/" style="font-size: 10px;">vsftp</a> <a href="/tags/多说/" style="font-size: 10px;">多说</a> <a href="/tags/机器人/" style="font-size: 10px;">机器人</a> <a href="/tags/股票/" style="font-size: 10px;">股票</a> <a href="/tags/财经/" style="font-size: 10px;">财经</a> <a href="/tags/阿里云/" style="font-size: 10px;">阿里云</a>
+						<a href="/tags/EME/" style="font-size: 10px;">EME</a> <a href="/tags/OSS/" style="font-size: 10px;">OSS</a> <a href="/tags/hexo/" style="font-size: 20px;">hexo</a> <a href="/tags/markdown/" style="font-size: 10px;">markdown</a> <a href="/tags/vsftp/" style="font-size: 10px;">vsftp</a> <a href="/tags/多说/" style="font-size: 10px;">多说</a> <a href="/tags/机器人/" style="font-size: 10px;">机器人</a> <a href="/tags/民生益生菌/" style="font-size: 10px;">民生益生菌</a> <a href="/tags/股票/" style="font-size: 10px;">股票</a> <a href="/tags/财经/" style="font-size: 10px;">财经</a> <a href="/tags/阿里云/" style="font-size: 10px;">阿里云</a>
 					</div>
 				</section>
 				
@@ -121,7 +141,7 @@
 		        
 					<li><a href="/archives">所有文章</a></li>
 		        
-					<li><a href="/2015/09/06/yilia-md">Yilla主题</a></li>
+					<li><a href="/yilia-主题.html">Yilla主题</a></li>
 		        
 		        <div class="clearfix"></div>
 				</ul>
@@ -140,11 +160,11 @@
 		</header>				
 	</div>
 </nav>
-      <div class="body-wrap"><article id="post-t-hexo-posts" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-yilia-主题" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2015/08/24/t-hexo-posts/" class="article-date">
-  	<time datetime="2015-08-24T12:10:54.000Z" itemprop="datePublished">2015-08-24</time>
+      <a href="/yilia-主题.html" class="article-date">
+  	<time datetime="2015-09-06T09:30:00.000Z" itemprop="datePublished">2015-09-06</time>
 </a>
     </div>
   
@@ -155,7 +175,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      Hexo _posts目录, skip_render 的说明
+      hexo-theme-yilia主题
     </h1>
   
 
@@ -176,8 +196,14 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="source/_post">source/_post</h1><p>使用<code>hexo new xxxx.md</code>创建的md文件位于<strong>source/_post</strong> 目录下,<br>在执行<code>hexo g</code>后, 该目录下的文件会索引在<strong>public/index.html</strong>中。<br>而<strong>source</strong>下其他目录虽然也会被生成,但是不会索引在<strong>public/index.html</strong>中, 也就是说打开主页的时候是看不到的,只能通过其url进行访问。<br><a id="more"></a><br><img src="http://iid.oss-cn-hangzhou.aliyuncs.com/hexo_posts.png" alt=" "></p>
-<h1 id="skip_render">skip_render</h1><p>意思是不将md文件转化为html, 注意:<em>md文件仍然会被copy到public目录中</em>。<br>例如：配置<code>skip_render: test/*</code>, 则test目录中所有文件不会被转化为html,但仍会被copy,<br>通过<em><a href="http://localhost:4000/test/01.md" target="_blank" rel="external">http://localhost:4000/test/01.md</a></em>仍可访问。<br><img src="http://iid.oss-cn-hangzhou.aliyuncs.com/hexo_posts2.png" alt=" "><br>貌似只能生成后手动删除了。</p>
+        <h3 id="非常感谢litten/hexo-theme-yilia作者提供这么棒的主题，写起博客来更有劲了!_这几天,_为了yilia更完美和实现我个性化的需求，我做了一些改进。">非常感谢litten/hexo-theme-yilia作者提供这么棒的主题，写起博客来更有劲了!  这几天, 为了yilia更完美和实现我个性化的需求，我做了一些改进。</h3><ol>
+<li><p>侧边栏的popup菜单改为了segment<br><img src="http://iid.oss-cn-hangzhou.aliyuncs.com/hexo-gif.gif" alt=" "></p>
+</li>
+<li><p>主页增加了<em>显示评论数</em>, 查看效果请点击<a href="/">我的博客</a></p>
+</li>
+</ol>
+<hr>
+<p>有任何问题，欢迎大家<a href="/2015/09/06/yilia-md/#comments">留言</a>！github地址: <a href="https://github.com/zhuifeng1017/hexo-theme-yilia" target="_blank" rel="external">https://github.com/zhuifeng1017/hexo-theme-yilia</a></p>
 
       
     </div>
@@ -187,18 +213,9 @@
     
 <nav id="article-nav">
   
-    <a href="/2015/08/24/f-01/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption"><</strong>
-      <div class="article-nav-title">
-        
-          疯狂的一天
-        
-      </div>
-    </a>
   
-  
-    <a href="/2015/08/24/t-data-thread-key/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">多说data-thread-key的设置</div>
+    <a href="/机器人行业.html" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">机器人行业</div>
       <strong class="article-nav-caption">></strong>
     </a>
   
@@ -227,7 +244,7 @@
 
 <div class="comments" id="comments"></div>
 <!-- 多说评论框 start -->
-<div class="ds-thread" data-thread-key="_posts/t-hexo-posts.md" data-title="Hexo _posts目录, skip_render 的说明" data-url="http://www.yczmm.com/2015/08/24/t-hexo-posts/"></div>
+<div class="ds-thread" data-thread-key="_posts%2Fyilia-md.md" data-title="hexo-theme-yilia主题" data-url="http://www.yczmm.com/yilia-主题.html"></div>
 <!-- 多说评论框 end -->
 <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 <script type="text/javascript">
