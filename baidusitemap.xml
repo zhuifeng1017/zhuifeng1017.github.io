@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
     
+    
+  <url>
+    <loc>http://www.yczmm.com/hexo-deploy%E6%8A%A5%E9%94%99%E8%A7%A3%E5%86%B3.html</loc>
+    <lastmod>2015-09-13T07:36:42.000Z</lastmod>
+    <data>
+        <display>
+        <title>hexo deploy报错解决</title>
+        <pubTime>2015-09-13T06:53:02.000Z</pubTime>
+        
+        <tag>hexo </tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
   <url>
     <loc>http://www.yczmm.com/%E6%B0%91%E7%94%9F%E7%9B%8A%E7%94%9F%E8%8F%8C-%E4%BC%9A%E5%91%98.html</loc>
     <lastmod>2015-09-12T15:00:40.000Z</lastmod>
@@ -54,46 +72,14 @@
 
     
   <url>
-    <loc>http://www.yczmm.com/markdown%E8%AF%AD%E6%B3%95.html</loc>
+    <loc>http://www.yczmm.com/hexo-skip_render.html</loc>
     <lastmod>2015-09-12T11:31:53.000Z</lastmod>
     <data>
         <display>
-        <title>markdown简明语法图示</title>
-        <pubTime>2015-08-21T20:30:00.000Z</pubTime>
+        <title>Hexo _posts目录, skip_render 的说明</title>
+        <pubTime>2015-08-24T12:10:54.000Z</pubTime>
         
-        <tag>markdown </tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.yczmm.com/%E7%96%AF%E7%8B%82%E7%9A%84%E4%B8%80%E5%A4%A9.html</loc>
-    <lastmod>2015-09-12T11:31:53.000Z</lastmod>
-    <data>
-        <display>
-        <title>疯狂的一天</title>
-        <pubTime>2015-08-24T15:57:28.000Z</pubTime>
-        
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.yczmm.com/%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%A1%8C%E4%B8%9A.html</loc>
-    <lastmod>2015-09-12T11:31:53.000Z</lastmod>
-    <data>
-        <display>
-        <title>机器人行业</title>
-        <pubTime>2015-09-02T12:06:00.000Z</pubTime>
-        
-        <tag>机器人 </tag>
+        <tag>hexo </tag>
          
          
            
@@ -139,6 +125,23 @@
 
     
   <url>
+    <loc>http://www.yczmm.com/markdown%E8%AF%AD%E6%B3%95.html</loc>
+    <lastmod>2015-09-12T11:31:53.000Z</lastmod>
+    <data>
+        <display>
+        <title>markdown简明语法图示</title>
+        <pubTime>2015-08-21T20:30:00.000Z</pubTime>
+        
+        <tag>markdown </tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.yczmm.com/%E7%BB%8F%E6%B5%8E%E7%9F%A5%E8%AF%86%E5%AD%A6%E4%B9%A0%E6%95%B4%E7%90%86.html</loc>
     <lastmod>2015-09-12T11:31:53.000Z</lastmod>
     <data>
@@ -158,15 +161,13 @@
 
     
   <url>
-    <loc>http://www.yczmm.com/hexo-skip_render.html</loc>
+    <loc>http://www.yczmm.com/%E7%96%AF%E7%8B%82%E7%9A%84%E4%B8%80%E5%A4%A9.html</loc>
     <lastmod>2015-09-12T11:31:53.000Z</lastmod>
     <data>
         <display>
-        <title>Hexo _posts目录, skip_render 的说明</title>
-        <pubTime>2015-08-24T12:10:54.000Z</pubTime>
+        <title>疯狂的一天</title>
+        <pubTime>2015-08-24T15:57:28.000Z</pubTime>
         
-        <tag>hexo </tag>
-         
          
            
         </display>
@@ -175,14 +176,14 @@
 
     
   <url>
-    <loc>http://www.yczmm.com/EME%E7%9A%84%E6%97%A5%E5%AD%90.html</loc>
+    <loc>http://www.yczmm.com/%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%A1%8C%E4%B8%9A.html</loc>
     <lastmod>2015-09-12T11:31:53.000Z</lastmod>
     <data>
         <display>
-        <title>EME的日子</title>
-        <pubTime>2015-08-20T09:20:30.000Z</pubTime>
+        <title>机器人行业</title>
+        <pubTime>2015-09-02T12:06:00.000Z</pubTime>
         
-        <tag>EME </tag>
+        <tag>机器人 </tag>
          
          
            
@@ -202,6 +203,23 @@
         <tag>hexo </tag>
          
         <tag>多说 </tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://www.yczmm.com/EME%E7%9A%84%E6%97%A5%E5%AD%90.html</loc>
+    <lastmod>2015-09-12T11:31:53.000Z</lastmod>
+    <data>
+        <display>
+        <title>EME的日子</title>
+        <pubTime>2015-08-20T09:20:30.000Z</pubTime>
+        
+        <tag>EME </tag>
          
          
            

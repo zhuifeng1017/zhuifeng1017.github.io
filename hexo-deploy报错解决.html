@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>hexo deploy报错解决 | 大风的博客</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Mac OS下一切正常，换到window下后，老是如下报错12345678910111213141516bash: /dev/tty: No such device or addresserror: failed to execute prompt script (exit code 1)fatal: could not read Username for &apos;https://github.com&apos;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="hexo deploy报错解决">
+<meta property="og:url" content="http://www.yczmm.com/hexo-deploy报错解决.html">
+<meta property="og:site_name" content="大风的博客">
+<meta property="og:description" content="Mac OS下一切正常，换到window下后，老是如下报错12345678910111213141516bash: /dev/tty: No such device or addresserror: failed to execute prompt script (exit code 1)fatal: could not read Username for &apos;https://github.com&apos;">
+<meta property="og:updated_time" content="2015-09-13T07:36:42.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="hexo deploy报错解决">
+<meta name="twitter:description" content="Mac OS下一切正常，换到window下后，老是如下报错12345678910111213141516bash: /dev/tty: No such device or addresserror: failed to execute prompt script (exit code 1)fatal: could not read Username for &apos;https://github.com&apos;">
+  
+    <link rel="alternative" href="/atom.xml" title="大风的博客" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+</head>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img lazy-src="http://iid.oss-cn-hangzhou.aliyuncs.com/head1.jpg" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">大风</a></h1>
+		</hgroup>
+
+		
+		<p class="header-subtitle">生命不息,折腾不止</p>
+		
+
+		
+		<div class="tips-inner-ex">
+			<a href="javascript:void(0);">导航</a>
+			<a href="javascript:void(0);">标签</a>
+			
+			
+			</div>
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/">主页</a></li>
+				        
+							<li><a href="/tags/益生菌">益生菌</a></li>
+				        
+							<li><a href="/archives">所有文章</a></li>
+				        
+							<li><a href="/yilia主题.html">Yilla主题</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+								<a class="github" target="_blank" href="https://github.com/zhuifeng1017" title="github">github</a>
+					        
+								<a class="weibo" target="_blank" href="http://www.weibo.com/u/1302045177" title="weibo">weibo</a>
+					        
+								<a class="mail" target="_blank" href="/zhaomin17@icloud.com" title="mail">mail</a>
+					        
+						</div>
+					</nav>
+				</section>
+				
+				
+				<section class="switch-part switch-part2">
+					<div class="widget tagcloud" id="js-tagcloud">
+						<a href="/tags/EME/" style="font-size: 10px;">EME</a> <a href="/tags/OSS/" style="font-size: 10px;">OSS</a> <a href="/tags/hexo/" style="font-size: 20px;">hexo</a> <a href="/tags/markdown/" style="font-size: 10px;">markdown</a> <a href="/tags/vsftp/" style="font-size: 10px;">vsftp</a> <a href="/tags/多说/" style="font-size: 10px;">多说</a> <a href="/tags/机器人/" style="font-size: 10px;">机器人</a> <a href="/tags/益生菌/" style="font-size: 15px;">益生菌</a> <a href="/tags/股票/" style="font-size: 10px;">股票</a> <a href="/tags/财经/" style="font-size: 10px;">财经</a> <a href="/tags/阿里云/" style="font-size: 10px;">阿里云</a>
+					</div>
+				</section>
+				
+				
+				
+
+				
+			</div>
+		</div>
+	</header>				
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">大风</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+				<img lazy-src="http://iid.oss-cn-hangzhou.aliyuncs.com/head1.jpg" class="js-avatar">
+			</div>
+			<hgroup>
+			  <h1 class="header-author">大风</h1>
+			</hgroup>
+			
+			<p class="header-subtitle">生命不息,折腾不止</p>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/tags/益生菌">益生菌</a></li>
+		        
+					<li><a href="/archives">所有文章</a></li>
+		        
+					<li><a href="/yilia主题.html">Yilla主题</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="https://github.com/zhuifeng1017" title="github">github</a>
+			        
+						<a class="weibo" target="_blank" href="http://www.weibo.com/u/1302045177" title="weibo">weibo</a>
+			        
+						<a class="mail" target="_blank" href="/zhaomin17@icloud.com" title="mail">mail</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+      <div class="body-wrap"><article id="post-hexo-deploy报错解决" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/hexo-deploy报错解决.html" class="article-date">
+  	<time datetime="2015-09-13T06:53:02.000Z" itemprop="datePublished">2015-09-13</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      hexo deploy报错解决
+    </h1>
+  
+
+        
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li></ul>
+	</div>
+
+        
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Mac OS下一切正常，换到window下后，老是如下报错<br><figure class="highlight smali"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">bash: /dev/tty: No such device<span class="instruction"> or </span>address</span><br><span class="line">error: failed to<span class="instruction"> execute </span>prompt script<span class="function"> (</span>exit code 1<span class="function">)</span></span><br><span class="line">fatal: could<span class="instruction"> not </span>read Username for 'https://github.com': No error</span><br><span class="line">FATAL Something's wrong. Maybe you can find the solution here: http://hexo.io/do</span><br><span class="line">cs/troubleshooting.html</span><br><span class="line">Error: bash: /dev/tty: No such device<span class="instruction"> or </span>address</span><br><span class="line">error: failed to<span class="instruction"> execute </span>prompt script<span class="function"> (</span>exit code 1<span class="function">)</span></span><br><span class="line">fatal: could<span class="instruction"> not </span>read Username for 'https://github.com': No error</span><br><span class="line"></span><br><span class="line">    at ChildProcess.&lt;anonymous&gt;<span class="function"> (</span>H:\blog\node_modules\hexo-deployer-git\node_mod</span><br><span class="line">ules\hexo-util\lib\spawn.js:42:17<span class="function">)</span></span><br><span class="line">    at ChildProcess.emit<span class="function"> (</span>events.js:110:17<span class="function">)</span></span><br><span class="line">    at maybeClose<span class="function"> (</span>child_process.js:1015:16<span class="function">)</span></span><br><span class="line">    at Socket.&lt;anonymous&gt;<span class="function"> (</span>child_process.js:1183:11<span class="function">)</span></span><br><span class="line">    at Socket.emit<span class="function"> (</span>events.js:107:17<span class="function">)</span></span><br><span class="line">    at Pipe.close<span class="function"> (</span>net.js:485:12<span class="function">)</span></span><br></pre></td></tr></table></figure></p>
+<p>一番研究之后，将https部署改为ssh部署，问题总算解决了。<br>参考链接</p>
+<ul>
+<li><a href="http://eesly.github.io/2014/10/26/%E5%88%A9%E7%94%A8ssh%E7%9C%81%E5%8E%BB%E5%9C%A8hexo-deploy%E8%BE%93%E5%85%A5%E5%AF%86%E7%A0%81/" target="_blank" rel="external">利用SSH省去在hexo deploy输入密码</a></li>
+<li><a href="https://help.github.com/articles/generating-ssh-keys/" target="_blank" rel="external">Generating SSH keys</a></li>
+</ul>
+<hr>
+<p>附上deploy配置<br><figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">deploy</span>:</span><br><span class="line">  <span class="attribute">type</span>: git</span><br><span class="line">- <span class="attribute">repo</span>: <span class="attribute">https</span>:<span class="comment">//github.com/USERNAME/<span class="label">xxxxx.github.io.git</span></span></span><br><span class="line">+ <span class="attribute">repo</span>: git<span class="variable">@github</span>.<span class="attribute">com</span>:USERNAME/xxxREPOSITORY.git</span><br></pre></td></tr></table></figure></p>
+
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/民生益生菌-产品介绍.html" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">民生益生菌-产品介绍</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+<div class="share">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">分享到：</span>
+		<a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+		<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	</div>
+	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
+
+
+
+<div class="comments" id="comments"></div>
+<!-- 多说评论框 start -->
+<div class="ds-thread" data-thread-key="_posts%2Fhexo-deploy%E6%8A%A5%E9%94%99%E8%A7%A3%E5%86%B3.md" data-title="hexo deploy报错解决" data-url="http://www.yczmm.com/hexo-deploy报错解决.html"></div>
+<!-- 多说评论框 end -->
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+	var duoshuoQuery = {short_name:'zhuifeng'};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0]
+		|| document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+</script>
+<!-- 多说公共JS代码 end -->
+
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2015 大风
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+
+<script>
+	var yiliaConfig = {
+		fancybox: false,
+		mathjax: false,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false
+	}
+</script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="/js/main.js" type="text/javascript"></script>
+
+
+
+
+
+
+
+<script>
+	var _hmt = _hmt || [];
+	(function() {
+		var hm = document.createElement("script");
+		hm.src = "//hm.baidu.com/hm.js?0b6aeca070d56c3a67f3f0e90381a9e7";
+		var s = document.getElementsByTagName("script")[0];
+		s.parentNode.insertBefore(hm, s);
+	})();
+</script>
+  </div>
+</body>
+
+<script type="text/javascript">
+  var duoshuoQuery = {short_name:'zhuifeng'};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0]
+    || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script>
+
+</html>
