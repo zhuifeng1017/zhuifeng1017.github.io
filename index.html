@@ -172,15 +172,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Mac OS下一切正常，换到window下后，老是如下报错<br><figure class="highlight smali"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">bash: /dev/tty: No such device<span class="instruction"> or </span>address</span><br><span class="line">error: failed to<span class="instruction"> execute </span>prompt script<span class="function"> (</span>exit code 1<span class="function">)</span></span><br><span class="line">fatal: could<span class="instruction"> not </span>read Username for 'https://github.com': No error</span><br><span class="line">FATAL Something's wrong. Maybe you can find the solution here: http://hexo.io/do</span><br><span class="line">cs/troubleshooting.html</span><br><span class="line">Error: bash: /dev/tty: No such device<span class="instruction"> or </span>address</span><br><span class="line">error: failed to<span class="instruction"> execute </span>prompt script<span class="function"> (</span>exit code 1<span class="function">)</span></span><br><span class="line">fatal: could<span class="instruction"> not </span>read Username for 'https://github.com': No error</span><br><span class="line"></span><br><span class="line">    at ChildProcess.&lt;anonymous&gt;<span class="function"> (</span>H:\blog\node_modules\hexo-deployer-git\node_mod</span><br><span class="line">ules\hexo-util\lib\spawn.js:42:17<span class="function">)</span></span><br><span class="line">    at ChildProcess.emit<span class="function"> (</span>events.js:110:17<span class="function">)</span></span><br><span class="line">    at maybeClose<span class="function"> (</span>child_process.js:1015:16<span class="function">)</span></span><br><span class="line">    at Socket.&lt;anonymous&gt;<span class="function"> (</span>child_process.js:1183:11<span class="function">)</span></span><br><span class="line">    at Socket.emit<span class="function"> (</span>events.js:107:17<span class="function">)</span></span><br><span class="line">    at Pipe.close<span class="function"> (</span>net.js:485:12<span class="function">)</span></span><br></pre></td></tr></table></figure></p>
-<p>一番研究之后，将https部署改为ssh部署，问题总算解决了。<br>参考链接</p>
-<ul>
-<li><a href="http://eesly.github.io/2014/10/26/%E5%88%A9%E7%94%A8ssh%E7%9C%81%E5%8E%BB%E5%9C%A8hexo-deploy%E8%BE%93%E5%85%A5%E5%AF%86%E7%A0%81/" target="_blank" rel="external">利用SSH省去在hexo deploy输入密码</a></li>
-<li><a href="https://help.github.com/articles/generating-ssh-keys/" target="_blank" rel="external">Generating SSH keys</a></li>
-</ul>
-<hr>
-<p>附上deploy配置<br><figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">deploy</span>:</span><br><span class="line">  <span class="attribute">type</span>: git</span><br><span class="line">- <span class="attribute">repo</span>: <span class="attribute">https</span>:<span class="comment">//github.com/USERNAME/<span class="label">xxxxx.github.io.git</span></span></span><br><span class="line">+ <span class="attribute">repo</span>: git<span class="variable">@github</span>.<span class="attribute">com</span>:USERNAME/xxxREPOSITORY.git</span><br></pre></td></tr></table></figure></p>
-
+        <p>Mac OS下一切正常，windows下老是如下报错<br>
       
     </div>
     
@@ -193,6 +185,10 @@
 
       
 
+      
+        <p class="article-more-link">
+          <a  href="/hexo-deploy报错解决.html#more">阅读全文 >></a>
+        </p>
       
       <div class="clearfix"></div>
     </div>
