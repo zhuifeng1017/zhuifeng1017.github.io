@@ -233,7 +233,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>在知乎上找到一篇相关文章，涨知识了。<a href="http://www.zhihu.com/question/24480413" target="_blank" rel="external">如何在 OS X 上架设本地代理服务器对 iOS 流量进行抓包分析</a></p>
+        <p>Mac上插有网线的情况下，通过热点共享给手机上网，然后用wireshark转包是我以前一贯做法。但是如果没插网线怎么办？<br>在知乎上找到一篇相关文章，<a href="http://www.zhihu.com/question/24480413" target="_blank" rel="external">如何在 OS X 上架设本地代理服务器对 iOS 流量进行抓包分析</a></p>
 <blockquote>
 <p>通过USB口将iPhone连接到Mac上。<br>使用Xcode的organizer工具获取到iPhone的UDID<br>使用rvictl命令创建RVI接口(remote virtual interface),使用iPhone的UDID作为参数。<br>$ rvictl -s <udid><br>如果想捕获多个设备的网络包，可以使用上述命令创建多个设备的RVI,传递每个iOS设备的UDID作为参数即可。<br>RVI虚拟接口的命名规则为rvi0,rvi1,rvi2,…,可使用ifconfig命令查看<br>$ ifconfig rvi0<br>rvi0: flags=3005<up,debug,link0,link1> mtu 0<br>在Mac上使用任意抓包工具<strong>tcpdump、wireshark</strong>等，监听创建的rvi接口即可。<br>使用完之后需要将创建的虚拟接口移除<br>$ rvictl -x <udid></udid></up,debug,link0,link1></udid></p>
 </blockquote>
@@ -361,12 +361,13 @@
 <li>符号: H , V ;   H代表水平方向 ,V代表垂直方向(水平和垂直的英文首字母) </li>
 </ul>
 <p>一些简写如： <code>@&quot;H:|[view1]|&quot; 等价于 @&quot;H:|-0-[view1]-0-|&quot;</code><br><a href="http://blog.csdn.net/yangbingbinga/article/details/43673817" target="_blank" rel="external">参考1&gt;&gt;</a><br><a href="http://www.vienta.me/2014/12/07/AutoLayout-%E5%BF%98%E6%8E%89Frame-%E6%8B%A5%E6%8A%B1Constraint%EF%BC%88I%EF%BC%89/" target="_blank" rel="external">参考2&gt;&gt;</a><br><a href="https://github.com/zhuifeng1017/AutoLayout1" target="_blank" rel="external">例子代码下载&gt;&gt;</a></p>
-<h2 id="总结">总结</h2><p>确定一个UI空间的位置，在frame时代需要指明(x,y,width,height), 在autolayout时代，本质是一样的，只是换成了相对概念。<br>即需要确定</p>
+<h2 id="使用Masonry">使用Masonry</h2><p>代码精简，手写autolayout情况下用它爽多了。</p>
+<h2 id="总结">总结</h2><p>确定一个UI控件的位置，在frame时代需要指明(x,y,width,height), 在autolayout时代，本质是一样的，只是换成了相对概念。<br>即需要确定</p>
 <ul>
 <li>水平方向相对位置；</li>
 <li>垂直方向相对位置；</li>
 <li>绝对宽, 或左右相对位置；</li>
-<li>绝对高，或上下相对位置；</li>
+<li>绝对高，或上下相对位置；<br>在实际开始中，可以xib/stroyboard, Masonry结合使用。对于简单的布局，用xib/stroyboard拖拖拽拽可以搞定就不必Masonry了。</li>
 </ul>
 
       

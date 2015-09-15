@@ -26,7 +26,7 @@ xcode右下角的几个按钮也可以进行操作：
 
 符">
 <meta property="og:image" content="http://iid.oss-cn-hangzhou.aliyuncs.com/iOS%2FACE7829D-7A9B-4370-9CE6-BB126B1FF187.png">
-<meta property="og:updated_time" content="2015-09-14T15:15:58.000Z">
+<meta property="og:updated_time" content="2015-09-15T09:02:52.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="autolayout学习1">
 <meta name="twitter:description" content="storyboard/xib中使用autolayout
@@ -215,12 +215,13 @@ xcode右下角的几个按钮也可以进行操作：
 <li>符号: H , V ;   H代表水平方向 ,V代表垂直方向(水平和垂直的英文首字母) </li>
 </ul>
 <p>一些简写如： <code>@&quot;H:|[view1]|&quot; 等价于 @&quot;H:|-0-[view1]-0-|&quot;</code><br><a href="http://blog.csdn.net/yangbingbinga/article/details/43673817" target="_blank" rel="external">参考1&gt;&gt;</a><br><a href="http://www.vienta.me/2014/12/07/AutoLayout-%E5%BF%98%E6%8E%89Frame-%E6%8B%A5%E6%8A%B1Constraint%EF%BC%88I%EF%BC%89/" target="_blank" rel="external">参考2&gt;&gt;</a><br><a href="https://github.com/zhuifeng1017/AutoLayout1" target="_blank" rel="external">例子代码下载&gt;&gt;</a></p>
-<h2 id="总结">总结</h2><p>确定一个UI空间的位置，在frame时代需要指明(x,y,width,height), 在autolayout时代，本质是一样的，只是换成了相对概念。<br>即需要确定</p>
+<h2 id="使用Masonry">使用Masonry</h2><p>代码精简，手写autolayout情况下用它爽多了。</p>
+<h2 id="总结">总结</h2><p>确定一个UI控件的位置，在frame时代需要指明(x,y,width,height), 在autolayout时代，本质是一样的，只是换成了相对概念。<br>即需要确定</p>
 <ul>
 <li>水平方向相对位置；</li>
 <li>垂直方向相对位置；</li>
 <li>绝对宽, 或左右相对位置；</li>
-<li>绝对高，或上下相对位置；</li>
+<li>绝对高，或上下相对位置；<br>在实际开始中，可以xib/stroyboard, Masonry结合使用。对于简单的布局，用xib/stroyboard拖拖拽拽可以搞定就不必Masonry了。</li>
 </ul>
 
       
