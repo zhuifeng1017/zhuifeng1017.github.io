@@ -83,7 +83,7 @@
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
-						<a href="/tags/EME/" style="font-size: 10px;">EME</a> <a href="/tags/OSS/" style="font-size: 10px;">OSS</a> <a href="/tags/autolayout/" style="font-size: 13.33px;">autolayout</a> <a href="/tags/hexo/" style="font-size: 16.67px;">hexo</a> <a href="/tags/ios/" style="font-size: 20px;">ios</a> <a href="/tags/markdown/" style="font-size: 10px;">markdown</a> <a href="/tags/vsftp/" style="font-size: 10px;">vsftp</a> <a href="/tags/xcode/" style="font-size: 10px;">xcode</a> <a href="/tags/多说/" style="font-size: 10px;">多说</a> <a href="/tags/机器人/" style="font-size: 10px;">机器人</a> <a href="/tags/益生菌/" style="font-size: 20px;">益生菌</a> <a href="/tags/股票/" style="font-size: 10px;">股票</a> <a href="/tags/营养常识/" style="font-size: 13.33px;">营养常识</a> <a href="/tags/财经/" style="font-size: 10px;">财经</a> <a href="/tags/阿里云/" style="font-size: 10px;">阿里云</a>
+						<a href="/tags/EME/" style="font-size: 10px;">EME</a> <a href="/tags/OSS/" style="font-size: 10px;">OSS</a> <a href="/tags/UICollectionView/" style="font-size: 10px;">UICollectionView</a> <a href="/tags/autolayout/" style="font-size: 15px;">autolayout</a> <a href="/tags/hexo/" style="font-size: 15px;">hexo</a> <a href="/tags/ios/" style="font-size: 20px;">ios</a> <a href="/tags/markdown/" style="font-size: 10px;">markdown</a> <a href="/tags/vsftp/" style="font-size: 10px;">vsftp</a> <a href="/tags/xcode/" style="font-size: 10px;">xcode</a> <a href="/tags/多说/" style="font-size: 10px;">多说</a> <a href="/tags/机器人/" style="font-size: 10px;">机器人</a> <a href="/tags/益生菌/" style="font-size: 17.5px;">益生菌</a> <a href="/tags/股票/" style="font-size: 10px;">股票</a> <a href="/tags/营养常识/" style="font-size: 12.5px;">营养常识</a> <a href="/tags/财经/" style="font-size: 10px;">财经</a> <a href="/tags/阿里云/" style="font-size: 10px;">阿里云</a>
 					</div>
 				</section>
 				
@@ -142,6 +142,61 @@
 	</div>
 </nav>
       <div class="body-wrap">
+  
+    <article id="post-动态计算UICollectionView-cell-width" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/动态计算UICollectionView-cell-width.html" class="article-date">
+  	<time datetime="2015-09-20T05:34:37.000Z" itemprop="datePublished">2015-09-20</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/动态计算UICollectionView-cell-width.html">动态计算UICollectionView cell width</a>
+    </h1>
+  
+
+        
+          <a href="/动态计算UICollectionView-cell-width.html#comments">
+          <span class="ds-thread-count" data-thread-key="_posts%2F%E5%8A%A8%E6%80%81%E8%AE%A1%E7%AE%97UICollectionView-cell-width.md" data-count-type="comments"></span>
+          </a>
+        
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>假设需求是每行cell数量(columnCount)是固定的，动态计算cell width<br><figure class="highlight objectivec"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">- (<span class="built_in">CGSize</span>)cellSize</span><br><span class="line">&#123;</span><br><span class="line">    <span class="built_in">UICollectionViewFlowLayout</span> *flowLayout = (<span class="built_in">UICollectionViewFlowLayout</span> *)<span class="keyword">self</span><span class="variable">.collectionView</span><span class="variable">.collectionViewLayout</span>;</span><br><span class="line">    <span class="built_in">CGFloat</span> width = ((<span class="keyword">self</span><span class="variable">.collectionView</span><span class="variable">.bounds</span><span class="variable">.size</span><span class="variable">.width</span>-<span class="keyword">self</span><span class="variable">.collectionView</span><span class="variable">.contentInset</span><span class="variable">.left</span>-<span class="keyword">self</span><span class="variable">.collectionView</span><span class="variable">.contentInset</span><span class="variable">.right</span>)/<span class="keyword">self</span><span class="variable">.columnCount</span>) - flowLayout<span class="variable">.minimumLineSpacing</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">CGSizeMake</span>(width, width);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/UICollectionView/">UICollectionView</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/autolayout/">autolayout</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ios/">ios</a></li></ul>
+	</div>
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
   
     <article id="post-XCodeGhost-我也中招了" class="article article-type-post" itemscope itemprop="blogPost">
   
@@ -681,64 +736,6 @@
       
         <p class="article-more-link">
           <a  href="/益生菌的功效与作用.html#more">阅读全文 >></a>
-        </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-  
-    <article id="post-每天50亿益生菌 给肠道也做个Spa" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/每天50亿益生菌 给肠道也做个Spa.html" class="article-date">
-  	<time datetime="2015-09-08T12:15:47.000Z" itemprop="datePublished">2015-09-08</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/每天50亿益生菌 给肠道也做个Spa.html">每天50亿益生菌 给肠道也做个Spa</a>
-    </h1>
-  
-
-        
-          <a href="/每天50亿益生菌 给肠道也做个Spa.html#comments">
-          <span class="ds-thread-count" data-thread-key="_posts%2F%E6%AF%8F%E5%A4%A950%E4%BA%BF%E7%9B%8A%E7%94%9F%E8%8F%8C%20%E7%BB%99%E8%82%A0%E9%81%93%E4%B9%9F%E5%81%9A%E4%B8%AASpa.md" data-count-type="comments"></span>
-          </a>
-        
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><font color="blue">相关统计表明，25-45岁的中青年是新型流感的易感人群，都市白领显然位居易感人群之列。可见，增强身体免疫力已成白领们的必修功课。亚洲乳酸菌学会联盟会长蔡英杰教授表示：“肠道是人体最大的免疫器官，掌管着人体70%以上的免疫功能，肠道不好时，免疫细胞、免疫球蛋白减少或功能减弱，人体免疫力就会下降，病菌便会趁虚而入。”</font><br>
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/益生菌/">益生菌</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/营养常识/">营养常识</a></li></ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a  href="/每天50亿益生菌 给肠道也做个Spa.html#more">阅读全文 >></a>
         </p>
       
       <div class="clearfix"></div>
