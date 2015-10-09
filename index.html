@@ -177,7 +177,7 @@
 <p>今天主要用到对gif的处理：</p>
 <ol>
 <li>分离gif到jpg/png等.<br><code>convert -coalesce 1.gif out%05d.jpg</code><br>说明：<code>out%05d</code>是格式化输入，输出JPG文件为out00001.jpg，out00002.jpg …</li>
-<li>只取gif第1帧<br><code>convert -coalesce 1.gif -delete 1--1  out.jpg</code><br>说明：<em>-delete 1–1</em>,表示删除第1帧到最后一帧（-1表示last index），也就是保留第0帧。</li>
+<li>只取gif第1帧<br><code>convert -coalesce 1.gif -delete 1--1  out.jpg</code><br>说明：-delete 1–1,表示删除第1帧到最后一帧（-1表示last index），也就是保留第0帧。</li>
 </ol>
 <p>参考连接:<a href="http://segmentfault.com/a/1190000000442060" target="_blank" rel="external">ImageMagick 命令行下图像处理的利器-segmentfault</a></p>
 
