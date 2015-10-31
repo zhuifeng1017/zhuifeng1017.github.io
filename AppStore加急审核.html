@@ -3,30 +3,24 @@
 <head>
   <meta charset="utf-8">
   
-  <title>ImageMagick处理gif | 大风的博客</title>
+  <title>AppStore加急审核 | 大风的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="ImageMagick是一系列的用于修改、加工图像的命令行工具。ImageMagick能够快速地使用命令行对图片进行操作，对大量的图片进行批处理。
-在MAC OS安装，如果系统装了brew，则直接命令行下执行：brew install imagemagick
-今天主要用到对gif的处理：
+  <meta name="description" content="上周五更新了版本，一般情况下审核都需要一周时间，之前听过有加急审核，但一直没有用过。由于近期ios9系统版本更新比较快，我们APP存在一些适配问题，尝试了一把加急审核：
 
-分离gif到jpg/png等.convert -coalesce 1.gif out%05d.jpg说明：o">
+Because of iOS9 compatible issue,user cannot login with wechat and qq account,it cause a majority of users cannot">
 <meta property="og:type" content="article">
-<meta property="og:title" content="ImageMagick处理gif">
-<meta property="og:url" content="http://www.yczmm.com/ImageMagick处理gif.html">
+<meta property="og:title" content="AppStore加急审核">
+<meta property="og:url" content="http://www.yczmm.com/AppStore加急审核.html">
 <meta property="og:site_name" content="大风的博客">
-<meta property="og:description" content="ImageMagick是一系列的用于修改、加工图像的命令行工具。ImageMagick能够快速地使用命令行对图片进行操作，对大量的图片进行批处理。
-在MAC OS安装，如果系统装了brew，则直接命令行下执行：brew install imagemagick
-今天主要用到对gif的处理：
+<meta property="og:description" content="上周五更新了版本，一般情况下审核都需要一周时间，之前听过有加急审核，但一直没有用过。由于近期ios9系统版本更新比较快，我们APP存在一些适配问题，尝试了一把加急审核：
 
-分离gif到jpg/png等.convert -coalesce 1.gif out%05d.jpg说明：o">
-<meta property="og:updated_time" content="2015-10-09T14:48:36.000Z">
+Because of iOS9 compatible issue,user cannot login with wechat and qq account,it cause a majority of users cannot">
+<meta property="og:updated_time" content="2015-10-31T10:24:49.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="ImageMagick处理gif">
-<meta name="twitter:description" content="ImageMagick是一系列的用于修改、加工图像的命令行工具。ImageMagick能够快速地使用命令行对图片进行操作，对大量的图片进行批处理。
-在MAC OS安装，如果系统装了brew，则直接命令行下执行：brew install imagemagick
-今天主要用到对gif的处理：
+<meta name="twitter:title" content="AppStore加急审核">
+<meta name="twitter:description" content="上周五更新了版本，一般情况下审核都需要一周时间，之前听过有加急审核，但一直没有用过。由于近期ios9系统版本更新比较快，我们APP存在一些适配问题，尝试了一把加急审核：
 
-分离gif到jpg/png等.convert -coalesce 1.gif out%05d.jpg说明：o">
+Because of iOS9 compatible issue,user cannot login with wechat and qq account,it cause a majority of users cannot">
   
     <link rel="alternative" href="/atom.xml" title="大风的博客" type="application/atom+xml">
   
@@ -154,11 +148,11 @@
 		</header>				
 	</div>
 </nav>
-      <div class="body-wrap"><article id="post-ImageMagick处理gif" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-AppStore加急审核" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/ImageMagick处理gif.html" class="article-date">
-  	<time datetime="2015-09-23T06:04:53.000Z" itemprop="datePublished">2015-09-23</time>
+      <a href="/AppStore加急审核.html" class="article-date">
+  	<time datetime="2015-10-31T10:13:17.000Z" itemprop="datePublished">2015-10-31</time>
 </a>
     </div>
   
@@ -169,7 +163,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      ImageMagick处理gif
+      AppStore加急审核
     </h1>
   
 
@@ -179,7 +173,7 @@
       <div class="article-info article-info-post">
         
 	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ImageMagick/">ImageMagick</a></li></ul>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ios/">ios</a></li></ul>
 	</div>
 
         
@@ -190,14 +184,11 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>ImageMagick是一系列的用于修改、加工图像的命令行工具。ImageMagick能够快速地使用命令行对图片进行操作，对大量的图片进行批处理。</p>
-<p>在MAC OS安装，如果系统装了brew，则直接命令行下执行：<br><code>brew install imagemagick</code></p>
-<p>今天主要用到对gif的处理：</p>
-<ol>
-<li>分离gif到jpg/png等.<br><code>convert -coalesce 1.gif out%05d.jpg</code><br>说明：<code>out%05d</code>是格式化输入，输出JPG文件为out00001.jpg，out00002.jpg …</li>
-<li>只取gif第1帧<br><code>convert -coalesce 1.gif -delete 1--1  out.jpg</code><br>说明：-delete 1–1,表示删除第1帧到最后一帧（-1表示last index），也就是保留第0帧。</li>
-</ol>
-<p>参考连接:<a href="http://segmentfault.com/a/1190000000442060" target="_blank" rel="external">ImageMagick 命令行下图像处理的利器-segmentfault</a></p>
+        <p>上周五更新了版本，一般情况下审核都需要一周时间，之前听过有加急审核，但一直没有用过。由于近期ios9系统版本更新比较快，我们APP存在一些适配问题，尝试了一把加急审核：</p>
+<blockquote>
+<p>Because of iOS9 compatible issue,<br>user cannot login with wechat and qq account,<br>it cause a majority of users cannot login out app.<br>So, we hope can apply for a expedited review, thank you very much.</p>
+</blockquote>
+<p>效果杠杠的，周一申请了加急审核，周二立马就审核过了。</p>
 
       
     </div>
@@ -207,18 +198,9 @@
     
 <nav id="article-nav">
   
-    <a href="/AppStore加急审核.html" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption"><</strong>
-      <div class="article-nav-title">
-        
-          AppStore加急审核
-        
-      </div>
-    </a>
   
-  
-    <a href="/动态计算UICollectionView-cell-width.html" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">动态计算UICollectionView cell width</div>
+    <a href="/ImageMagick处理gif.html" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">ImageMagick处理gif</div>
       <strong class="article-nav-caption">></strong>
     </a>
   
@@ -247,7 +229,7 @@
 
 <div class="comments" id="comments"></div>
 <!-- 多说评论框 start -->
-<div class="ds-thread" data-thread-key="_posts%2FImageMagick%E5%A4%84%E7%90%86gif.md" data-title="ImageMagick处理gif" data-url="http://www.yczmm.com/ImageMagick处理gif.html"></div>
+<div class="ds-thread" data-thread-key="_posts%2FAppStore%E5%8A%A0%E6%80%A5%E5%AE%A1%E6%A0%B8.md" data-title="AppStore加急审核" data-url="http://www.yczmm.com/AppStore加急审核.html"></div>
 <!-- 多说评论框 end -->
 <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 <script type="text/javascript">
