@@ -3,17 +3,18 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Tag: xcode | 大风的博客</title>
+  <title>systemLayoutSizeFittingSize return 0 for UITableViewCell | 大风的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="大风的博客">
-<meta property="og:type" content="website">
-<meta property="og:title" content="大风的博客">
-<meta property="og:url" content="http://www.yczmm.com/tags/xcode/index.html">
+  <meta name="description" content="The problem is that your constraints are not determinative of the height of the cell. You have not pinned the top of the image view or the bottom of the image view to its superview (the contentView).">
+<meta property="og:type" content="article">
+<meta property="og:title" content="systemLayoutSizeFittingSize return 0 for UITableViewCell">
+<meta property="og:url" content="http://www.yczmm.com/systemLayoutSizeFittingSize_return0.html">
 <meta property="og:site_name" content="大风的博客">
-<meta property="og:description" content="大风的博客">
+<meta property="og:description" content="The problem is that your constraints are not determinative of the height of the cell. You have not pinned the top of the image view or the bottom of the image view to its superview (the contentView).">
+<meta property="og:updated_time" content="2015-12-18T06:22:23.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="大风的博客">
-<meta name="twitter:description" content="大风的博客">
+<meta name="twitter:title" content="systemLayoutSizeFittingSize return 0 for UITableViewCell">
+<meta name="twitter:description" content="The problem is that your constraints are not determinative of the height of the cell. You have not pinned the top of the image view or the bottom of the image view to its superview (the contentView).">
   
     <link rel="alternative" href="/atom.xml" title="大风的博客" type="application/atom+xml">
   
@@ -141,94 +142,110 @@
 		</header>				
 	</div>
 </nav>
-      <div class="body-wrap">
+      <div class="body-wrap"><article id="post-systemLayoutSizeFittingSize_return0" class="article article-type-post" itemscope itemprop="blogPost">
   
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2015" class="archive-year">2015</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-            
-            <a href="/Xcode-pragma-marks.html#comments" class="archive-article-date">
-                <span class="ds-thread-count ds-thread-count-ex" data-thread-key="_posts%2FXcode-pragma-marks.md" data-count-type="comments"></span>
-            </a>
-            
-            <a href="/Xcode-pragma-marks.html" class="archive-article-date">
-  	<time datetime="2015-12-10T09:42:25.000Z" itemprop="datePublished">Dec 10</time>
+    <div class="article-meta">
+      <a href="/systemLayoutSizeFittingSize_return0.html" class="article-date">
+  	<time datetime="2015-12-18T06:20:00.000Z" itemprop="datePublished">2015-12-18</time>
 </a>
-        </div>
-    	 
+    </div>
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/Xcode-pragma-marks.html">Xcode pragma marks</a>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      systemLayoutSizeFittingSize return 0 for UITableViewCell
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+      </header>
+      
+      <div class="article-info article-info-post">
+        
 	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ios/">ios</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/xcode/">xcode</a></li></ul>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ios/">ios</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/systemLayoutSizeFittingSize/">systemLayoutSizeFittingSize</a></li></ul>
 	</div>
 
-          
+        
 
-        </div>
         <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
+      </div>
+      
     
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-            
-            <a href="/用到的xcode插件.html#comments" class="archive-article-date">
-                <span class="ds-thread-count ds-thread-count-ex" data-thread-key="_posts%2F%E7%94%A8%E5%88%B0%E7%9A%84xcode%E6%8F%92%E4%BB%B6.md" data-count-type="comments"></span>
-            </a>
-            
-            <a href="/用到的xcode插件.html" class="archive-article-date">
-  	<time datetime="2015-09-15T08:30:25.000Z" itemprop="datePublished">Sep 15</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/用到的xcode插件.html">用到的xcode插件</a>
-    </h1>
-  
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>The problem is that your constraints are not determinative of the height of the cell. You have not pinned the top of the image view or the bottom of the image view to its superview (the contentView). So the cell has nothing internal to keep it from collapsing all the way to zero, as it were, when you call systemLayoutSizeFittingSize.</p>
+<p>To put it another way: the way systemLayoutSizeFittingSize works is by treating something’s internal constraints as struts that give it a minimum (or maximum) size. You have no struts.</p>
+<p>大概意思可能是：没有设置相对于<strong>the contentView</strong>的<strong>Top</strong>或<strong>Bottom</strong>的约束</p>
+<p>参考stackoverflow.com： <a href="http://stackoverflow.com/questions/26598896/why-is-systemlayoutsizefittingsize-returning-0-0-for-uitableviewcell" target="_blank" rel="external">Why is systemLayoutSizeFittingSize returning (0, 0) for UITableViewCell</a></p>
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ios/">ios</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/xcode/">xcode</a></li></ul>
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/Wondershare Video Converter Ultimate.html" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          Wondershare Video Converter Ultimate
+        
+      </div>
+    </a>
+  
+  
+    <a href="/Xcode-pragma-marks.html" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Xcode pragma marks</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+<div class="share">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">分享到：</span>
+		<a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+		<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
 	</div>
+	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
 
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
 
-    
+<div class="comments" id="comments"></div>
+<!-- 多说评论框 start -->
+<div class="ds-thread" data-thread-key="_posts%2FsystemLayoutSizeFittingSize_return0.md" data-title="systemLayoutSizeFittingSize return 0 for UITableViewCell" data-url="http://www.yczmm.com/systemLayoutSizeFittingSize_return0.html"></div>
+<!-- 多说评论框 end -->
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+	var duoshuoQuery = {short_name:'zhuifeng'};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0]
+		|| document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+</script>
+<!-- 多说公共JS代码 end -->
 
 </div>
       <footer id="footer">
@@ -252,9 +269,9 @@
 		mathjax: false,
 		animate: true,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false
 	}
