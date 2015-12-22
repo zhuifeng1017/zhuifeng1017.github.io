@@ -3,30 +3,27 @@
 <head>
   <meta charset="utf-8">
   
-  <title>ImageMagick处理gif | 大风的博客</title>
+  <title>ImageMagick处理图片 | 大风的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="ImageMagick是一系列的用于修改、加工图像的命令行工具。ImageMagick能够快速地使用命令行对图片进行操作，对大量的图片进行批处理。
 在MAC OS安装，如果系统装了brew，则直接命令行下执行：brew install imagemagick
-今天主要用到对gif的处理：
-
-分离gif到jpg/png等.convert -coalesce 1.gif out%05d.jpg说明：o">
+gif处理：
+分离gif到jpg/png等.convert -coalesce 1.gif out%05d.jpg说明：out%05d是格式">
 <meta property="og:type" content="article">
-<meta property="og:title" content="ImageMagick处理gif">
+<meta property="og:title" content="ImageMagick处理图片">
 <meta property="og:url" content="http://www.yczmm.com/ImageMagick处理gif.html">
 <meta property="og:site_name" content="大风的博客">
 <meta property="og:description" content="ImageMagick是一系列的用于修改、加工图像的命令行工具。ImageMagick能够快速地使用命令行对图片进行操作，对大量的图片进行批处理。
 在MAC OS安装，如果系统装了brew，则直接命令行下执行：brew install imagemagick
-今天主要用到对gif的处理：
-
-分离gif到jpg/png等.convert -coalesce 1.gif out%05d.jpg说明：o">
-<meta property="og:updated_time" content="2015-12-21T05:35:07.000Z">
+gif处理：
+分离gif到jpg/png等.convert -coalesce 1.gif out%05d.jpg说明：out%05d是格式">
+<meta property="og:updated_time" content="2015-12-22T08:16:20.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="ImageMagick处理gif">
+<meta name="twitter:title" content="ImageMagick处理图片">
 <meta name="twitter:description" content="ImageMagick是一系列的用于修改、加工图像的命令行工具。ImageMagick能够快速地使用命令行对图片进行操作，对大量的图片进行批处理。
 在MAC OS安装，如果系统装了brew，则直接命令行下执行：brew install imagemagick
-今天主要用到对gif的处理：
-
-分离gif到jpg/png等.convert -coalesce 1.gif out%05d.jpg说明：o">
+gif处理：
+分离gif到jpg/png等.convert -coalesce 1.gif out%05d.jpg说明：out%05d是格式">
   
     <link rel="alternative" href="/atom.xml" title="大风的博客" type="application/atom+xml">
   
@@ -169,7 +166,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      ImageMagick处理gif
+      ImageMagick处理图片
     </h1>
   
 
@@ -192,11 +189,11 @@
       
         <p>ImageMagick是一系列的用于修改、加工图像的命令行工具。ImageMagick能够快速地使用命令行对图片进行操作，对大量的图片进行批处理。</p>
 <p>在MAC OS安装，如果系统装了brew，则直接命令行下执行：<br><code>brew install imagemagick</code></p>
-<p>今天主要用到对gif的处理：</p>
-<ol>
+<h3 id="gif处理：">gif处理：</h3><ol>
 <li>分离gif到jpg/png等.<br><code>convert -coalesce 1.gif out%05d.jpg</code><br>说明：<code>out%05d</code>是格式化输入，输出JPG文件为out00001.jpg，out00002.jpg …</li>
 <li>只取gif第1帧<br><code>convert -coalesce 1.gif -delete 1--1  out.jpg</code><br>说明：-delete 1–1,表示删除第1帧到最后一帧（-1表示last index），也就是保留第0帧。</li>
 </ol>
+<h3 id="压缩">压缩</h3><p>convert -quality 50 -resize 50%x50% src.jpg dst.jpg<br>-quality 值为0-100之间的数值,数字越大,质量越好,一般指定70-80,基本上看不出前后的差别<br>-resize </p>
 <p>参考连接:<a href="http://segmentfault.com/a/1190000000442060" target="_blank" rel="external">ImageMagick 命令行下图像处理的利器-segmentfault</a></p>
 
       
@@ -247,7 +244,7 @@
 
 <div class="comments" id="comments"></div>
 <!-- 多说评论框 start -->
-<div class="ds-thread" data-thread-key="_posts%2FImageMagick%E5%A4%84%E7%90%86gif.md" data-title="ImageMagick处理gif" data-url="http://www.yczmm.com/ImageMagick处理gif.html"></div>
+<div class="ds-thread" data-thread-key="_posts%2FImageMagick%E5%A4%84%E7%90%86gif.md" data-title="ImageMagick处理图片" data-url="http://www.yczmm.com/ImageMagick处理gif.html"></div>
 <!-- 多说评论框 end -->
 <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 <script type="text/javascript">
