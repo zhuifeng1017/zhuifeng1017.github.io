@@ -4,7 +4,7 @@
   <subtitle><![CDATA[生命不息,折腾不止]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.yczmm.com/"/>
-  <updated>2015-12-22T08:08:28.000Z</updated>
+  <updated>2016-01-11T03:45:40.000Z</updated>
   <id>http://www.yczmm.com/</id>
   
   <author>
@@ -13,6 +13,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[mongodb操作]]></title>
+    <link href="http://www.yczmm.com/mongodb%E6%93%8D%E4%BD%9C.html"/>
+    <id>http://www.yczmm.com/mongodb操作.html</id>
+    <published>2016-01-11T03:32:00.000Z</published>
+    <updated>2016-01-11T03:45:40.000Z</updated>
+    <content type="html"><![CDATA[<p>一. 索引</p>
+<ul>
+<li>MongoDB使用 <code>ensureIndex()</code>方法来创建索引,语法中 Key 值为你要创建的索引字段，1为指定按升序创建索引，如果你想按降序来创建索引指定为-1即可。<br><code>&gt;db.COLLECTION_NAME.ensureIndex({KEY:1})</code></li>
+<li><code>db.system.indexes.find()</code>         //当前数据库中的所有索引</li>
+<li><code>db.COLLECTION_NAME.getIndexes()</code>   //指定集合建立的索引<br><a href="http://www.runoob.com/mongodb/mongodb-indexing.html" target="_blank" rel="external">参考连接http://www.runoob.com/</a> </li>
+</ul>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>一. 索引</p>
+<ul>
+<li>MongoDB使用 <code>ensureIndex()</code>方法来创建索引,语法中 Key 值为你要创建的索引字段，1为指定按升序创建索引，如果你想按降序来创建索引指定为-1即可。<br><code>&gt;db.COLLE]]>
+    </summary>
+    
+      <category term="MongoDB" scheme="http://www.yczmm.com/tags/MongoDB/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[兑付AppStore收入遇到的问题]]></title>

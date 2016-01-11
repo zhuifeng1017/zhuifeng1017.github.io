@@ -3,18 +3,30 @@
 <head>
   <meta charset="utf-8">
   
-  <title>多说data-thread-key的设置 | 大风的博客</title>
+  <title>mongodb操作 | 大风的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="这几天玩hexo搭建博客, 下载了多个theme，包括landscape-plus,next,yilia.试验下来多很不错。在集成多说评论框的时候遇到了一点小问题, 因为不同theme使用的data-thread-key不同, 导致切换theme后，原先评论不见了。于是，解决办法就是设置统一的data-thread-key。">
+  <meta name="description" content="一. 索引
+
+MongoDB使用 ensureIndex()方法来创建索引,语法中 Key 值为你要创建的索引字段，1为指定按升序创建索引，如果你想按降序来创建索引指定为-1即可。&amp;gt;db.COLLECTION_NAME.ensureIndex({KEY:1})
+db.system.indexes.find()         //当前数据库中的所有索引
+db.COLLECTION_NAME.">
 <meta property="og:type" content="article">
-<meta property="og:title" content="多说data-thread-key的设置">
-<meta property="og:url" content="http://www.yczmm.com/data-thread-key.html">
+<meta property="og:title" content="mongodb操作">
+<meta property="og:url" content="http://www.yczmm.com/mongodb操作.html">
 <meta property="og:site_name" content="大风的博客">
-<meta property="og:description" content="这几天玩hexo搭建博客, 下载了多个theme，包括landscape-plus,next,yilia.试验下来多很不错。在集成多说评论框的时候遇到了一点小问题, 因为不同theme使用的data-thread-key不同, 导致切换theme后，原先评论不见了。于是，解决办法就是设置统一的data-thread-key。">
-<meta property="og:updated_time" content="2015-09-12T11:31:53.000Z">
+<meta property="og:description" content="一. 索引
+
+MongoDB使用 ensureIndex()方法来创建索引,语法中 Key 值为你要创建的索引字段，1为指定按升序创建索引，如果你想按降序来创建索引指定为-1即可。&amp;gt;db.COLLECTION_NAME.ensureIndex({KEY:1})
+db.system.indexes.find()         //当前数据库中的所有索引
+db.COLLECTION_NAME.">
+<meta property="og:updated_time" content="2016-01-11T03:45:40.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="多说data-thread-key的设置">
-<meta name="twitter:description" content="这几天玩hexo搭建博客, 下载了多个theme，包括landscape-plus,next,yilia.试验下来多很不错。在集成多说评论框的时候遇到了一点小问题, 因为不同theme使用的data-thread-key不同, 导致切换theme后，原先评论不见了。于是，解决办法就是设置统一的data-thread-key。">
+<meta name="twitter:title" content="mongodb操作">
+<meta name="twitter:description" content="一. 索引
+
+MongoDB使用 ensureIndex()方法来创建索引,语法中 Key 值为你要创建的索引字段，1为指定按升序创建索引，如果你想按降序来创建索引指定为-1即可。&amp;gt;db.COLLECTION_NAME.ensureIndex({KEY:1})
+db.system.indexes.find()         //当前数据库中的所有索引
+db.COLLECTION_NAME.">
   
     <link rel="alternative" href="/atom.xml" title="大风的博客" type="application/atom+xml">
   
@@ -146,11 +158,11 @@
 		</header>				
 	</div>
 </nav>
-      <div class="body-wrap"><article id="post-data-thread-key" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-mongodb操作" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/data-thread-key.html" class="article-date">
-  	<time datetime="2015-08-24T06:08:43.000Z" itemprop="datePublished">2015-08-24</time>
+      <a href="/mongodb操作.html" class="article-date">
+  	<time datetime="2016-01-11T03:32:00.000Z" itemprop="datePublished">2016-01-11</time>
 </a>
     </div>
   
@@ -161,7 +173,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      多说data-thread-key的设置
+      mongodb操作
     </h1>
   
 
@@ -171,7 +183,7 @@
       <div class="article-info article-info-post">
         
 	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/多说/">多说</a></li></ul>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/MongoDB/">MongoDB</a></li></ul>
 	</div>
 
         
@@ -182,21 +194,12 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>这几天玩<code>hexo</code>搭建博客, 下载了多个theme，包括<code>landscape-plus,next,yilia</code>.试验下来多很不错。<br>在集成多说评论框的时候遇到了一点小问题, 因为不同theme使用的<code>data-thread-key</code>不同, 导致切换theme后，原先评论不见了。<br>于是，解决办法就是设置统一的<code>data-thread-key</code>。<br><a id="more"></a></p>
-<h3 id="在不同的theme中,看到过3种设置:">在不同的theme中,看到过3种设置:</h3><ol>
-<li><p>data-thread-key=”&lt;%= post.source %&gt;”  //文章原始路径<br>页面上显示为 data-thread-key=”_posts/hello-world.md”</p>
-</li>
-<li><p>data-thread-key=”&lt;%= post.path %&gt;”  // 当前页面的路径（不含根路径）<br>页面上显示为 data-thread-key=”2015/08/20/hello-world/“</p>
-</li>
-<li><p>data-thread-key=”&lt;%= post.layout %&gt;-&lt;%= post.slug %&gt;”  // ??不太清楚post.slug是什么,验证下来好像是文件名<br>页面显示为 data-thread-key=”post-hello-world”</p>
-</li>
-</ol>
-<p><em>我感觉第1种比较好,因为只要文件名不改变，生成的<code>data-thread-key</code>就不会变。</em></p>
-<hr>
-<p>附上多说评论框代码:<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- 多说评论框 start --&gt;</span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ds-thread"</span> <span class="attribute">data-thread-key</span>=<span class="value">"&lt;%= post.layout %&gt;-&lt;%= post.slug %&gt;"</span></span><br><span class="line"> <span class="attribute">data-title</span>=<span class="value">"&lt;%= post.title %&gt;"</span> <span class="attribute">data-url</span>=<span class="value">"&lt;%= page.permalink %&gt;"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- 多说评论框 end --&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- 多说公共JS代码 start (一个网页只需插入一次) --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">script</span> <span class="attribute">type</span>=<span class="value">"text/javascript"</span>&gt;</span><span class="javascript"></span><br><span class="line">	<span class="keyword">var</span> duoshuoQuery = &#123;short_name:<span class="string">'&lt;%= config.duoshuo_shortname %&gt;'</span>&#125;;</span><br><span class="line">	(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">		<span class="keyword">var</span> ds = <span class="built_in">document</span>.createElement(<span class="string">'script'</span>);</span><br><span class="line">		ds.type = <span class="string">'text/javascript'</span>;ds.async = <span class="literal">true</span>;</span><br><span class="line">		ds.src = (<span class="built_in">document</span>.location.protocol == <span class="string">'https:'</span> ? <span class="string">'https:'</span> : <span class="string">'http:'</span>) + <span class="string">'//static.duoshuo.com/embed.js'</span>;</span><br><span class="line">		ds.charset = <span class="string">'UTF-8'</span>;</span><br><span class="line">		(<span class="built_in">document</span>.getElementsByTagName(<span class="string">'head'</span>)[<span class="number">0</span>]</span><br><span class="line">		|| <span class="built_in">document</span>.getElementsByTagName(<span class="string">'body'</span>)[<span class="number">0</span>]).appendChild(ds);</span><br><span class="line">	&#125;)();</span><br><span class="line"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- 多说公共JS代码 end --&gt;</span></span></span><br></pre></td></tr></table></figure></p>
-<blockquote>
-<p><a href="http://dev.duoshuo.com/docs/5003ecd94cab3e7250000008" target="_blank" rel="external">参考多说上对data-thread-key的解释 &gt;&gt;&gt;</a></p>
-</blockquote>
+        <p>一. 索引</p>
+<ul>
+<li>MongoDB使用 <code>ensureIndex()</code>方法来创建索引,语法中 Key 值为你要创建的索引字段，1为指定按升序创建索引，如果你想按降序来创建索引指定为-1即可。<br><code>&gt;db.COLLECTION_NAME.ensureIndex({KEY:1})</code></li>
+<li><code>db.system.indexes.find()</code>         //当前数据库中的所有索引</li>
+<li><code>db.COLLECTION_NAME.getIndexes()</code>   //指定集合建立的索引<br><a href="http://www.runoob.com/mongodb/mongodb-indexing.html" target="_blank" rel="external">参考连接http://www.runoob.com/</a> </li>
+</ul>
 
       
     </div>
@@ -206,18 +209,9 @@
     
 <nav id="article-nav">
   
-    <a href="/hexo-skip_render.html" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption"><</strong>
-      <div class="article-nav-title">
-        
-          Hexo _posts目录, skip_render 的说明
-        
-      </div>
-    </a>
   
-  
-    <a href="/阿里云OSS图片.html" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">打开阿里云OSS图片URL直接下载</div>
+    <a href="/兑付AppStore收入遇到的问题.html" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">兑付AppStore收入遇到的问题</div>
       <strong class="article-nav-caption">></strong>
     </a>
   
@@ -246,7 +240,7 @@
 
 <div class="comments" id="comments"></div>
 <!-- 多说评论框 start -->
-<div class="ds-thread" data-thread-key="_posts%2Fdata-thread-key.md" data-title="多说data-thread-key的设置" data-url="http://www.yczmm.com/data-thread-key.html"></div>
+<div class="ds-thread" data-thread-key="_posts%2Fmongodb%E6%93%8D%E4%BD%9C.md" data-title="mongodb操作" data-url="http://www.yczmm.com/mongodb操作.html"></div>
 <!-- 多说评论框 end -->
 <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 <script type="text/javascript">
