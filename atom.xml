@@ -4,7 +4,7 @@
   <subtitle><![CDATA[生命不息,折腾不止]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.yczmm.com/"/>
-  <updated>2016-01-11T03:45:40.000Z</updated>
+  <updated>2016-01-11T03:53:38.000Z</updated>
   <id>http://www.yczmm.com/</id>
   
   <author>
@@ -19,18 +19,19 @@
     <link href="http://www.yczmm.com/mongodb%E6%93%8D%E4%BD%9C.html"/>
     <id>http://www.yczmm.com/mongodb操作.html</id>
     <published>2016-01-11T03:32:00.000Z</published>
-    <updated>2016-01-11T03:45:40.000Z</updated>
-    <content type="html"><![CDATA[<p>一. 索引</p>
+    <updated>2016-01-11T03:53:38.000Z</updated>
+    <content type="html"><![CDATA[<p><strong>一. 索引</strong></p>
 <ul>
 <li>MongoDB使用 <code>ensureIndex()</code>方法来创建索引,语法中 Key 值为你要创建的索引字段，1为指定按升序创建索引，如果你想按降序来创建索引指定为-1即可。<br><code>&gt;db.COLLECTION_NAME.ensureIndex({KEY:1})</code></li>
 <li><code>db.system.indexes.find()</code>         //当前数据库中的所有索引</li>
 <li><code>db.COLLECTION_NAME.getIndexes()</code>   //指定集合建立的索引<br><a href="http://www.runoob.com/mongodb/mongodb-indexing.html" target="_blank" rel="external">参考连接http://www.runoob.com/</a> </li>
 </ul>
+<p><strong>最后：</strong><br>MacOS下的mongodb客户端工具:<br>推荐使用<em>mongohub</em>，安装方法：<br><code>brew-cask install mongohub</code><br>不要用<em>Robomongo</em>，有bug，连上后看不到数据库，根本无法使用。</p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<p>一. 索引</p>
+    <![CDATA[<p><strong>一. 索引</strong></p>
 <ul>
-<li>MongoDB使用 <code>ensureIndex()</code>方法来创建索引,语法中 Key 值为你要创建的索引字段，1为指定按升序创建索引，如果你想按降序来创建索引指定为-1即可。<br><code>&gt;db.COLLE]]>
+<li>MongoDB使用 <code>ensureIndex()</code>方法来创建索引,语法中 Key 值为你要创建的索引字段，1为指定按升序创建索引，如果你想按降序来创建索引指定为-1即可。<br><]]>
     </summary>
     
       <category term="MongoDB" scheme="http://www.yczmm.com/tags/MongoDB/"/>
