@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.yczmm.com/d191.html</loc>
+    <lastmod>2016-01-15T14:51:36.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.yczmm.com/d1.html</loc>
     <lastmod>2016-01-15T06:24:18.000Z</lastmod>
   </url>
@@ -112,11 +117,6 @@
   </url>
   
   <url>
-    <loc>http://www.yczmm.com/%E7%96%AF%E7%8B%82%E7%9A%84%E4%B8%80%E5%A4%A9.html</loc>
-    <lastmod>2015-09-12T11:31:53.000Z</lastmod>
-  </url>
-  
-  <url>
     <loc>http://www.yczmm.com/%E9%98%BF%E9%87%8C%E4%BA%91OSS%E5%9B%BE%E7%89%87.html</loc>
     <lastmod>2015-09-12T11:31:53.000Z</lastmod>
   </url>
@@ -148,6 +148,11 @@
   
   <url>
     <loc>http://www.yczmm.com/hexo-skip_render.html</loc>
+    <lastmod>2015-09-12T11:31:53.000Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.yczmm.com/%E7%96%AF%E7%8B%82%E7%9A%84%E4%B8%80%E5%A4%A9.html</loc>
     <lastmod>2015-09-12T11:31:53.000Z</lastmod>
   </url>
   
