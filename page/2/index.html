@@ -147,6 +147,61 @@
 </nav>
       <div class="body-wrap">
   
+    <article id="post-动态计算UICollectionView-cell-width" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/动态计算UICollectionView-cell-width.html" class="article-date">
+  	<time datetime="2015-09-20T05:34:37.000Z" itemprop="datePublished">2015-09-20</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/动态计算UICollectionView-cell-width.html">动态计算UICollectionView cell width</a>
+    </h1>
+  
+
+        
+          <a href="/动态计算UICollectionView-cell-width.html#comments">
+          <span class="ds-thread-count" data-thread-key="_posts%2F%E5%8A%A8%E6%80%81%E8%AE%A1%E7%AE%97UICollectionView-cell-width.md" data-count-type="comments"></span>
+          </a>
+        
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>假设需求是每行cell数量(columnCount)是固定的，动态计算cell width<br><figure class="highlight objectivec"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">- (<span class="built_in">CGSize</span>)cellSize &#123;</span><br><span class="line">    <span class="built_in">UICollectionViewFlowLayout</span> *flowLayout = (<span class="built_in">UICollectionViewFlowLayout</span> *)<span class="keyword">self</span><span class="variable">.collectionView</span><span class="variable">.collectionViewLayout</span>;</span><br><span class="line">    <span class="built_in">CGFloat</span> width = (((<span class="keyword">self</span><span class="variable">.collectionView</span><span class="variable">.bounds</span><span class="variable">.size</span><span class="variable">.width</span> - <span class="keyword">self</span><span class="variable">.collectionView</span><span class="variable">.contentInset</span><span class="variable">.left</span> - <span class="keyword">self</span><span class="variable">.collectionView</span><span class="variable">.contentInset</span><span class="variable">.right</span>) - (columnCount - <span class="number">1</span>) * flowLayout<span class="variable">.minimumInteritemSpacing</span>) / columnCount);</span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">CGSizeMake</span>(width, width);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/UICollectionView/">UICollectionView</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/autolayout/">autolayout</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ios/">ios</a></li></ul>
+	</div>
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+  
     <article id="post-XCodeGhost-我也中招了" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
@@ -299,6 +354,7 @@
 <li>Peckham.xcplugin             // Add #import-s from anywhere in the code.  </li>
 <li>RevealPlugin.xcplugin        // Reveal调试UI</li>
 <li>VVDocumenter-Xcode.xcplugin  // <code>///</code> 添加注释</li>
+<li>XcodeColors.xcplugin         // 控制台颜色输出（配合<code>CocoaLumberjack</code>）</li>
 </ol>
 
       
@@ -680,68 +736,6 @@
       
         <p class="article-more-link">
           <a  href="/机器人行业.html#more">阅读全文 >></a>
-        </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-  
-    <article id="post-经济知识学习整理" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/经济知识学习整理.html" class="article-date">
-  	<time datetime="2015-08-27T14:06:47.000Z" itemprop="datePublished">2015-08-27</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/经济知识学习整理.html">经济知识学习整理, 持续更新中</a>
-    </h1>
-  
-
-        
-          <a href="/经济知识学习整理.html#comments">
-          <span class="ds-thread-count" data-thread-key="_posts%2F%E7%BB%8F%E6%B5%8E%E7%9F%A5%E8%AF%86%E5%AD%A6%E4%B9%A0%E6%95%B4%E7%90%86.md" data-count-type="comments"></span>
-          </a>
-        
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p> <a href="http://www.zhihu.com/question/20283786">央行加息降息如何影响股市？</a><br> <a href="http://finance.people.com.cn/stock/n/2015/0128/c67815-26463269.html">人民币暴跌如何影响股市？–财经–人民网</a><br> <a href="http://www.yicai.com/news/2015/08/4668298.html">A股如何应对本币贬值？</a><br> <a href="http://www.zhihu.com/question/31848914">万一 2015 年股市崩盘，会有什么样的后果？</a></p>
-<hr>
-<p> <a href="http://www.zhihu.com/question/21733410">如何通俗地解释 97 年亚洲金融危机发生的原因和过程？</a><br> <a href="http://finance.sina.com.cn/stock/y/20150705/172422594338.shtml">揭秘恒生HOMS系统配资真相</a><br> <a href="http://finance.ifeng.com/a/20150630/13807774_0.shtml">场外配资崩盘的真相</a><br> <a href="http://www.zhihu.com/question/28778713">你是如何从两千多只股票中选出心仪的股票的？</a></p>
-<hr>
-<p> <a href="http://www.zhihu.com/question/20004959">中国为什么采用现行的外汇储备政策？有哪些更好的选择？</a><br> <a href="http://www.zhihu.com/question/28716270/answer/54926655">希腊最近几年是怎么没落的？</a><br> <a href="http://club.ebusinessreview.cn/blogArticle-224909.html">一间玩具厂的倒掉 | 商业评论网</a><br> <a href="http://www.zhihu.com/question/19976358">什么是洗钱？为什么洗钱？</a><br> <a href="http://www.zhihu.com/question/20784125">有哪些关于经济或金融的纪录片？</a><br>
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/股票/">股票</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/财经/">财经</a></li></ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a  href="/经济知识学习整理.html#more">阅读全文 >></a>
         </p>
       
       <div class="clearfix"></div>

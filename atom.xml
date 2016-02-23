@@ -4,7 +4,7 @@
   <subtitle><![CDATA[生命不息,折腾不止]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.yczmm.com/"/>
-  <updated>2016-01-11T03:53:38.000Z</updated>
+  <updated>2016-02-23T06:11:49.000Z</updated>
   <id>http://www.yczmm.com/</id>
   
   <author>
@@ -13,6 +13,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[此证书的签发者无效]]></title>
+    <link href="http://www.yczmm.com/%E6%AD%A4%E8%AF%81%E4%B9%A6%E7%9A%84%E7%AD%BE%E5%8F%91%E8%80%85%E6%97%A0%E6%95%88.html"/>
+    <id>http://www.yczmm.com/此证书的签发者无效.html</id>
+    <published>2016-02-23T06:00:00.000Z</published>
+    <updated>2016-02-23T06:11:49.000Z</updated>
+    <content type="html"><![CDATA[<p>很多小伙伴过完年回来，打包ipa时碰到了坑爹的问题：“此证书的签发者无效”<br>解决办法：</p>
+<blockquote>
+<ol>
+<li><a href="https://developer.apple.com/certificationauthority/AppleWWDRCA.cer，并安装。" target="_blank" rel="external">https://developer.apple.com/certificationauthority/AppleWWDRCA.cer，并安装。</a></li>
+<li>在keychains里选择login,然后点选Certificates，在这个界面，选择工具栏的View -&gt; Show Expired Certificates，这时候你会发现一个过期的“WWDR Certificate”（Apple Worldwide Developer Relations Certification Authority），删除它。</li>
+<li>在System的那一栏也有这个过期的“WWDR Certificate”，一并删除它.<br>4.不出意外你的证书那里从 “This certificate has an invalid issuer”（此证书的签发者无效）变成了 “This certificate is valid”了。</li>
+</ol>
+</blockquote>
+<p>[参考连接 <a href="https://segmentfault.com/q/1010000004433963" target="_blank" rel="external">iOS相关，过年回来电脑上的证书都失效了，求大神！</a> </p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>很多小伙伴过完年回来，打包ipa时碰到了坑爹的问题：“此证书的签发者无效”<br>解决办法：</p>
+<blockquote>
+<ol>
+<li><a href="https://developer.apple.com/certificationauthority/Appl]]>
+    </summary>
+    
+      <category term="ios" scheme="http://www.yczmm.com/tags/ios/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[mongodb操作]]></title>
@@ -290,13 +317,14 @@
     <link href="http://www.yczmm.com/%E7%94%A8%E5%88%B0%E7%9A%84xcode%E6%8F%92%E4%BB%B6.html"/>
     <id>http://www.yczmm.com/用到的xcode插件.html</id>
     <published>2015-09-15T08:30:25.000Z</published>
-    <updated>2015-09-15T08:45:44.000Z</updated>
+    <updated>2016-02-23T06:02:26.000Z</updated>
     <content type="html"><![CDATA[<p>xcode插件目录位于<code>~/Library/Application Support/Developer/Shared/Xcode/Plug-ins</code>，打开此目录就能看到当前XCode装了哪些插件。<br>以下是我目前用到的插件,在github上都可以找到:</p>
 <ol>
 <li>ClangFormat.xcplugin          // 代码格式化</li>
 <li>Peckham.xcplugin             // Add #import-s from anywhere in the code.  </li>
 <li>RevealPlugin.xcplugin        // Reveal调试UI</li>
 <li>VVDocumenter-Xcode.xcplugin  // <code>///</code> 添加注释</li>
+<li>XcodeColors.xcplugin         // 控制台颜色输出（配合<code>CocoaLumberjack</code>）</li>
 </ol>
 ]]></content>
     <summary type="html">

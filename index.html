@@ -147,6 +147,69 @@
 </nav>
       <div class="body-wrap">
   
+    <article id="post-此证书的签发者无效" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/此证书的签发者无效.html" class="article-date">
+  	<time datetime="2016-02-23T06:00:00.000Z" itemprop="datePublished">2016-02-23</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/此证书的签发者无效.html">此证书的签发者无效</a>
+    </h1>
+  
+
+        
+          <a href="/此证书的签发者无效.html#comments">
+          <span class="ds-thread-count" data-thread-key="_posts%2F%E6%AD%A4%E8%AF%81%E4%B9%A6%E7%9A%84%E7%AD%BE%E5%8F%91%E8%80%85%E6%97%A0%E6%95%88.md" data-count-type="comments"></span>
+          </a>
+        
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>很多小伙伴过完年回来，打包ipa时碰到了坑爹的问题：“此证书的签发者无效”<br>解决办法：</p>
+<blockquote>
+<ol>
+<li><a href="https://developer.apple.com/certificationauthority/AppleWWDRCA.cer，并安装。" target="_blank" rel="external">https://developer.apple.com/certificationauthority/AppleWWDRCA.cer，并安装。</a></li>
+<li>在keychains里选择login,然后点选Certificates，在这个界面，选择工具栏的View -&gt; Show Expired Certificates，这时候你会发现一个过期的“WWDR Certificate”（Apple Worldwide Developer Relations Certification Authority），删除它。</li>
+<li>在System的那一栏也有这个过期的“WWDR Certificate”，一并删除它.<br>4.不出意外你的证书那里从 “This certificate has an invalid issuer”（此证书的签发者无效）变成了 “This certificate is valid”了。</li>
+</ol>
+</blockquote>
+<p>[参考连接 <a href="https://segmentfault.com/q/1010000004433963" target="_blank" rel="external">iOS相关，过年回来电脑上的证书都失效了，求大神！</a> </p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ios/">ios</a></li></ul>
+	</div>
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+  
     <article id="post-mongodb操作" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
@@ -671,61 +734,6 @@
       
 	<div class="article-tag tagcloud">
 		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ImageMagick/">ImageMagick</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/发现/">发现</a></li></ul>
-	</div>
-
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-  
-    <article id="post-动态计算UICollectionView-cell-width" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/动态计算UICollectionView-cell-width.html" class="article-date">
-  	<time datetime="2015-09-20T05:34:37.000Z" itemprop="datePublished">2015-09-20</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/动态计算UICollectionView-cell-width.html">动态计算UICollectionView cell width</a>
-    </h1>
-  
-
-        
-          <a href="/动态计算UICollectionView-cell-width.html#comments">
-          <span class="ds-thread-count" data-thread-key="_posts%2F%E5%8A%A8%E6%80%81%E8%AE%A1%E7%AE%97UICollectionView-cell-width.md" data-count-type="comments"></span>
-          </a>
-        
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>假设需求是每行cell数量(columnCount)是固定的，动态计算cell width<br><figure class="highlight objectivec"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">- (<span class="built_in">CGSize</span>)cellSize &#123;</span><br><span class="line">    <span class="built_in">UICollectionViewFlowLayout</span> *flowLayout = (<span class="built_in">UICollectionViewFlowLayout</span> *)<span class="keyword">self</span><span class="variable">.collectionView</span><span class="variable">.collectionViewLayout</span>;</span><br><span class="line">    <span class="built_in">CGFloat</span> width = (((<span class="keyword">self</span><span class="variable">.collectionView</span><span class="variable">.bounds</span><span class="variable">.size</span><span class="variable">.width</span> - <span class="keyword">self</span><span class="variable">.collectionView</span><span class="variable">.contentInset</span><span class="variable">.left</span> - <span class="keyword">self</span><span class="variable">.collectionView</span><span class="variable">.contentInset</span><span class="variable">.right</span>) - (columnCount - <span class="number">1</span>) * flowLayout<span class="variable">.minimumInteritemSpacing</span>) / columnCount);</span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">CGSizeMake</span>(width, width);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/UICollectionView/">UICollectionView</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/autolayout/">autolayout</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ios/">ios</a></li></ul>
 	</div>
 
       
