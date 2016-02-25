@@ -3,17 +3,21 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Tag: 机器人 | 大风的博客</title>
+  <title>git检出标签 | 大风的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="大风的博客">
-<meta property="og:type" content="website">
-<meta property="og:title" content="大风的博客">
-<meta property="og:url" content="http://www.yczmm.com/tags/机器人/index.html">
+  <meta name="description" content="在 Git 中你并不能真的检出一个标签，因为它们并不能像分支一样来回移动。 如果你想要工作目录与仓库中特定的标签版本完全一样，可以使用 git checkout -b [branchname] [tagname] 在特定的标签上创建一个新分支： 12$ git checkout -b version2 v2.0.0Switched to a new branch &apos;version2&apos;
+当然，如果在">
+<meta property="og:type" content="article">
+<meta property="og:title" content="git检出标签">
+<meta property="og:url" content="http://www.yczmm.com/git检出标签.html">
 <meta property="og:site_name" content="大风的博客">
-<meta property="og:description" content="大风的博客">
+<meta property="og:description" content="在 Git 中你并不能真的检出一个标签，因为它们并不能像分支一样来回移动。 如果你想要工作目录与仓库中特定的标签版本完全一样，可以使用 git checkout -b [branchname] [tagname] 在特定的标签上创建一个新分支： 12$ git checkout -b version2 v2.0.0Switched to a new branch &apos;version2&apos;
+当然，如果在">
+<meta property="og:updated_time" content="2016-02-25T05:40:41.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="大风的博客">
-<meta name="twitter:description" content="大风的博客">
+<meta name="twitter:title" content="git检出标签">
+<meta name="twitter:description" content="在 Git 中你并不能真的检出一个标签，因为它们并不能像分支一样来回移动。 如果你想要工作目录与仓库中特定的标签版本完全一样，可以使用 git checkout -b [branchname] [tagname] 在特定的标签上创建一个新分支： 12$ git checkout -b version2 v2.0.0Switched to a new branch &apos;version2&apos;
+当然，如果在">
   
     <link rel="alternative" href="/atom.xml" title="大风的博客" type="application/atom+xml">
   
@@ -145,58 +149,102 @@
 		</header>				
 	</div>
 </nav>
-      <div class="body-wrap">
+      <div class="body-wrap"><article id="post-git检出标签" class="article article-type-post" itemscope itemprop="blogPost">
   
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2015" class="archive-year">2015</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-            
-            <a href="/机器人行业.html#comments" class="archive-article-date">
-                <span class="ds-thread-count ds-thread-count-ex" data-thread-key="_posts%2F%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%A1%8C%E4%B8%9A.md" data-count-type="comments"></span>
-            </a>
-            
-            <a href="/机器人行业.html" class="archive-article-date">
-  	<time datetime="2015-09-02T12:06:00.000Z" itemprop="datePublished">Sep 2</time>
+    <div class="article-meta">
+      <a href="/git检出标签.html" class="article-date">
+  	<time datetime="2016-02-25T06:00:00.000Z" itemprop="datePublished">2016-02-25</time>
 </a>
-        </div>
-    	 
+    </div>
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/机器人行业.html">机器人行业</a>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      git检出标签
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+      </header>
+      
+      <div class="article-info article-info-post">
+        
 	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/机器人/">机器人</a></li></ul>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/git/">git</a></li></ul>
 	</div>
 
-          
+        
 
-        </div>
         <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
+      </div>
+      
     
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>在 Git 中你并不能真的检出一个标签，因为它们并不能像分支一样来回移动。 如果你想要工作目录与仓库中特定的标签版本完全一样，可以使用 git checkout -b [branchname] [tagname] 在特定的标签上创建一个新分支：<br> <figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout -<span class="tag">b</span> version2 v2.<span class="number">0.0</span></span><br><span class="line">Switched to <span class="tag">a</span> new branch <span class="string">'version2'</span></span><br></pre></td></tr></table></figure></p>
+<p>当然，如果在这之后又进行了一次提交，version2 分支会因为改动向前移动了，那么 version2 分支就会和 v2.0.0 标签稍微有些不同，这时就应该当心了。</p>
+</blockquote>
+<p><a href="https://git-scm.com/book/zh/v2/Git-%E5%9F%BA%E7%A1%80-%E6%89%93%E6%A0%87%E7%AD%BE" target="_blank" rel="external">参考连接</a> </p>
+
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/此证书的签发者无效.html" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">此证书的签发者无效</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+<div class="share">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">分享到：</span>
+		<a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+		<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	</div>
+	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
+
+
+
+<div class="comments" id="comments"></div>
+<!-- 多说评论框 start -->
+<div class="ds-thread" data-thread-key="_posts%2Fgit%E6%A3%80%E5%87%BA%E6%A0%87%E7%AD%BE.md" data-title="git检出标签" data-url="http://www.yczmm.com/git检出标签.html"></div>
+<!-- 多说评论框 end -->
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+	var duoshuoQuery = {short_name:'zhuifeng'};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0]
+		|| document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+</script>
+<!-- 多说公共JS代码 end -->
 
 </div>
       <footer id="footer">
@@ -220,9 +268,9 @@
 		mathjax: false,
 		animate: true,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false
 	}

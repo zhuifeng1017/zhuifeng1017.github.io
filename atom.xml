@@ -4,7 +4,7 @@
   <subtitle><![CDATA[生命不息,折腾不止]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.yczmm.com/"/>
-  <updated>2016-02-23T06:11:49.000Z</updated>
+  <updated>2016-02-25T05:40:41.000Z</updated>
   <id>http://www.yczmm.com/</id>
   
   <author>
@@ -13,6 +13,27 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[git检出标签]]></title>
+    <link href="http://www.yczmm.com/git%E6%A3%80%E5%87%BA%E6%A0%87%E7%AD%BE.html"/>
+    <id>http://www.yczmm.com/git检出标签.html</id>
+    <published>2016-02-25T06:00:00.000Z</published>
+    <updated>2016-02-25T05:40:41.000Z</updated>
+    <content type="html"><![CDATA[<blockquote>
+<p>在 Git 中你并不能真的检出一个标签，因为它们并不能像分支一样来回移动。 如果你想要工作目录与仓库中特定的标签版本完全一样，可以使用 git checkout -b [branchname] [tagname] 在特定的标签上创建一个新分支：<br> <figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout -<span class="tag">b</span> version2 v2.<span class="number">0.0</span></span><br><span class="line">Switched to <span class="tag">a</span> new branch <span class="string">'version2'</span></span><br></pre></td></tr></table></figure></p>
+<p>当然，如果在这之后又进行了一次提交，version2 分支会因为改动向前移动了，那么 version2 分支就会和 v2.0.0 标签稍微有些不同，这时就应该当心了。</p>
+</blockquote>
+<p><a href="https://git-scm.com/book/zh/v2/Git-%E5%9F%BA%E7%A1%80-%E6%89%93%E6%A0%87%E7%AD%BE" target="_blank" rel="external">参考连接</a> </p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<blockquote>
+<p>在 Git 中你并不能真的检出一个标签，因为它们并不能像分支一样来回移动。 如果你想要工作目录与仓库中特定的标签版本完全一样，可以使用 git checkout -b [branchname] [tagname] 在特定的标签上创建一个新分支：<b]]>
+    </summary>
+    
+      <category term="git" scheme="http://www.yczmm.com/tags/git/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[此证书的签发者无效]]></title>
