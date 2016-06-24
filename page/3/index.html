@@ -147,6 +147,83 @@
 </nav>
       <div class="body-wrap">
   
+    <article id="post-autolayout学习1" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/autolayout学习1.html" class="article-date">
+  	<time datetime="2015-09-14T09:37:21.000Z" itemprop="datePublished">2015-09-14</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/autolayout学习1.html">autolayout学习1</a>
+    </h1>
+  
+
+        
+          <a href="/autolayout学习1.html#comments">
+          <span class="ds-thread-count" data-thread-key="_posts%2Fautolayout%E5%AD%A6%E4%B9%A01.md" data-count-type="comments"></span>
+          </a>
+        
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="storyboard/xib中使用autolayout">storyboard/xib中使用autolayout</h2><ul>
+<li>使用<strong>鼠标右键</strong>关联两两之间的约束, 对于简单的布局掌握之后还是弄起来还是比较快的.</li>
+<li>选中控件后，在Mene-&gt;Editor中也可以指定约束</li>
+<li>xcode右下角的几个按钮也可以进行操作：<br><img src="http://iid.oss-cn-hangzhou.aliyuncs.com/iOS%2FACE7829D-7A9B-4370-9CE6-BB126B1FF187.png" alt=" "><br><a href="http://www.cnblogs.com/cxbblog/p/4166876.html" target="_blank" rel="external">iOS 屏幕适配，autoResizing autoLayout和sizeClass图文详解- csdn</a></li>
+</ul>
+<h2 id="用代码手写autolayout">用代码手写autolayout</h2><p>需要掌握<code>Visual Format Language</code>, 初次看到这种写法的时候简直崩溃，一番研究下来还是很快可以掌握。</p>
+<ul>
+<li>符号: -  ; 代表两个视图之间的间隔,默认的子视图之间的标准间隔是8;子视图与父视图之间默认是20  </li>
+<li>符号:[]; 中括号的里面是视图的名称,如果是属性的话,应该加上 _下划线,例如  [_view]  </li>
+<li>符号:| ; 竖线代表父视图(或者父视图的边界)  </li>
+<li>符号:(); 数值的表达式,可以是不等式,等式,或者一个数字,包括负数,可以设置宽度(使用@”H:[view2(100)]”)或者高度(使用@”V:[_view2(==100)]”)  </li>
+<li>符号:@; 代表 在  A@B中,A的优先级是B数值;当 A这个约束的值和和同方向上的约束产生冲突时,会按照优先级来调整尺寸 </li>
+<li>符号: H , V ;   H代表水平方向 ,V代表垂直方向(水平和垂直的英文首字母) </li>
+</ul>
+<p>一些简写如： <code>@&quot;H:|[view1]|&quot; 等价于 @&quot;H:|-0-[view1]-0-|&quot;</code><br><a href="http://blog.csdn.net/yangbingbinga/article/details/43673817" target="_blank" rel="external">VisualFormat可视化格式字符串构成</a><br><a href="http://www.vienta.me/2014/12/07/AutoLayout-%E5%BF%98%E6%8E%89Frame-%E6%8B%A5%E6%8A%B1Constraint%EF%BC%88I%EF%BC%89/" target="_blank" rel="external">AutoLayout:忘掉Frame,拥抱Constraint（I）</a><br><a href="https://github.com/zhuifeng1017/AutoLayout1" target="_blank" rel="external">例子代码下载&gt;&gt;github</a></p>
+<h2 id="使用Masonry">使用Masonry</h2><p>代码精简，手写autolayout情况下用它爽多了。</p>
+<h2 id="总结">总结</h2><p>确定一个UI控件的位置，在frame时代需要指明(x,y,width,height), 在autolayout时代，本质是一样的，只是换成了相对概念。<br>即需要确定</p>
+<ul>
+<li>水平方向相对位置；</li>
+<li>垂直方向相对位置；</li>
+<li>绝对宽, 或左右相对位置；</li>
+<li>绝对高，或上下相对位置；<br>在实际开发中，可以xib/stroyboard, Masonry结合使用。对于简单的布局，用xib/stroyboard拖拖拽拽可以搞定就不必Masonry了。</li>
+</ul>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/autolayout/">autolayout</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ios/">ios</a></li></ul>
+	</div>
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+  
     <article id="post-hexo-deploy报错解决" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
@@ -661,64 +738,6 @@
       
         <p class="article-more-link">
           <a  href="/markdown语法.html#more">阅读全文 >></a>
-        </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-  
-    <article id="post-vsftp安装" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/vsftp安装.html" class="article-date">
-  	<time datetime="2015-08-21T09:20:30.000Z" itemprop="datePublished">2015-08-21</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/vsftp安装.html">CentOS下安装vsftp</a>
-    </h1>
-  
-
-        
-          <a href="/vsftp安装.html#comments">
-          <span class="ds-thread-count" data-thread-key="_posts%2Fvsftp%E5%AE%89%E8%A3%85.md" data-count-type="comments"></span>
-          </a>
-        
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="机器环境：CentOS6-5_64位">机器环境：CentOS6.5 64位</h2><p>1, yum在线安装vsftpd<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost]<span class="comment"># yum -y install vsftpd</span></span><br></pre></td></tr></table></figure></p>
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/vsftp/">vsftp</a></li></ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a  href="/vsftp安装.html#more">阅读全文 >></a>
         </p>
       
       <div class="clearfix"></div>

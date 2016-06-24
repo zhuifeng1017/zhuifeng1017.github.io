@@ -4,7 +4,7 @@
   <subtitle><![CDATA[生命不息,折腾不止]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.yczmm.com/"/>
-  <updated>2016-04-01T08:47:52.000Z</updated>
+  <updated>2016-06-24T03:55:35.000Z</updated>
   <id>http://www.yczmm.com/</id>
   
   <author>
@@ -13,6 +13,27 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[App每次进入都要登陆]]></title>
+    <link href="http://www.yczmm.com/App%E6%AF%8F%E6%AC%A1%E8%BF%9B%E5%85%A5%E9%83%BD%E8%A6%81%E7%99%BB%E9%99%86.html"/>
+    <id>http://www.yczmm.com/App每次进入都要登陆.html</id>
+    <published>2016-06-20T06:00:00.000Z</published>
+    <updated>2016-06-24T03:55:35.000Z</updated>
+    <content type="html"><![CDATA[<p><strong>iPhone6s 64G.    iOS 9.3.1</strong></p>
+<p>这几天手机遇到一个操蛋的问题， 每个App进入后都提示要登陆，包括支付宝，微博， 淘宝，京东….. （微信，QQ却没有这个问题）,what a fuck! 吃饭付钱时提示要输入密码，上淘宝京东买东西提示没有登陆… 连SS vpn也连接不上了…  无语了。。。。</p>
+<p>作为一名技术人员，我感觉是iOS系统出问题了，初步判断可能是系统存储配置文件文件出现bug了，写代码测试NSUserDefaults存储， fuck，在我这个手机上确实无法写入，而其他手机上是没有问题的。</p>
+<p>没办法了， 升级系统到iOS 9.3.2。 </p>
+<p>….. 升级之后问题是解决了，但是不知道是系统升级，还是因为手机重启了把问题解决了。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p><strong>iPhone6s 64G.    iOS 9.3.1</strong></p>
+<p>这几天手机遇到一个操蛋的问题， 每个App进入后都提示要登陆，包括支付宝，微博， 淘宝，京东….. （微信，QQ却没有这个问题）,what a fuck! 吃饭付钱时提示要]]>
+    </summary>
+    
+      <category term="ios" scheme="http://www.yczmm.com/tags/ios/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[安装PonyDebugger遇到的坑]]></title>
@@ -34,6 +55,26 @@
   </entry>
   
   <entry>
+    <title><![CDATA[SIP (System Integrity Protection) with OS X 10.11, El Capitan]]></title>
+    <link href="http://www.yczmm.com/SIP%20(System%20Integrity%20Protection)%20with%20OS%20X%2010.11,%20El%20Capitan.html"/>
+    <id>http://www.yczmm.com/SIP (System Integrity Protection) with OS X 10.11, El Capitan.html</id>
+    <published>2016-02-25T06:00:00.000Z</published>
+    <updated>2016-03-21T02:02:36.000Z</updated>
+    <content type="html"><![CDATA[<blockquote>
+<p>SIP功能是Apple在OSX上推出的系统完整性保护功能，对于普通MAC用户来说是一项安全保护功能，如果不了解他的作用请不要随意关闭，对于开发者来说，因为会使用到很多的第三方辅助工具（例如：Cocoapods、Homebrew），而这些工具可能会修改系统目录，在这些工具未推出适应OSX 10.11的版本时，有必要临时关闭SIP以确保开发工具的使用。</p>
+</blockquote>
+<p><a href="http://www.jianshu.com/p/0572336a0771" target="_blank" rel="external">&gt;&gt;&gt;如何关闭OSX 10.11 SIP (System Integrity Protection)</a> </p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<blockquote>
+<p>SIP功能是Apple在OSX上推出的系统完整性保护功能，对于普通MAC用户来说是一项安全保护功能，如果不了解他的作用请不要随意关闭，对于开发者来说，因为会使用到很多的第三方辅助工具（例如：Cocoapods、Homebrew），而这些工具可能会修]]>
+    </summary>
+    
+      <category term="mac" scheme="http://www.yczmm.com/tags/mac/"/>
+    
+  </entry>
+  
+  <entry>
     <title><![CDATA[git检出标签]]></title>
     <link href="http://www.yczmm.com/git%E6%A3%80%E5%87%BA%E6%A0%87%E7%AD%BE.html"/>
     <id>http://www.yczmm.com/git检出标签.html</id>
@@ -51,26 +92,6 @@
     </summary>
     
       <category term="git" scheme="http://www.yczmm.com/tags/git/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[SIP (System Integrity Protection) with OS X 10.11, El Capitan]]></title>
-    <link href="http://www.yczmm.com/SIP%20(System%20Integrity%20Protection)%20with%20OS%20X%2010.11,%20El%20Capitan.html"/>
-    <id>http://www.yczmm.com/SIP (System Integrity Protection) with OS X 10.11, El Capitan.html</id>
-    <published>2016-02-25T06:00:00.000Z</published>
-    <updated>2016-03-21T02:02:36.000Z</updated>
-    <content type="html"><![CDATA[<blockquote>
-<p>SIP功能是Apple在OSX上推出的系统完整性保护功能，对于普通MAC用户来说是一项安全保护功能，如果不了解他的作用请不要随意关闭，对于开发者来说，因为会使用到很多的第三方辅助工具（例如：Cocoapods、Homebrew），而这些工具可能会修改系统目录，在这些工具未推出适应OSX 10.11的版本时，有必要临时关闭SIP以确保开发工具的使用。</p>
-</blockquote>
-<p><a href="http://www.jianshu.com/p/0572336a0771" target="_blank" rel="external">&gt;&gt;&gt;如何关闭OSX 10.11 SIP (System Integrity Protection)</a> </p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<blockquote>
-<p>SIP功能是Apple在OSX上推出的系统完整性保护功能，对于普通MAC用户来说是一项安全保护功能，如果不了解他的作用请不要随意关闭，对于开发者来说，因为会使用到很多的第三方辅助工具（例如：Cocoapods、Homebrew），而这些工具可能会修]]>
-    </summary>
-    
-      <category term="mac" scheme="http://www.yczmm.com/tags/mac/"/>
     
   </entry>
   
