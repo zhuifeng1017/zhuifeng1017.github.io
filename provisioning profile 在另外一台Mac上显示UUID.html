@@ -3,24 +3,21 @@
 <head>
   <meta charset="utf-8">
   
-  <title>App每次进入都要登陆 | 大风的博客</title>
+  <title>provisioning profile 在另外一台Mac上显示UUID | 大风的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="iPhone6s 64G.    iOS 9.3.1
-这几天手机遇到一个操蛋的问题， 每个App进入后都提示要登陆，包括支付宝，微博， 淘宝，京东….. （微信，QQ却没有这个问题）,what a fuck! 吃饭付钱时提示要输入密码，上淘宝京东买东西提示没有登陆… 连SS vpn也连接不上了…  无语了。。。。
-作为一名技术人员，我感觉是iOS系统出问题了，初步判断可能是系统存储配置文件文件出现">
+  <meta name="description" content="在一台Mac上配置好了XCode的provisioning profile，然后在另外一台Mac上却显示一串UUID。 这种情况是因为本地存在多个相同的provisioning profile文件(比如添加了新的设备后重新生成了provisioning)。
+  解决这个办法就是: 打开系统provisioning文件位置，全选全部删除，然后通过XCode重新download。 搞定！！！">
 <meta property="og:type" content="article">
-<meta property="og:title" content="App每次进入都要登陆">
-<meta property="og:url" content="http://www.yczmm.com/App每次进入都要登陆.html">
+<meta property="og:title" content="provisioning profile 在另外一台Mac上显示UUID">
+<meta property="og:url" content="http://www.yczmm.com/provisioning profile 在另外一台Mac上显示UUID.html">
 <meta property="og:site_name" content="大风的博客">
-<meta property="og:description" content="iPhone6s 64G.    iOS 9.3.1
-这几天手机遇到一个操蛋的问题， 每个App进入后都提示要登陆，包括支付宝，微博， 淘宝，京东….. （微信，QQ却没有这个问题）,what a fuck! 吃饭付钱时提示要输入密码，上淘宝京东买东西提示没有登陆… 连SS vpn也连接不上了…  无语了。。。。
-作为一名技术人员，我感觉是iOS系统出问题了，初步判断可能是系统存储配置文件文件出现">
-<meta property="og:updated_time" content="2016-06-24T03:55:35.000Z">
+<meta property="og:description" content="在一台Mac上配置好了XCode的provisioning profile，然后在另外一台Mac上却显示一串UUID。 这种情况是因为本地存在多个相同的provisioning profile文件(比如添加了新的设备后重新生成了provisioning)。
+  解决这个办法就是: 打开系统provisioning文件位置，全选全部删除，然后通过XCode重新download。 搞定！！！">
+<meta property="og:updated_time" content="2016-07-28T10:20:59.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="App每次进入都要登陆">
-<meta name="twitter:description" content="iPhone6s 64G.    iOS 9.3.1
-这几天手机遇到一个操蛋的问题， 每个App进入后都提示要登陆，包括支付宝，微博， 淘宝，京东….. （微信，QQ却没有这个问题）,what a fuck! 吃饭付钱时提示要输入密码，上淘宝京东买东西提示没有登陆… 连SS vpn也连接不上了…  无语了。。。。
-作为一名技术人员，我感觉是iOS系统出问题了，初步判断可能是系统存储配置文件文件出现">
+<meta name="twitter:title" content="provisioning profile 在另外一台Mac上显示UUID">
+<meta name="twitter:description" content="在一台Mac上配置好了XCode的provisioning profile，然后在另外一台Mac上却显示一串UUID。 这种情况是因为本地存在多个相同的provisioning profile文件(比如添加了新的设备后重新生成了provisioning)。
+  解决这个办法就是: 打开系统provisioning文件位置，全选全部删除，然后通过XCode重新download。 搞定！！！">
   
     <link rel="alternative" href="/atom.xml" title="大风的博客" type="application/atom+xml">
   
@@ -152,11 +149,11 @@
 		</header>				
 	</div>
 </nav>
-      <div class="body-wrap"><article id="post-App每次进入都要登陆" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-provisioning profile 在另外一台Mac上显示UUID" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/App每次进入都要登陆.html" class="article-date">
-  	<time datetime="2016-06-20T06:00:00.000Z" itemprop="datePublished">2016-06-20</time>
+      <a href="/provisioning profile 在另外一台Mac上显示UUID.html" class="article-date">
+  	<time datetime="2016-06-28T10:00:00.000Z" itemprop="datePublished">2016-06-28</time>
 </a>
     </div>
   
@@ -167,7 +164,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      App每次进入都要登陆
+      provisioning profile 在另外一台Mac上显示UUID
     </h1>
   
 
@@ -188,11 +185,8 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><strong>iPhone6s 64G.    iOS 9.3.1</strong></p>
-<p>这几天手机遇到一个操蛋的问题， 每个App进入后都提示要登陆，包括支付宝，微博， 淘宝，京东….. （微信，QQ却没有这个问题）,what a fuck! 吃饭付钱时提示要输入密码，上淘宝京东买东西提示没有登陆… 连SS vpn也连接不上了…  无语了。。。。</p>
-<p>作为一名技术人员，我感觉是iOS系统出问题了，初步判断可能是系统存储配置文件文件出现bug了，写代码测试NSUserDefaults存储， fuck，在我这个手机上确实无法写入，而其他手机上是没有问题的。</p>
-<p>没办法了， 升级系统到iOS 9.3.2。 </p>
-<p>….. 升级之后问题是解决了，但是不知道是系统升级，还是因为手机重启了把问题解决了。</p>
+        <p>  在一台Mac上配置好了XCode的provisioning profile，然后在另外一台Mac上却显示一串<em>UUID</em>。 这种情况是因为本地存在多个相同的provisioning profile文件(比如添加了新的设备后重新生成了provisioning)。</p>
+<p>  解决这个办法就是: 打开系统provisioning文件位置，全选全部删除，然后通过XCode重新download。 搞定！！！</p>
 
       
     </div>
@@ -202,18 +196,9 @@
     
 <nav id="article-nav">
   
-    <a href="/provisioning profile 在另外一台Mac上显示UUID.html" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption"><</strong>
-      <div class="article-nav-title">
-        
-          provisioning profile 在另外一台Mac上显示UUID
-        
-      </div>
-    </a>
   
-  
-    <a href="/安装PonyDebugger遇到的坑.html" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">安装PonyDebugger遇到的坑</div>
+    <a href="/App每次进入都要登陆.html" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">App每次进入都要登陆</div>
       <strong class="article-nav-caption">></strong>
     </a>
   
@@ -242,7 +227,7 @@
 
 <div class="comments" id="comments"></div>
 <!-- 多说评论框 start -->
-<div class="ds-thread" data-thread-key="_posts%2FApp%E6%AF%8F%E6%AC%A1%E8%BF%9B%E5%85%A5%E9%83%BD%E8%A6%81%E7%99%BB%E9%99%86.md" data-title="App每次进入都要登陆" data-url="http://www.yczmm.com/App每次进入都要登陆.html"></div>
+<div class="ds-thread" data-thread-key="_posts%2Fprovisioning%20profile%20%E5%9C%A8%E5%8F%A6%E5%A4%96%E4%B8%80%E5%8F%B0Mac%E4%B8%8A%E6%98%BE%E7%A4%BAUUID.md" data-title="provisioning profile 在另外一台Mac上显示UUID" data-url="http://www.yczmm.com/provisioning profile 在另外一台Mac上显示UUID.html"></div>
 <!-- 多说评论框 end -->
 <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 <script type="text/javascript">

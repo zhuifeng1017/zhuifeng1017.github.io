@@ -4,7 +4,7 @@
   <subtitle><![CDATA[生命不息,折腾不止]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://www.yczmm.com/"/>
-  <updated>2016-06-24T03:55:35.000Z</updated>
+  <updated>2016-07-28T10:20:59.000Z</updated>
   <id>http://www.yczmm.com/</id>
   
   <author>
@@ -13,6 +13,23 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[provisioning profile 在另外一台Mac上显示UUID]]></title>
+    <link href="http://www.yczmm.com/provisioning%20profile%20%E5%9C%A8%E5%8F%A6%E5%A4%96%E4%B8%80%E5%8F%B0Mac%E4%B8%8A%E6%98%BE%E7%A4%BAUUID.html"/>
+    <id>http://www.yczmm.com/provisioning profile 在另外一台Mac上显示UUID.html</id>
+    <published>2016-06-28T10:00:00.000Z</published>
+    <updated>2016-07-28T10:20:59.000Z</updated>
+    <content type="html"><![CDATA[<p>  在一台Mac上配置好了XCode的provisioning profile，然后在另外一台Mac上却显示一串<em>UUID</em>。 这种情况是因为本地存在多个相同的provisioning profile文件(比如添加了新的设备后重新生成了provisioning)。</p>
+<p>  解决这个办法就是: 打开系统provisioning文件位置，全选全部删除，然后通过XCode重新download。 搞定！！！</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>  在一台Mac上配置好了XCode的provisioning profile，然后在另外一台Mac上却显示一串<em>UUID</em>。 这种情况是因为本地存在多个相同的provisioning profile文件(比如添加了新的设备后重新生成了provisioning]]>
+    </summary>
+    
+      <category term="ios" scheme="http://www.yczmm.com/tags/ios/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[App每次进入都要登陆]]></title>
