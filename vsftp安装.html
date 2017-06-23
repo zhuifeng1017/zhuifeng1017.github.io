@@ -6,9 +6,10 @@
   <title>CentOS下安装vsftp | 大风的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="机器环境：CentOS6.5 64位1, yum在线安装vsftpd1[root@localhost]# yum -y install vsftpd">
+<meta name="keywords" content="vsftp">
 <meta property="og:type" content="article">
 <meta property="og:title" content="CentOS下安装vsftp">
-<meta property="og:url" content="http://www.yczmm.com/vsftp安装.html">
+<meta property="og:url" content="http://zhuifeng1017.github.io/vsftp安装.html">
 <meta property="og:site_name" content="大风的博客">
 <meta property="og:description" content="机器环境：CentOS6.5 64位1, yum在线安装vsftpd1[root@localhost]# yum -y install vsftpd">
 <meta property="og:updated_time" content="2015-09-12T11:31:53.000Z">
@@ -21,7 +22,7 @@
   
     <link rel="icon" href="/favicon.png">
   
-  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
   <div id="container">
@@ -182,22 +183,22 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="机器环境：CentOS6-5_64位">机器环境：CentOS6.5 64位</h2><p>1, yum在线安装vsftpd<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost]<span class="comment"># yum -y install vsftpd</span></span><br></pre></td></tr></table></figure></p>
+        <h2 id="机器环境：CentOS6-5-64位"><a href="#机器环境：CentOS6-5-64位" class="headerlink" title="机器环境：CentOS6.5 64位"></a>机器环境：CentOS6.5 64位</h2><p>1, yum在线安装vsftpd<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[root@localhost]<span class="comment"># yum -y install vsftpd</span></div></pre></td></tr></table></figure></p>
 <a id="more"></a>
-<p>2, 启动vsftpd<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost]<span class="comment"># service vsftpd start</span></span><br><span class="line">启动成功后使用`netstat -lptn`查看vsftpd是否启动成功</span><br></pre></td></tr></table></figure></p>
-<p>3, 配置vsftpd.config （配置之前最好备份一下）<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost]<span class="comment"># vi /etc/vsftpd/vsftpd.conf </span></span><br><span class="line">作如下修改</span><br><span class="line">anonymous_<span class="built_in">enable</span>=YES  --&gt;  anonymous_<span class="built_in">enable</span>=NO           //不允许匿名用户访问，默认是允许。</span><br><span class="line">chroot_list_<span class="built_in">enable</span>=YES  --&gt;  chroot_list_<span class="built_in">enable</span>=NO      //不允许FTP用户离开自己主目录</span><br></pre></td></tr></table></figure></p>
-<p>4, 配置ftp用户<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">a. 创建ftp用户组</span><br><span class="line">[root@localhost]<span class="comment"># groupadd ftpusers</span></span><br><span class="line">b. 创建ftp主目录</span><br><span class="line">[root@localhost]<span class="comment"># mkdir /www</span></span><br><span class="line">c. 修改/www权限让ftpusers组有权限访问</span><br><span class="line">[root@localhost]<span class="comment"># chmod 770 /www</span></span><br><span class="line">[root@localhost]<span class="comment"># chown -R root:ftpusers /www</span></span><br><span class="line">d. 创建ftp用户,并指定主目录</span><br><span class="line">[root@localhost]<span class="comment"># useradd -g ftpusers -d /www -s /sbin/nologin ftp1</span></span><br><span class="line">[root@localhost]<span class="comment"># useradd -g ftpusers -d /www -s /sbin/nologin ftp2</span></span><br><span class="line">e. 设定密码 </span><br><span class="line">[root@localhost]<span class="comment"># passwd ftp1</span></span><br><span class="line">[root@localhost]<span class="comment"># passwd ftp2</span></span><br></pre></td></tr></table></figure></p>
+<p>2, 启动vsftpd<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">[root@localhost]<span class="comment"># service vsftpd start</span></div><div class="line">启动成功后使用`netstat -lptn`查看vsftpd是否启动成功</div></pre></td></tr></table></figure></p>
+<p>3, 配置vsftpd.config （配置之前最好备份一下）<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">[root@localhost]<span class="comment"># vi /etc/vsftpd/vsftpd.conf </span></div><div class="line">作如下修改</div><div class="line">anonymous_enable=YES  --&gt;  anonymous_enable=NO           //不允许匿名用户访问，默认是允许。</div><div class="line">chroot_list_enable=YES  --&gt;  chroot_list_enable=NO      //不允许FTP用户离开自己主目录</div></pre></td></tr></table></figure></p>
+<p>4, 配置ftp用户<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">a. 创建ftp用户组</div><div class="line">[root@localhost]<span class="comment"># groupadd ftpusers</span></div><div class="line">b. 创建ftp主目录</div><div class="line">[root@localhost]<span class="comment"># mkdir /www</span></div><div class="line">c. 修改/www权限让ftpusers组有权限访问</div><div class="line">[root@localhost]<span class="comment"># chmod 770 /www</span></div><div class="line">[root@localhost]<span class="comment"># chown -R root:ftpusers /www</span></div><div class="line">d. 创建ftp用户,并指定主目录</div><div class="line">[root@localhost]<span class="comment"># useradd -g ftpusers -d /www -s /sbin/nologin ftp1</span></div><div class="line">[root@localhost]<span class="comment"># useradd -g ftpusers -d /www -s /sbin/nologin ftp2</span></div><div class="line">e. 设定密码 </div><div class="line">[root@localhost]<span class="comment"># passwd ftp1</span></div><div class="line">[root@localhost]<span class="comment"># passwd ftp2</span></div></pre></td></tr></table></figure></p>
 <p>5, 重启vsftpd service vsftpd restart</p>
-<h2 id="6,_配置防火墙，开启21端口_(略)">6, 配置防火墙，开启21端口 (略)</h2><h1 id="———-注意可能出现的问题————"><strong><em>———-注意可能出现的问题————</em></strong></h1><ol>
-<li><h3 id="500_OOPS:_could_not_read_chroot()_list_file:/etc/vsftpd/chroot_list">500 OOPS: could not read chroot() list file:/etc/vsftpd/chroot_list</h3><p>解决办法：查看/etc/vsftpd/vsftpd.conf<br>chroot_list_file=/etc/vsftpd/chroot_list<br>如果磁盘中不存在/etc/vsftpd/chroot_list，则touch chroot_list</p>
+<h2 id="6-配置防火墙，开启21端口-略"><a href="#6-配置防火墙，开启21端口-略" class="headerlink" title="6, 配置防火墙，开启21端口 (略)"></a>6, 配置防火墙，开启21端口 (略)</h2><h1 id="———-注意可能出现的问题————"><a href="#———-注意可能出现的问题————" class="headerlink" title="———-注意可能出现的问题————"></a><strong><em>———-注意可能出现的问题————</em></strong></h1><ol>
+<li><h3 id="500-OOPS-could-not-read-chroot-list-file-etc-vsftpd-chroot-list"><a href="#500-OOPS-could-not-read-chroot-list-file-etc-vsftpd-chroot-list" class="headerlink" title="500 OOPS: could not read chroot() list file:/etc/vsftpd/chroot_list"></a>500 OOPS: could not read chroot() list file:/etc/vsftpd/chroot_list</h3><p>解决办法：查看/etc/vsftpd/vsftpd.conf<br>chroot_list_file=/etc/vsftpd/chroot_list<br>如果磁盘中不存在/etc/vsftpd/chroot_list，则touch chroot_list</p>
 </li>
-<li><h3 id="命令行能连，而FileZilla等客户端工具连接失败的情况。">命令行能连，而FileZilla等客户端工具连接失败的情况。</h3><p>解决办法：修改/etc/vsftpd/vsftpd.conf文件<br>pasv_enable=NO</p>
+<li><h3 id="命令行能连，而FileZilla等客户端工具连接失败的情况。"><a href="#命令行能连，而FileZilla等客户端工具连接失败的情况。" class="headerlink" title="命令行能连，而FileZilla等客户端工具连接失败的情况。"></a>命令行能连，而FileZilla等客户端工具连接失败的情况。</h3><p>解决办法：修改/etc/vsftpd/vsftpd.conf文件<br>pasv_enable=NO</p>
 </li>
-<li><h3 id="如果出现只能get无法put的情况时">如果出现只能get无法put的情况时</h3><p>可能的解决办法：<br>a. <em>确认目录权限</em><br>b. <em><a href="http://zhangge.net/3987.html" target="_blank" rel="external">http://zhangge.net/3987.html</a></em><br>最终，在一个linux论坛才找到了如下解决办法：<br>作者说这个问题在Centos上才会出现，Redhat就没有，难怪我在公司都没见过这问题。<br>解决办法：<br>①、查看ftp的Selinux状态：<code>sestatus -b | grep ftp</code><br>②、在结果中可以看到： <code>ftp_home_dir  off</code><br>③、将状态改为on：<code>setsebool -P  ftp_home_dir  on</code><br>④、重启vsftp服务：<code>service vsftpd restart</code><br>有点纳闷的是，他的服务器根本就没开selinux，所以第②步根本没结果，理论上，这个解决办法应该没效果才对，可实际上，全部执行完成之后，发现可以上传文件和新建文件夹了。我去，还真是诡异，总之解决了问题就好。</p>
+<li><h3 id="如果出现只能get无法put的情况时"><a href="#如果出现只能get无法put的情况时" class="headerlink" title="如果出现只能get无法put的情况时"></a>如果出现只能get无法put的情况时</h3><p>可能的解决办法：<br>a. <em>确认目录权限</em><br>b. <em><a href="http://zhangge.net/3987.html" target="_blank" rel="external">http://zhangge.net/3987.html</a></em><br>最终，在一个linux论坛才找到了如下解决办法：<br>作者说这个问题在Centos上才会出现，Redhat就没有，难怪我在公司都没见过这问题。<br>解决办法：<br>①、查看ftp的Selinux状态：<code>sestatus -b | grep ftp</code><br>②、在结果中可以看到： <code>ftp_home_dir  off</code><br>③、将状态改为on：<code>setsebool -P  ftp_home_dir  on</code><br>④、重启vsftp服务：<code>service vsftpd restart</code><br>有点纳闷的是，他的服务器根本就没开selinux，所以第②步根本没结果，理论上，这个解决办法应该没效果才对，可实际上，全部执行完成之后，发现可以上传文件和新建文件夹了。我去，还真是诡异，总之解决了问题就好。</p>
 </li>
 </ol>
 <hr>
-<h3 id="供参考命令">供参考命令</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">usermod -G ftpusers ftp1  // 修改用户所属用户组</span><br><span class="line">chown -R ftp1 <span class="string">'/www’  // 为用户ftp1配置目录权限</span></span><br></pre></td></tr></table></figure>
+<h3 id="供参考命令"><a href="#供参考命令" class="headerlink" title="供参考命令"></a>供参考命令</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">usermod -G ftpusers ftp1  // 修改用户所属用户组</div><div class="line">chown -R ftp1 <span class="string">'/www’  // 为用户ftp1配置目录权限</span></div></pre></td></tr></table></figure>
       
     </div>
     
@@ -246,7 +247,7 @@
 
 <div class="comments" id="comments"></div>
 <!-- 多说评论框 start -->
-<div class="ds-thread" data-thread-key="_posts%2Fvsftp%E5%AE%89%E8%A3%85.md" data-title="CentOS下安装vsftp" data-url="http://www.yczmm.com/vsftp安装.html"></div>
+<div class="ds-thread" data-thread-key="_posts%2Fvsftp%E5%AE%89%E8%A3%85.md" data-title="CentOS下安装vsftp" data-url="http://zhuifeng1017.github.io/vsftp安装.html"></div>
 <!-- 多说评论框 end -->
 <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 <script type="text/javascript">
@@ -267,7 +268,7 @@
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2016 大风
+    		&copy; 2017 大风
     	</div>
       	<div class="footer-right">
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
@@ -291,8 +292,8 @@
 		open_in_new: false
 	}
 </script>
-<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js" type="text/javascript"></script>
-<script src="/js/main.js" type="text/javascript"></script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script src="/js/main.js"></script>
 
 
 

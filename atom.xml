@@ -1,82 +1,99 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title><![CDATA[大风的博客]]></title>
-  <subtitle><![CDATA[生命不息,折腾不止]]></subtitle>
+  <title>大风的博客</title>
+  <subtitle>生命不息,折腾不止</subtitle>
   <link href="/atom.xml" rel="self"/>
-  <link href="http://www.yczmm.com/"/>
+  
+  <link href="http://zhuifeng1017.github.io/"/>
   <updated>2016-07-28T10:20:59.000Z</updated>
-  <id>http://www.yczmm.com/</id>
+  <id>http://zhuifeng1017.github.io/</id>
   
   <author>
-    <name><![CDATA[大风]]></name>
+    <name>大风</name>
     
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title><![CDATA[provisioning profile 在另外一台Mac上显示UUID]]></title>
-    <link href="http://www.yczmm.com/provisioning%20profile%20%E5%9C%A8%E5%8F%A6%E5%A4%96%E4%B8%80%E5%8F%B0Mac%E4%B8%8A%E6%98%BE%E7%A4%BAUUID.html"/>
-    <id>http://www.yczmm.com/provisioning profile 在另外一台Mac上显示UUID.html</id>
+    <title>provisioning profile 在另外一台Mac上显示UUID</title>
+    <link href="http://zhuifeng1017.github.io/provisioning%20profile%20%E5%9C%A8%E5%8F%A6%E5%A4%96%E4%B8%80%E5%8F%B0Mac%E4%B8%8A%E6%98%BE%E7%A4%BAUUID.html"/>
+    <id>http://zhuifeng1017.github.io/provisioning profile 在另外一台Mac上显示UUID.html</id>
     <published>2016-06-28T10:00:00.000Z</published>
     <updated>2016-07-28T10:20:59.000Z</updated>
+    
     <content type="html"><![CDATA[<p>  在一台Mac上配置好了XCode的provisioning profile，然后在另外一台Mac上却显示一串<em>UUID</em>。 这种情况是因为本地存在多个相同的provisioning profile文件(比如添加了新的设备后重新生成了provisioning)。</p>
 <p>  解决这个办法就是: 打开系统provisioning文件位置，全选全部删除，然后通过XCode重新download。 搞定！！！</p>
 ]]></content>
+    
     <summary type="html">
-    <![CDATA[<p>  在一台Mac上配置好了XCode的provisioning profile，然后在另外一台Mac上却显示一串<em>UUID</em>。 这种情况是因为本地存在多个相同的provisioning profile文件(比如添加了新的设备后重新生成了provisioning]]>
+    
+      &lt;p&gt;  在一台Mac上配置好了XCode的provisioning profile，然后在另外一台Mac上却显示一串&lt;em&gt;UUID&lt;/em&gt;。 这种情况是因为本地存在多个相同的provisioning profile文件(比如添加了新的设备后重新生成了provisioning
+    
     </summary>
     
-      <category term="ios" scheme="http://www.yczmm.com/tags/ios/"/>
+    
+      <category term="ios" scheme="http://zhuifeng1017.github.io/tags/ios/"/>
     
   </entry>
   
   <entry>
-    <title><![CDATA[App每次进入都要登陆]]></title>
-    <link href="http://www.yczmm.com/App%E6%AF%8F%E6%AC%A1%E8%BF%9B%E5%85%A5%E9%83%BD%E8%A6%81%E7%99%BB%E9%99%86.html"/>
-    <id>http://www.yczmm.com/App每次进入都要登陆.html</id>
+    <title>App每次进入都要登陆</title>
+    <link href="http://zhuifeng1017.github.io/App%E6%AF%8F%E6%AC%A1%E8%BF%9B%E5%85%A5%E9%83%BD%E8%A6%81%E7%99%BB%E9%99%86.html"/>
+    <id>http://zhuifeng1017.github.io/App每次进入都要登陆.html</id>
     <published>2016-06-20T06:00:00.000Z</published>
     <updated>2016-06-24T03:55:35.000Z</updated>
+    
     <content type="html"><![CDATA[<p><strong>iPhone6s 64G.    iOS 9.3.1</strong></p>
 <p>这几天手机遇到一个操蛋的问题， 每个App进入后都提示要登陆，包括支付宝，微博， 淘宝，京东….. （微信，QQ却没有这个问题）,what a fuck! 吃饭付钱时提示要输入密码，上淘宝京东买东西提示没有登陆… 连SS vpn也连接不上了…  无语了。。。。</p>
 <p>作为一名技术人员，我感觉是iOS系统出问题了，初步判断可能是系统存储配置文件文件出现bug了，写代码测试NSUserDefaults存储， fuck，在我这个手机上确实无法写入，而其他手机上是没有问题的。</p>
 <p>没办法了， 升级系统到iOS 9.3.2。 </p>
 <p>….. 升级之后问题是解决了，但是不知道是系统升级，还是因为手机重启了把问题解决了。</p>
 ]]></content>
+    
     <summary type="html">
-    <![CDATA[<p><strong>iPhone6s 64G.    iOS 9.3.1</strong></p>
-<p>这几天手机遇到一个操蛋的问题， 每个App进入后都提示要登陆，包括支付宝，微博， 淘宝，京东….. （微信，QQ却没有这个问题）,what a fuck! 吃饭付钱时提示要]]>
+    
+      &lt;p&gt;&lt;strong&gt;iPhone6s 64G.    iOS 9.3.1&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;这几天手机遇到一个操蛋的问题， 每个App进入后都提示要登陆，包括支付宝，微博， 淘宝，京东….. （微信，QQ却没有这个问题）,what a fuck! 吃饭付钱时提示要
+    
     </summary>
     
-      <category term="ios" scheme="http://www.yczmm.com/tags/ios/"/>
+    
+      <category term="ios" scheme="http://zhuifeng1017.github.io/tags/ios/"/>
     
   </entry>
   
   <entry>
-    <title><![CDATA[安装PonyDebugger遇到的坑]]></title>
-    <link href="http://www.yczmm.com/%E5%AE%89%E8%A3%85PonyDebugger%E9%81%87%E5%88%B0%E7%9A%84%E5%9D%91.html"/>
-    <id>http://www.yczmm.com/安装PonyDebugger遇到的坑.html</id>
+    <title>安装PonyDebugger遇到的坑</title>
+    <link href="http://zhuifeng1017.github.io/%E5%AE%89%E8%A3%85PonyDebugger%E9%81%87%E5%88%B0%E7%9A%84%E5%9D%91.html"/>
+    <id>http://zhuifeng1017.github.io/安装PonyDebugger遇到的坑.html</id>
     <published>2016-04-01T06:00:00.000Z</published>
     <updated>2016-04-01T08:47:52.000Z</updated>
+    
     <content type="html"><![CDATA[<p>按照github教程安装, 执行’ponyd update-devtools’时失败了，查看控制台输出信息，原来是<br>下载<a href="http://storage.googleapis.com/chromium-browser-continuous/Mac/152100/devtools_frontend.zip失败，" target="_blank" rel="external">http://storage.googleapis.com/chromium-browser-continuous/Mac/152100/devtools_frontend.zip失败，</a><br>（生在天朝原因你懂的）。<br>于是，翻墙手动下载了devtools_frontend.zip文件。<br>查看<code>~/Library/PonyDebugger/src/ponydebugger/ponyd/downloader.py</code>源文件，发现下载的devtools_frontend.zip会解压到<code>~/Library/PonyDebugger/src/devtools</code>目录。果然，这样做之后，再执行<br><code>ponyd serve --listen-interface=127.0.0.1</code>就没有报错了。</p>
-<p>以下为<code>ponyd update-devtools</code>时失败执行ponyd报错信息<br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">Traceback (most recent call last):</span><br><span class="line">  File <span class="string">"/usr/local/bin/ponyd"</span>, line <span class="number">5</span>, <span class="keyword">in</span> &lt;module&gt;</span><br><span class="line">    from pkg_resources import load_entry_point</span><br><span class="line">  File <span class="string">"/System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python/pkg_resources.py"</span>, line <span class="number">2793</span>, <span class="keyword">in</span> &lt;module&gt;</span><br><span class="line">    working_set.<span class="function"><span class="title">require</span><span class="params">(__requires__)</span></span></span><br><span class="line">  File <span class="string">"/System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python/pkg_resources.py"</span>, line <span class="number">673</span>, <span class="keyword">in</span> require</span><br><span class="line">    needed = self.<span class="function"><span class="title">resolve</span><span class="params">(parse_requirements(requirements)</span></span>)</span><br><span class="line">  File <span class="string">"/System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python/pkg_resources.py"</span>, line <span class="number">576</span>, <span class="keyword">in</span> resolve</span><br><span class="line">    raise <span class="function"><span class="title">DistributionNotFound</span><span class="params">(req)</span></span></span><br><span class="line">pkg_resources<span class="class">.DistributionNotFound</span>: tornado</span><br></pre></td></tr></table></figure></p>
+<p>以下为<code>ponyd update-devtools</code>时失败执行ponyd报错信息<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">Traceback (most recent <span class="keyword">call</span> <span class="keyword">last</span>):</div><div class="line">  <span class="keyword">File</span> <span class="string">"/usr/local/bin/ponyd"</span>, line <span class="number">5</span>, <span class="keyword">in</span> &lt;<span class="keyword">module</span>&gt;</div><div class="line">    <span class="keyword">from</span> pkg_resources <span class="keyword">import</span> load_entry_point</div><div class="line">  <span class="keyword">File</span> <span class="string">"/System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python/pkg_resources.py"</span>, line <span class="number">2793</span>, <span class="keyword">in</span> &lt;<span class="keyword">module</span>&gt;</div><div class="line">    working_set.require(__requires__)</div><div class="line">  <span class="keyword">File</span> <span class="string">"/System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python/pkg_resources.py"</span>, line <span class="number">673</span>, <span class="keyword">in</span> require</div><div class="line">    needed = self.resolve(parse_requirements(requirements))</div><div class="line">  <span class="keyword">File</span> <span class="string">"/System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python/pkg_resources.py"</span>, line <span class="number">576</span>, <span class="keyword">in</span> resolve</div><div class="line">    <span class="keyword">raise</span> DistributionNotFound(req)</div><div class="line">pkg_resources.DistributionNotFound: tornado</div></pre></td></tr></table></figure></p>
 ]]></content>
+    
     <summary type="html">
-    <![CDATA[<p>按照github教程安装, 执行’ponyd update-devtools’时失败了，查看控制台输出信息，原来是<br>下载<a href="http://storage.googleapis.com/chromium-browser-continuous/Mac/152]]>
+    
+      &lt;p&gt;按照github教程安装, 执行’ponyd update-devtools’时失败了，查看控制台输出信息，原来是&lt;br&gt;下载&lt;a href=&quot;http://storage.googleapis.com/chromium-browser-continuous/Mac/152
+    
     </summary>
     
-      <category term="PonyDebugger" scheme="http://www.yczmm.com/tags/PonyDebugger/"/>
     
-      <category term="ios" scheme="http://www.yczmm.com/tags/ios/"/>
+      <category term="ios" scheme="http://zhuifeng1017.github.io/tags/ios/"/>
+    
+      <category term="PonyDebugger" scheme="http://zhuifeng1017.github.io/tags/PonyDebugger/"/>
     
   </entry>
   
   <entry>
-    <title><![CDATA[pod在github上fork的repo]]></title>
-    <link href="http://www.yczmm.com/pod%E5%9C%A8github%E4%B8%8Afork%E7%9A%84repo.html"/>
-    <id>http://www.yczmm.com/pod在github上fork的repo.html</id>
+    <title>pod在github上fork的repo</title>
+    <link href="http://zhuifeng1017.github.io/pod%E5%9C%A8github%E4%B8%8Afork%E7%9A%84repo.html"/>
+    <id>http://zhuifeng1017.github.io/pod在github上fork的repo.html</id>
     <published>2016-03-20T06:00:00.000Z</published>
     <updated>2016-06-27T09:29:26.000Z</updated>
+    
     <content type="html"><![CDATA[<p><strong>在github上fork的某大牛的repo，需要做细微的修改，修改后用pod管理，如何实现呢？</strong><br>很简单在pod文件中这样写就可以了： </p>
 <p>pod ‘UIView+draggable’, :git =&gt; “<a href="https://github.com/zhuifeng1017/UIView-draggable.git" target="_blank" rel="external">https://github.com/zhuifeng1017/UIView-draggable.git</a>“</p>
 <p>表示: 使用 <a href="https://github.com/zhuifeng1017/UIView-draggable.git" target="_blank" rel="external">https://github.com/zhuifeng1017/UIView-draggable.git</a>  的master branch。<br>以后github上有修改， 执行pod update就可以同步了。</p>
@@ -91,64 +108,79 @@
 </ul>
 <p><a href="https://guides.cocoapods.org/using/the-podfile.html" target="_blank" rel="external">参考连接http://guides.cocoapods.org/</a> </p>
 ]]></content>
+    
     <summary type="html">
-    <![CDATA[<p><strong>在github上fork的某大牛的repo，需要做细微的修改，修改后用pod管理，如何实现呢？</strong><br>很简单在pod文件中这样写就可以了： </p>
-<p>pod ‘UIView+draggable’, :git =&gt; “<a hre]]>
+    
+      &lt;p&gt;&lt;strong&gt;在github上fork的某大牛的repo，需要做细微的修改，修改后用pod管理，如何实现呢？&lt;/strong&gt;&lt;br&gt;很简单在pod文件中这样写就可以了： &lt;/p&gt;
+&lt;p&gt;pod ‘UIView+draggable’, :git =&amp;gt; “&lt;a hre
+    
     </summary>
     
-      <category term="cocoapod" scheme="http://www.yczmm.com/tags/cocoapod/"/>
     
-      <category term="git" scheme="http://www.yczmm.com/tags/git/"/>
+      <category term="git" scheme="http://zhuifeng1017.github.io/tags/git/"/>
+    
+      <category term="cocoapod" scheme="http://zhuifeng1017.github.io/tags/cocoapod/"/>
     
   </entry>
   
   <entry>
-    <title><![CDATA[SIP (System Integrity Protection) with OS X 10.11, El Capitan]]></title>
-    <link href="http://www.yczmm.com/SIP%20(System%20Integrity%20Protection)%20with%20OS%20X%2010.11,%20El%20Capitan.html"/>
-    <id>http://www.yczmm.com/SIP (System Integrity Protection) with OS X 10.11, El Capitan.html</id>
+    <title>git检出标签</title>
+    <link href="http://zhuifeng1017.github.io/git%E6%A3%80%E5%87%BA%E6%A0%87%E7%AD%BE.html"/>
+    <id>http://zhuifeng1017.github.io/git检出标签.html</id>
+    <published>2016-02-25T06:00:00.000Z</published>
+    <updated>2016-04-07T06:23:20.000Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote>
+<p>在 Git 中你并不能真的检出一个标签，因为它们并不能像分支一样来回移动。 如果你想要工作目录与仓库中特定的标签版本完全一样，可以使用 git checkout -b [branchname] [tagname] 在特定的标签上创建一个新分支：<br> <figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ git checkout -<span class="selector-tag">b</span> version2 v2.<span class="number">0.0</span></div><div class="line">Switched to <span class="selector-tag">a</span> new branch <span class="string">'version2'</span></div></pre></td></tr></table></figure></p>
+<p>当然，如果在这之后又进行了一次提交，version2 分支会因为改动向前移动了，那么 version2 分支就会和 v2.0.0 标签稍微有些不同，这时就应该当心了。</p>
+</blockquote>
+<p><a href="https://git-scm.com/book/zh/v2/Git-%E5%9F%BA%E7%A1%80-%E6%89%93%E6%A0%87%E7%AD%BE" target="_blank" rel="external">参考连接</a> </p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;在 Git 中你并不能真的检出一个标签，因为它们并不能像分支一样来回移动。 如果你想要工作目录与仓库中特定的标签版本完全一样，可以使用 git checkout -b [branchname] [tagname] 在特定的标签上创建一个新分支：&lt;b
+    
+    </summary>
+    
+    
+      <category term="git" scheme="http://zhuifeng1017.github.io/tags/git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>SIP (System Integrity Protection) with OS X 10.11, El Capitan</title>
+    <link href="http://zhuifeng1017.github.io/SIP%20(System%20Integrity%20Protection)%20with%20OS%20X%2010.11,%20El%20Capitan.html"/>
+    <id>http://zhuifeng1017.github.io/SIP (System Integrity Protection) with OS X 10.11, El Capitan.html</id>
     <published>2016-02-25T06:00:00.000Z</published>
     <updated>2016-03-21T02:02:36.000Z</updated>
+    
     <content type="html"><![CDATA[<blockquote>
 <p>SIP功能是Apple在OSX上推出的系统完整性保护功能，对于普通MAC用户来说是一项安全保护功能，如果不了解他的作用请不要随意关闭，对于开发者来说，因为会使用到很多的第三方辅助工具（例如：Cocoapods、Homebrew），而这些工具可能会修改系统目录，在这些工具未推出适应OSX 10.11的版本时，有必要临时关闭SIP以确保开发工具的使用。</p>
 </blockquote>
 <p><a href="http://www.jianshu.com/p/0572336a0771" target="_blank" rel="external">&gt;&gt;&gt;如何关闭OSX 10.11 SIP (System Integrity Protection)</a> </p>
 ]]></content>
+    
     <summary type="html">
-    <![CDATA[<blockquote>
-<p>SIP功能是Apple在OSX上推出的系统完整性保护功能，对于普通MAC用户来说是一项安全保护功能，如果不了解他的作用请不要随意关闭，对于开发者来说，因为会使用到很多的第三方辅助工具（例如：Cocoapods、Homebrew），而这些工具可能会修]]>
+    
+      &lt;blockquote&gt;
+&lt;p&gt;SIP功能是Apple在OSX上推出的系统完整性保护功能，对于普通MAC用户来说是一项安全保护功能，如果不了解他的作用请不要随意关闭，对于开发者来说，因为会使用到很多的第三方辅助工具（例如：Cocoapods、Homebrew），而这些工具可能会修
+    
     </summary>
     
-      <category term="mac" scheme="http://www.yczmm.com/tags/mac/"/>
+    
+      <category term="mac" scheme="http://zhuifeng1017.github.io/tags/mac/"/>
     
   </entry>
   
   <entry>
-    <title><![CDATA[git检出标签]]></title>
-    <link href="http://www.yczmm.com/git%E6%A3%80%E5%87%BA%E6%A0%87%E7%AD%BE.html"/>
-    <id>http://www.yczmm.com/git检出标签.html</id>
-    <published>2016-02-25T06:00:00.000Z</published>
-    <updated>2016-04-07T06:23:20.000Z</updated>
-    <content type="html"><![CDATA[<blockquote>
-<p>在 Git 中你并不能真的检出一个标签，因为它们并不能像分支一样来回移动。 如果你想要工作目录与仓库中特定的标签版本完全一样，可以使用 git checkout -b [branchname] [tagname] 在特定的标签上创建一个新分支：<br> <figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout -<span class="tag">b</span> version2 v2.<span class="number">0.0</span></span><br><span class="line">Switched to <span class="tag">a</span> new branch <span class="string">'version2'</span></span><br></pre></td></tr></table></figure></p>
-<p>当然，如果在这之后又进行了一次提交，version2 分支会因为改动向前移动了，那么 version2 分支就会和 v2.0.0 标签稍微有些不同，这时就应该当心了。</p>
-</blockquote>
-<p><a href="https://git-scm.com/book/zh/v2/Git-%E5%9F%BA%E7%A1%80-%E6%89%93%E6%A0%87%E7%AD%BE" target="_blank" rel="external">参考连接</a> </p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<blockquote>
-<p>在 Git 中你并不能真的检出一个标签，因为它们并不能像分支一样来回移动。 如果你想要工作目录与仓库中特定的标签版本完全一样，可以使用 git checkout -b [branchname] [tagname] 在特定的标签上创建一个新分支：<b]]>
-    </summary>
-    
-      <category term="git" scheme="http://www.yczmm.com/tags/git/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[此证书的签发者无效]]></title>
-    <link href="http://www.yczmm.com/%E6%AD%A4%E8%AF%81%E4%B9%A6%E7%9A%84%E7%AD%BE%E5%8F%91%E8%80%85%E6%97%A0%E6%95%88.html"/>
-    <id>http://www.yczmm.com/此证书的签发者无效.html</id>
+    <title>此证书的签发者无效</title>
+    <link href="http://zhuifeng1017.github.io/%E6%AD%A4%E8%AF%81%E4%B9%A6%E7%9A%84%E7%AD%BE%E5%8F%91%E8%80%85%E6%97%A0%E6%95%88.html"/>
+    <id>http://zhuifeng1017.github.io/此证书的签发者无效.html</id>
     <published>2016-02-23T06:00:00.000Z</published>
     <updated>2016-02-23T06:11:49.000Z</updated>
+    
     <content type="html"><![CDATA[<p>很多小伙伴过完年回来，打包ipa时碰到了坑爹的问题：“此证书的签发者无效”<br>解决办法：</p>
 <blockquote>
 <ol>
@@ -159,23 +191,28 @@
 </blockquote>
 <p>[参考连接 <a href="https://segmentfault.com/q/1010000004433963" target="_blank" rel="external">iOS相关，过年回来电脑上的证书都失效了，求大神！</a> </p>
 ]]></content>
+    
     <summary type="html">
-    <![CDATA[<p>很多小伙伴过完年回来，打包ipa时碰到了坑爹的问题：“此证书的签发者无效”<br>解决办法：</p>
-<blockquote>
-<ol>
-<li><a href="https://developer.apple.com/certificationauthority/Appl]]>
+    
+      &lt;p&gt;很多小伙伴过完年回来，打包ipa时碰到了坑爹的问题：“此证书的签发者无效”&lt;br&gt;解决办法：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;https://developer.apple.com/certificationauthority/Appl
+    
     </summary>
     
-      <category term="ios" scheme="http://www.yczmm.com/tags/ios/"/>
+    
+      <category term="ios" scheme="http://zhuifeng1017.github.io/tags/ios/"/>
     
   </entry>
   
   <entry>
-    <title><![CDATA[mongodb操作]]></title>
-    <link href="http://www.yczmm.com/mongodb%E6%93%8D%E4%BD%9C.html"/>
-    <id>http://www.yczmm.com/mongodb操作.html</id>
+    <title>mongodb操作</title>
+    <link href="http://zhuifeng1017.github.io/mongodb%E6%93%8D%E4%BD%9C.html"/>
+    <id>http://zhuifeng1017.github.io/mongodb操作.html</id>
     <published>2016-01-11T03:32:00.000Z</published>
     <updated>2016-01-11T03:53:38.000Z</updated>
+    
     <content type="html"><![CDATA[<p><strong>一. 索引</strong></p>
 <ul>
 <li>MongoDB使用 <code>ensureIndex()</code>方法来创建索引,语法中 Key 值为你要创建的索引字段，1为指定按升序创建索引，如果你想按降序来创建索引指定为-1即可。<br><code>&gt;db.COLLECTION_NAME.ensureIndex({KEY:1})</code></li>
@@ -184,104 +221,127 @@
 </ul>
 <p><strong>最后：</strong><br>MacOS下的mongodb客户端工具:<br>推荐使用<em>mongohub</em>，安装方法：<br><code>brew-cask install mongohub</code><br>不要用<em>Robomongo</em>，有bug，连上后看不到数据库，根本无法使用。</p>
 ]]></content>
+    
     <summary type="html">
-    <![CDATA[<p><strong>一. 索引</strong></p>
-<ul>
-<li>MongoDB使用 <code>ensureIndex()</code>方法来创建索引,语法中 Key 值为你要创建的索引字段，1为指定按升序创建索引，如果你想按降序来创建索引指定为-1即可。<br><]]>
+    
+      &lt;p&gt;&lt;strong&gt;一. 索引&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;MongoDB使用 &lt;code&gt;ensureIndex()&lt;/code&gt;方法来创建索引,语法中 Key 值为你要创建的索引字段，1为指定按升序创建索引，如果你想按降序来创建索引指定为-1即可。&lt;br&gt;&lt;
+    
     </summary>
     
-      <category term="MongoDB" scheme="http://www.yczmm.com/tags/MongoDB/"/>
+    
+      <category term="MongoDB" scheme="http://zhuifeng1017.github.io/tags/MongoDB/"/>
     
   </entry>
   
   <entry>
-    <title><![CDATA[兑付AppStore收入遇到的问题]]></title>
-    <link href="http://www.yczmm.com/%E5%85%91%E4%BB%98AppStore%E6%94%B6%E5%85%A5%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98.html"/>
-    <id>http://www.yczmm.com/兑付AppStore收入遇到的问题.html</id>
+    <title>兑付AppStore收入遇到的问题</title>
+    <link href="http://zhuifeng1017.github.io/%E5%85%91%E4%BB%98AppStore%E6%94%B6%E5%85%A5%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98.html"/>
+    <id>http://zhuifeng1017.github.io/兑付AppStore收入遇到的问题.html</id>
     <published>2015-12-22T07:26:00.000Z</published>
     <updated>2015-12-22T08:08:28.000Z</updated>
+    
     <content type="html"><![CDATA[<p>想把从AppStore赚到的钱取不出来并不是一件简单的事情，民生银行管的就是严，要求提供Apple打款给我们的邮件证明，否则永远别想把钱取出来。找遍了邮箱也没有这种邮件。然后打电话咨询了iTunesConnect技术支持，得到了如下回复：在<strong>iTunes Connect资源和帮助</strong>页面，用英文找Apple要票据，一定要用英文,英文,英文。<br><a id="more"></a><br><img src="images/invoiceingApple.jpg" alt=" "><br><img src="images/invoiceingApple2.jpg" alt=" "></p>
 ]]></content>
+    
     <summary type="html">
-    <![CDATA[<p>想把从AppStore赚到的钱取不出来并不是一件简单的事情，民生银行管的就是严，要求提供Apple打款给我们的邮件证明，否则永远别想把钱取出来。找遍了邮箱也没有这种邮件。然后打电话咨询了iTunesConnect技术支持，得到了如下回复：在<strong>iTunes Connect资源和帮助</strong>页面，用英文找Apple要票据，一定要用英文,英文,英文。<br>]]>
+    
+      &lt;p&gt;想把从AppStore赚到的钱取不出来并不是一件简单的事情，民生银行管的就是严，要求提供Apple打款给我们的邮件证明，否则永远别想把钱取出来。找遍了邮箱也没有这种邮件。然后打电话咨询了iTunesConnect技术支持，得到了如下回复：在&lt;strong&gt;iTunes Connect资源和帮助&lt;/strong&gt;页面，用英文找Apple要票据，一定要用英文,英文,英文。&lt;br&gt;
     
     </summary>
     
-      <category term="ios" scheme="http://www.yczmm.com/tags/ios/"/>
     
-      <category term="发现" scheme="http://www.yczmm.com/tags/%E5%8F%91%E7%8E%B0/"/>
+      <category term="ios" scheme="http://zhuifeng1017.github.io/tags/ios/"/>
+    
+      <category term="发现" scheme="http://zhuifeng1017.github.io/tags/%E5%8F%91%E7%8E%B0/"/>
     
   </entry>
   
   <entry>
-    <title><![CDATA[Mac下外接USB3.0分线器致WiFi连接超时]]></title>
-    <link href="http://www.yczmm.com/Mac%E4%B8%8B%E5%A4%96%E6%8E%A5USB3.0%E9%9B%86%E7%BA%BF%E5%99%A8%E8%87%B4WiFi%E8%BF%9E%E6%8E%A5%E8%B6%85%E6%97%B6.html"/>
-    <id>http://www.yczmm.com/Mac下外接USB3.0集线器致WiFi连接超时.html</id>
+    <title>Mac下外接USB3.0分线器致WiFi连接超时</title>
+    <link href="http://zhuifeng1017.github.io/Mac%E4%B8%8B%E5%A4%96%E6%8E%A5USB3.0%E9%9B%86%E7%BA%BF%E5%99%A8%E8%87%B4WiFi%E8%BF%9E%E6%8E%A5%E8%B6%85%E6%97%B6.html"/>
+    <id>http://zhuifeng1017.github.io/Mac下外接USB3.0集线器致WiFi连接超时.html</id>
     <published>2015-12-21T06:00:00.000Z</published>
     <updated>2015-12-21T06:17:33.000Z</updated>
+    
     <content type="html"><![CDATA[<p>MacBook Pro只有两个USB接口，实在太少。买了个贵的usb3.0的分线器，插上后却导致WiFi连不上，一直提示超时，拔掉就正常了。坑，只能用便宜的usb2.0。</p>
 <blockquote>
 <p>有时在 USB 3 设备连接至电脑时，使用 Wi-Fi 或蓝牙设备会遇到问题。可能是出现了什么问题？<br>部分 USB 3 设备（尤其是硬盘驱动器）可能会产生射频干扰，这些射频干扰可能会导致在 2.4 GHz 频段中工作的 Wi-Fi 和蓝牙设备出现与电脑通信方面的问题。请勿将硬盘驱动器或其他 USB 设备放在 Mac 背后的屏幕铰链附近。Wi-Fi 和蓝牙的天线位于该处，若将 USB 3 设备放在该处，则可能会干扰无线连接。请参阅此白皮书了解更多信息。</p>
 </blockquote>
 <p>参考连接: <u><a href="https://www.zhihu.com/question/23249161" target="_blank" rel="external">macbook WIFI经常性连接超时是什么原因–知乎</a></u><br><u><a href="https://support.apple.com/zh-cn/HT5172#15" target="_blank" rel="external">在 Mac 电脑上使用 USB 3 设备的常见问题–apple.com</a>  </u></p>
 ]]></content>
+    
     <summary type="html">
-    <![CDATA[<p>MacBook Pro只有两个USB接口，实在太少。买了个贵的usb3.0的分线器，插上后却导致WiFi连不上，一直提示超时，拔掉就正常了。坑，只能用便宜的usb2.0。</p>
-<blockquote>
-<p>有时在 USB 3 设备连接至电脑时，使用 Wi-Fi 或蓝牙]]>
+    
+      &lt;p&gt;MacBook Pro只有两个USB接口，实在太少。买了个贵的usb3.0的分线器，插上后却导致WiFi连不上，一直提示超时，拔掉就正常了。坑，只能用便宜的usb2.0。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;有时在 USB 3 设备连接至电脑时，使用 Wi-Fi 或蓝牙
+    
     </summary>
     
-      <category term="发现" scheme="http://www.yczmm.com/tags/%E5%8F%91%E7%8E%B0/"/>
+    
+      <category term="发现" scheme="http://zhuifeng1017.github.io/tags/%E5%8F%91%E7%8E%B0/"/>
     
   </entry>
   
   <entry>
-    <title><![CDATA[Wondershare Video Converter Ultimate]]></title>
-    <link href="http://www.yczmm.com/Wondershare%20Video%20Converter%20Ultimate.html"/>
-    <id>http://www.yczmm.com/Wondershare Video Converter Ultimate.html</id>
+    <title>Wondershare Video Converter Ultimate</title>
+    <link href="http://zhuifeng1017.github.io/Wondershare%20Video%20Converter%20Ultimate.html"/>
+    <id>http://zhuifeng1017.github.io/Wondershare Video Converter Ultimate.html</id>
     <published>2015-12-21T05:40:00.000Z</published>
     <updated>2015-12-21T05:46:27.000Z</updated>
+    
     <content type="html"><![CDATA[<p>Mac上最好的万能视频格式转换工具（Wondershare Video Converter Ultimate)</p>
 <p>这是一款Mac平台的万能视频格式转换器，可以将包括MP4、MOV 、3GP、AVI、WMV、RM、MPEG-1、MPEG-2、FLV、ASF、M4A、WMA、WAV、MP3、AAC和AC3在内的多媒体格式转换为便携式视频/音频播放器（Zune、iPod、Apple TV、iPhone、PSP）支持的格式,且不会失去原有的品质。它功能强大，支持视频编辑，可以定制文件大小和输出质量。<br><a id="more"></a><br>序列号：<br>123@mail.com<br>7846802592DDBF09C5865D465052C73C<br>321@mail.com<br>FA42B43F7B0B320C0EFE5A0730B0AA37<br>789@mail.com<br>9D3E1A075057734CD0D5E436F8542925<br>温馨提示：安装和输入序列号时不要联网</p>
 <p>参考连接: <u><a href="http://www.yunrui.co/22325.html" target="_blank" rel="external">Wondershare Video Converter Ultimate</a></u></p>
 ]]></content>
+    
     <summary type="html">
-    <![CDATA[<p>Mac上最好的万能视频格式转换工具（Wondershare Video Converter Ultimate)</p>
-<p>这是一款Mac平台的万能视频格式转换器，可以将包括MP4、MOV 、3GP、AVI、WMV、RM、MPEG-1、MPEG-2、FLV、ASF、M4A、WMA、WAV、MP3、AAC和AC3在内的多媒体格式转换为便携式视频/音频播放器（Zune、iPod、Apple TV、iPhone、PSP）支持的格式,且不会失去原有的品质。它功能强大，支持视频编辑，可以定制文件大小和输出质量。<br>]]>
+    
+      &lt;p&gt;Mac上最好的万能视频格式转换工具（Wondershare Video Converter Ultimate)&lt;/p&gt;
+&lt;p&gt;这是一款Mac平台的万能视频格式转换器，可以将包括MP4、MOV 、3GP、AVI、WMV、RM、MPEG-1、MPEG-2、FLV、ASF、M4A、WMA、WAV、MP3、AAC和AC3在内的多媒体格式转换为便携式视频/音频播放器（Zune、iPod、Apple TV、iPhone、PSP）支持的格式,且不会失去原有的品质。它功能强大，支持视频编辑，可以定制文件大小和输出质量。&lt;br&gt;
     
     </summary>
     
-      <category term="发现" scheme="http://www.yczmm.com/tags/%E5%8F%91%E7%8E%B0/"/>
+    
+      <category term="发现" scheme="http://zhuifeng1017.github.io/tags/%E5%8F%91%E7%8E%B0/"/>
     
   </entry>
   
   <entry>
-    <title><![CDATA[systemLayoutSizeFittingSize return 0 for UITableViewCell]]></title>
-    <link href="http://www.yczmm.com/systemLayoutSizeFittingSize_return0.html"/>
-    <id>http://www.yczmm.com/systemLayoutSizeFittingSize_return0.html</id>
+    <title>systemLayoutSizeFittingSize return 0 for UITableViewCell</title>
+    <link href="http://zhuifeng1017.github.io/systemLayoutSizeFittingSize_return0.html"/>
+    <id>http://zhuifeng1017.github.io/systemLayoutSizeFittingSize_return0.html</id>
     <published>2015-12-18T06:20:00.000Z</published>
     <updated>2015-12-21T08:17:24.000Z</updated>
+    
     <content type="html"><![CDATA[<p>The problem is that your constraints are not determinative of the height of the cell. You have not pinned the top of the image view or the bottom of the image view to its superview (the contentView). So the cell has nothing internal to keep it from collapsing all the way to zero, as it were, when you call systemLayoutSizeFittingSize.</p>
 <p>To put it another way: the way systemLayoutSizeFittingSize works is by treating something’s internal constraints as struts that give it a minimum (or maximum) size. You have no struts.</p>
 <p>大概意思可能是：没有设置相对于<strong>the contentView</strong>的<strong>Top</strong>或<strong>Bottom</strong>的约束</p>
 <p>参考stackoverflow.com： <a href="http://stackoverflow.com/questions/26598896/why-is-systemlayoutsizefittingsize-returning-0-0-for-uitableviewcell" target="_blank" rel="external">Why is systemLayoutSizeFittingSize returning (0, 0) for UITableViewCell</a></p>
 ]]></content>
+    
     <summary type="html">
-    <![CDATA[<p>The problem is that your constraints are not determinative of the height of the cell. You have not pinned the top of the image view or th]]>
+    
+      &lt;p&gt;The problem is that your constraints are not determinative of the height of the cell. You have not pinned the top of the image view or th
+    
     </summary>
     
-      <category term="autolayout" scheme="http://www.yczmm.com/tags/autolayout/"/>
     
-      <category term="ios" scheme="http://www.yczmm.com/tags/ios/"/>
+      <category term="ios" scheme="http://zhuifeng1017.github.io/tags/ios/"/>
+    
+      <category term="autolayout" scheme="http://zhuifeng1017.github.io/tags/autolayout/"/>
     
   </entry>
   
   <entry>
-    <title><![CDATA[Xcode pragma marks]]></title>
-    <link href="http://www.yczmm.com/Xcode-pragma-marks.html"/>
-    <id>http://www.yczmm.com/Xcode-pragma-marks.html</id>
+    <title>Xcode pragma marks</title>
+    <link href="http://zhuifeng1017.github.io/Xcode-pragma-marks.html"/>
+    <id>http://zhuifeng1017.github.io/Xcode-pragma-marks.html</id>
     <published>2015-12-10T09:42:25.000Z</published>
     <updated>2015-12-10T09:54:05.000Z</updated>
+    
     <content type="html"><![CDATA[<ol>
 <li>//TODO:</li>
 <li>//FIXME:</li>
@@ -289,164 +349,197 @@
 <li>//???:</li>
 </ol>
 <p>参考： <a href="http://blog.reigndesign.com/blog/10-xcode-power-user-tips-for-iphone-devs/" target="_blank" rel="external">10 Xcode power user tips for iPhone devs</a><br><a href="http://stackoverflow.com/questions/5891193/xcode-using-fixme-todo" target="_blank" rel="external">Xcode using FIXME, TODO, ???,?</a></p>
-<p>in XCode, below is work:<br><figure class="highlight 1c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//          <span class="doctag">FIXME:</span> This works.</span></span><br><span class="line">  <span class="comment">//<span class="doctag">TODO:</span> This works.</span></span><br><span class="line">    <span class="comment">//                  !!!: Working.</span></span><br><span class="line"><span class="comment">// // //???: Works as well.</span></span><br></pre></td></tr></table></figure></p>
+<p>in XCode, below is work:<br><figure class="highlight awk"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="regexp">//</span>          FIXME: This works.</div><div class="line">  <span class="regexp">//</span>TODO: This works.</div><div class="line">    <span class="regexp">//</span>                  !!!: Working.</div><div class="line"><span class="regexp">//</span> <span class="regexp">//</span> <span class="regexp">//</span>???: Works as well.</div></pre></td></tr></table></figure></p>
 ]]></content>
+    
     <summary type="html">
-    <![CDATA[<ol>
-<li>//TODO:</li>
-<li>//FIXME:</li>
-<li>//!!!:</li>
-<li>//???:</li>
-</ol>
-<p>参考： <a href="http://blog.reigndesign.com/blog/10-xcode-powe]]>
+    
+      &lt;ol&gt;
+&lt;li&gt;//TODO:&lt;/li&gt;
+&lt;li&gt;//FIXME:&lt;/li&gt;
+&lt;li&gt;//!!!:&lt;/li&gt;
+&lt;li&gt;//???:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;参考： &lt;a href=&quot;http://blog.reigndesign.com/blog/10-xcode-powe
+    
     </summary>
     
-      <category term="ios" scheme="http://www.yczmm.com/tags/ios/"/>
     
-      <category term="xcode" scheme="http://www.yczmm.com/tags/xcode/"/>
+      <category term="ios" scheme="http://zhuifeng1017.github.io/tags/ios/"/>
+    
+      <category term="xcode" scheme="http://zhuifeng1017.github.io/tags/xcode/"/>
     
   </entry>
   
   <entry>
-    <title><![CDATA[ios8.3之后查看sandbox]]></title>
-    <link href="http://www.yczmm.com/ios8-3%E4%B9%8B%E5%90%8E%E6%9F%A5%E7%9C%8Bsandbox.html"/>
-    <id>http://www.yczmm.com/ios8-3之后查看sandbox.html</id>
+    <title>ios8.3之后查看sandbox</title>
+    <link href="http://zhuifeng1017.github.io/ios8-3%E4%B9%8B%E5%90%8E%E6%9F%A5%E7%9C%8Bsandbox.html"/>
+    <id>http://zhuifeng1017.github.io/ios8-3之后查看sandbox.html</id>
     <published>2015-11-08T03:10:26.000Z</published>
     <updated>2015-11-08T04:05:37.000Z</updated>
+    
     <content type="html"><![CDATA[<p>ios8.3之后，苹果封锁了沙盒，第三方软件ifunbox，itools都无法查看应用程序的数据了。</p>
 <blockquote>
 <p>ifunbox报错信息：<br>App Sandbox access is restricted by Apple to ones with ‘iTunes File Sharing’ enabled since iOS 8.3. Jailbreak is required to open the sandbox of this App.</p>
 </blockquote>
 <p>看来ios8.3之后，只能用xcode查看sandbox数据了.<br><a id="more"></a><br><img src="http://iid.oss-cn-hangzhou.aliyuncs.com/Site%2FB27E76B1-FFA3-4641-A06A-815F366D710D.png" alt=" "></p>
 ]]></content>
+    
     <summary type="html">
-    <![CDATA[<p>ios8.3之后，苹果封锁了沙盒，第三方软件ifunbox，itools都无法查看应用程序的数据了。</p>
-<blockquote>
-<p>ifunbox报错信息：<br>App Sandbox access is restricted by Apple to ones with ‘iTunes File Sharing’ enabled since iOS 8.3. Jailbreak is required to open the sandbox of this App.</p>
-</blockquote>
-<p>看来ios8.3之后，只能用xcode查看sandbox数据了.<br>]]>
+    
+      &lt;p&gt;ios8.3之后，苹果封锁了沙盒，第三方软件ifunbox，itools都无法查看应用程序的数据了。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;ifunbox报错信息：&lt;br&gt;App Sandbox access is restricted by Apple to ones with ‘iTunes File Sharing’ enabled since iOS 8.3. Jailbreak is required to open the sandbox of this App.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;看来ios8.3之后，只能用xcode查看sandbox数据了.&lt;br&gt;
     
     </summary>
     
-      <category term="ios" scheme="http://www.yczmm.com/tags/ios/"/>
+    
+      <category term="ios" scheme="http://zhuifeng1017.github.io/tags/ios/"/>
     
   </entry>
   
   <entry>
-    <title><![CDATA[AppStore加急审核]]></title>
-    <link href="http://www.yczmm.com/AppStore%E5%8A%A0%E6%80%A5%E5%AE%A1%E6%A0%B8.html"/>
-    <id>http://www.yczmm.com/AppStore加急审核.html</id>
+    <title>AppStore加急审核</title>
+    <link href="http://zhuifeng1017.github.io/AppStore%E5%8A%A0%E6%80%A5%E5%AE%A1%E6%A0%B8.html"/>
+    <id>http://zhuifeng1017.github.io/AppStore加急审核.html</id>
     <published>2015-10-31T10:13:17.000Z</published>
     <updated>2015-10-31T10:31:26.000Z</updated>
+    
     <content type="html"><![CDATA[<p>上周五更新了版本，一般情况下审核都需要一周时间，之前听过有加急审核，但一直没有用过。由于近期ios9系统版本更新比较快，我们APP存在一些适配问题，尝试了一把加急审核：</p>
 <blockquote>
 <p>以下是加急审核填写的理由：<br>Because of iOS9 compatible issue,<br>user cannot login with wechat and qq account,<br>it cause a majority of users cannot login out app.<br>So, we hope can apply for a expedited review, thank you very much.</p>
 </blockquote>
 <p>效果杠杠的，周一申请了加急审核，周二立马就审核过了。</p>
 ]]></content>
+    
     <summary type="html">
-    <![CDATA[<p>上周五更新了版本，一般情况下审核都需要一周时间，之前听过有加急审核，但一直没有用过。由于近期ios9系统版本更新比较快，我们APP存在一些适配问题，尝试了一把加急审核：</p>
-<blockquote>
-<p>以下是加急审核填写的理由：<br>Because of iOS9]]>
+    
+      &lt;p&gt;上周五更新了版本，一般情况下审核都需要一周时间，之前听过有加急审核，但一直没有用过。由于近期ios9系统版本更新比较快，我们APP存在一些适配问题，尝试了一把加急审核：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;以下是加急审核填写的理由：&lt;br&gt;Because of iOS9
+    
     </summary>
     
-      <category term="ios" scheme="http://www.yczmm.com/tags/ios/"/>
+    
+      <category term="ios" scheme="http://zhuifeng1017.github.io/tags/ios/"/>
     
   </entry>
   
   <entry>
-    <title><![CDATA[ImageMagick处理图片]]></title>
-    <link href="http://www.yczmm.com/ImageMagick%E5%A4%84%E7%90%86gif.html"/>
-    <id>http://www.yczmm.com/ImageMagick处理gif.html</id>
+    <title>ImageMagick处理图片</title>
+    <link href="http://zhuifeng1017.github.io/ImageMagick%E5%A4%84%E7%90%86gif.html"/>
+    <id>http://zhuifeng1017.github.io/ImageMagick处理gif.html</id>
     <published>2015-09-23T06:04:53.000Z</published>
     <updated>2015-12-22T08:16:20.000Z</updated>
+    
     <content type="html"><![CDATA[<p>ImageMagick是一系列的用于修改、加工图像的命令行工具。ImageMagick能够快速地使用命令行对图片进行操作，对大量的图片进行批处理。</p>
 <p>在MAC OS安装，如果系统装了brew，则直接命令行下执行：<br><code>brew install imagemagick</code></p>
-<h3 id="gif处理：">gif处理：</h3><ol>
+<h3 id="gif处理："><a href="#gif处理：" class="headerlink" title="gif处理："></a>gif处理：</h3><ol>
 <li>分离gif到jpg/png等.<br><code>convert -coalesce 1.gif out%05d.jpg</code><br>说明：<code>out%05d</code>是格式化输入，输出JPG文件为out00001.jpg，out00002.jpg …</li>
 <li>只取gif第1帧<br><code>convert -coalesce 1.gif -delete 1--1  out.jpg</code><br>说明：-delete 1–1,表示删除第1帧到最后一帧（-1表示last index），也就是保留第0帧。</li>
 </ol>
-<h3 id="压缩">压缩</h3><p>convert -quality 50 -resize 50%x50% src.jpg dst.jpg<br>-quality 值为0-100之间的数值,数字越大,质量越好,一般指定70-80,基本上看不出前后的差别<br>-resize </p>
+<h3 id="压缩"><a href="#压缩" class="headerlink" title="压缩"></a>压缩</h3><p>convert -quality 50 -resize 50%x50% src.jpg dst.jpg<br>-quality 值为0-100之间的数值,数字越大,质量越好,一般指定70-80,基本上看不出前后的差别<br>-resize </p>
 <p>参考连接:<a href="http://segmentfault.com/a/1190000000442060" target="_blank" rel="external">ImageMagick 命令行下图像处理的利器-segmentfault</a></p>
 ]]></content>
+    
     <summary type="html">
-    <![CDATA[<p>ImageMagick是一系列的用于修改、加工图像的命令行工具。ImageMagick能够快速地使用命令行对图片进行操作，对大量的图片进行批处理。</p>
-<p>在MAC OS安装，如果系统装了brew，则直接命令行下执行：<br><code>brew install im]]>
+    
+      &lt;p&gt;ImageMagick是一系列的用于修改、加工图像的命令行工具。ImageMagick能够快速地使用命令行对图片进行操作，对大量的图片进行批处理。&lt;/p&gt;
+&lt;p&gt;在MAC OS安装，如果系统装了brew，则直接命令行下执行：&lt;br&gt;&lt;code&gt;brew install im
+    
     </summary>
     
-      <category term="ImageMagick" scheme="http://www.yczmm.com/tags/ImageMagick/"/>
     
-      <category term="发现" scheme="http://www.yczmm.com/tags/%E5%8F%91%E7%8E%B0/"/>
+      <category term="发现" scheme="http://zhuifeng1017.github.io/tags/%E5%8F%91%E7%8E%B0/"/>
+    
+      <category term="ImageMagick" scheme="http://zhuifeng1017.github.io/tags/ImageMagick/"/>
     
   </entry>
   
   <entry>
-    <title><![CDATA[动态计算UICollectionView cell width]]></title>
-    <link href="http://www.yczmm.com/%E5%8A%A8%E6%80%81%E8%AE%A1%E7%AE%97UICollectionView-cell-width.html"/>
-    <id>http://www.yczmm.com/动态计算UICollectionView-cell-width.html</id>
+    <title>动态计算UICollectionView cell width</title>
+    <link href="http://zhuifeng1017.github.io/%E5%8A%A8%E6%80%81%E8%AE%A1%E7%AE%97UICollectionView-cell-width.html"/>
+    <id>http://zhuifeng1017.github.io/动态计算UICollectionView-cell-width.html</id>
     <published>2015-09-20T05:34:37.000Z</published>
     <updated>2015-10-09T14:44:17.000Z</updated>
-    <content type="html"><![CDATA[<p>假设需求是每行cell数量(columnCount)是固定的，动态计算cell width<br><figure class="highlight objectivec"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">- (<span class="built_in">CGSize</span>)cellSize &#123;</span><br><span class="line">    <span class="built_in">UICollectionViewFlowLayout</span> *flowLayout = (<span class="built_in">UICollectionViewFlowLayout</span> *)<span class="keyword">self</span><span class="variable">.collectionView</span><span class="variable">.collectionViewLayout</span>;</span><br><span class="line">    <span class="built_in">CGFloat</span> width = (((<span class="keyword">self</span><span class="variable">.collectionView</span><span class="variable">.bounds</span><span class="variable">.size</span><span class="variable">.width</span> - <span class="keyword">self</span><span class="variable">.collectionView</span><span class="variable">.contentInset</span><span class="variable">.left</span> - <span class="keyword">self</span><span class="variable">.collectionView</span><span class="variable">.contentInset</span><span class="variable">.right</span>) - (columnCount - <span class="number">1</span>) * flowLayout<span class="variable">.minimumInteritemSpacing</span>) / columnCount);</span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">CGSizeMake</span>(width, width);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+    
+    <content type="html"><![CDATA[<p>假设需求是每行cell数量(columnCount)是固定的，动态计算cell width<br><figure class="highlight objectivec"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">- (<span class="built_in">CGSize</span>)cellSize &#123;</div><div class="line">    <span class="built_in">UICollectionViewFlowLayout</span> *flowLayout = (<span class="built_in">UICollectionViewFlowLayout</span> *)<span class="keyword">self</span>.collectionView.collectionViewLayout;</div><div class="line">    <span class="built_in">CGFloat</span> width = (((<span class="keyword">self</span>.collectionView.bounds.size.width - <span class="keyword">self</span>.collectionView.contentInset.left - <span class="keyword">self</span>.collectionView.contentInset.right) - (columnCount - <span class="number">1</span>) * flowLayout.minimumInteritemSpacing) / columnCount);</div><div class="line">    <span class="keyword">return</span> <span class="built_in">CGSizeMake</span>(width, width);</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
 ]]></content>
+    
     <summary type="html">
-    <![CDATA[<p>假设需求是每行cell数量(columnCount)是固定的，动态计算cell width<br><figure class="highlight objectivec"><table><tr><td class="gutter"><pre><span class="lin]]>
+    
+      &lt;p&gt;假设需求是每行cell数量(columnCount)是固定的，动态计算cell width&lt;br&gt;&lt;figure class=&quot;highlight objectivec&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line
+    
     </summary>
     
-      <category term="UICollectionView" scheme="http://www.yczmm.com/tags/UICollectionView/"/>
     
-      <category term="autolayout" scheme="http://www.yczmm.com/tags/autolayout/"/>
+      <category term="ios" scheme="http://zhuifeng1017.github.io/tags/ios/"/>
     
-      <category term="ios" scheme="http://www.yczmm.com/tags/ios/"/>
+      <category term="autolayout" scheme="http://zhuifeng1017.github.io/tags/autolayout/"/>
+    
+      <category term="UICollectionView" scheme="http://zhuifeng1017.github.io/tags/UICollectionView/"/>
     
   </entry>
   
   <entry>
-    <title><![CDATA[XCodeGhost-我也中招了]]></title>
-    <link href="http://www.yczmm.com/XCodeGhost-%E6%88%91%E4%B9%9F%E4%B8%AD%E6%8B%9B%E4%BA%86.html"/>
-    <id>http://www.yczmm.com/XCodeGhost-我也中招了.html</id>
+    <title>XCodeGhost-我也中招了</title>
+    <link href="http://zhuifeng1017.github.io/XCodeGhost-%E6%88%91%E4%B9%9F%E4%B8%AD%E6%8B%9B%E4%BA%86.html"/>
+    <id>http://zhuifeng1017.github.io/XCodeGhost-我也中招了.html</id>
     <published>2015-09-19T10:43:25.000Z</published>
     <updated>2015-09-19T10:47:53.000Z</updated>
-    <content type="html"><![CDATA[<p>这两天被<strong>XCodeGhost</strong>搞得人心惶惶。检查了一下我从百度网盘下载的xcode, 靠, 居然中招了！！！<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ shasum Xcode_6<span class="number">.4</span>.dmg </span><br><span class="line">$ a836d8fa0fce198e061b7b38b826178b44c053a8  Xcode_6<span class="number">.4</span>.dmg</span><br></pre></td></tr></table></figure></p>
+    
+    <content type="html"><![CDATA[<p>这两天被<strong>XCodeGhost</strong>搞得人心惶惶。检查了一下我从百度网盘下载的xcode, 靠, 居然中招了！！！<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span><span class="bash"> shasum Xcode_6.4.dmg </span></div><div class="line"><span class="meta">$</span><span class="bash"> a836d8fa0fce198e061b7b38b826178b44c053a8  Xcode_6.4.dmg</span></div></pre></td></tr></table></figure></p>
 <p><a href="http://36kr.com/chouti/5037588?utm_source=chouti" target="_blank" rel="external">滴滴、网易云音乐都中招的 XcodeGhost 病毒是怎么回事？</a></p>
 <blockquote>
 <p>随后很多留言的小伙伴们纷纷表示中招，@谁敢乱说话表示：”还是不能相信迅雷，我是把官网上的下载URL复制到迅雷里下载的，还是中招了。我说一下：有问题的Xcode6.4.dmg的sha1是：a836d8fa0fce198e061b7b38b826178b44c053a8，官方正确的是：672e3dcb7727fc6db071e5a8528b70aa03900bb0，大家一定要校验。”另外还有一位小伙伴表示他是在百度网盘上下载的，也中招了。</p>
 </blockquote>
 ]]></content>
+    
     <summary type="html">
-    <![CDATA[<p>这两天被<strong>XCodeGhost</strong>搞得人心惶惶。检查了一下我从百度网盘下载的xcode, 靠, 居然中招了！！！<br><figure class="highlight cpp"><table><tr><td class="gutter"><pr]]>
+    
+      &lt;p&gt;这两天被&lt;strong&gt;XCodeGhost&lt;/strong&gt;搞得人心惶惶。检查了一下我从百度网盘下载的xcode, 靠, 居然中招了！！！&lt;br&gt;&lt;figure class=&quot;highlight shell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;
+    
     </summary>
     
-      <category term="ios" scheme="http://www.yczmm.com/tags/ios/"/>
+    
+      <category term="ios" scheme="http://zhuifeng1017.github.io/tags/ios/"/>
     
   </entry>
   
   <entry>
-    <title><![CDATA[iphone6s兼容模式与适配模式效果图]]></title>
-    <link href="http://www.yczmm.com/iphone6s%E5%85%BC%E5%AE%B9%E6%A8%A1%E5%BC%8F%E4%B8%8E%E9%80%82%E9%85%8D%E6%A8%A1%E5%BC%8F%E6%95%88%E6%9E%9C%E5%9B%BE.html"/>
-    <id>http://www.yczmm.com/iphone6s兼容模式与适配模式效果图.html</id>
+    <title>iphone6s兼容模式与适配模式效果图</title>
+    <link href="http://zhuifeng1017.github.io/iphone6s%E5%85%BC%E5%AE%B9%E6%A8%A1%E5%BC%8F%E4%B8%8E%E9%80%82%E9%85%8D%E6%A8%A1%E5%BC%8F%E6%95%88%E6%9E%9C%E5%9B%BE.html"/>
+    <id>http://zhuifeng1017.github.io/iphone6s兼容模式与适配模式效果图.html</id>
     <published>2015-09-17T07:03:07.000Z</published>
     <updated>2015-09-17T11:19:07.000Z</updated>
+    
     <content type="html"><![CDATA[<p>看下面两张图对比，效果很明显了吧。<br>兼容模式下内容是等比例放大，App 内部获取到的设备分辨率和 iPhone5 是一样的：320x568。<br>对比适配后的效果，显然字变大了，图片变大了，一屏下显示的内容变少了。<br><a id="more"></a><br>兼容模式截图<br><img src="http://iid.oss-cn-hangzhou.aliyuncs.com/iOS%2Fip6s_%E5%85%BC%E5%AE%B9%E6%A8%A1%E5%BC%8F.png" alt="兼容模式截图"></p>
 <hr>
 <p>适配模式截图<br><img src="http://iid.oss-cn-hangzhou.aliyuncs.com/iOS%2Fip6s_%E9%80%82%E9%85%8D%E6%A8%A1%E5%BC%8F.png" alt="适配模式截图"></p>
 ]]></content>
+    
     <summary type="html">
-    <![CDATA[<p>看下面两张图对比，效果很明显了吧。<br>兼容模式下内容是等比例放大，App 内部获取到的设备分辨率和 iPhone5 是一样的：320x568。<br>对比适配后的效果，显然字变大了，图片变大了，一屏下显示的内容变少了。<br>]]>
+    
+      &lt;p&gt;看下面两张图对比，效果很明显了吧。&lt;br&gt;兼容模式下内容是等比例放大，App 内部获取到的设备分辨率和 iPhone5 是一样的：320x568。&lt;br&gt;对比适配后的效果，显然字变大了，图片变大了，一屏下显示的内容变少了。&lt;br&gt;
     
     </summary>
     
-      <category term="autolayout" scheme="http://www.yczmm.com/tags/autolayout/"/>
     
-      <category term="ios" scheme="http://www.yczmm.com/tags/ios/"/>
+      <category term="ios" scheme="http://zhuifeng1017.github.io/tags/ios/"/>
+    
+      <category term="autolayout" scheme="http://zhuifeng1017.github.io/tags/autolayout/"/>
     
   </entry>
   
   <entry>
-    <title><![CDATA[用到的xcode插件]]></title>
-    <link href="http://www.yczmm.com/%E7%94%A8%E5%88%B0%E7%9A%84xcode%E6%8F%92%E4%BB%B6.html"/>
-    <id>http://www.yczmm.com/用到的xcode插件.html</id>
+    <title>用到的xcode插件</title>
+    <link href="http://zhuifeng1017.github.io/%E7%94%A8%E5%88%B0%E7%9A%84xcode%E6%8F%92%E4%BB%B6.html"/>
+    <id>http://zhuifeng1017.github.io/用到的xcode插件.html</id>
     <published>2015-09-15T08:30:25.000Z</published>
     <updated>2016-02-23T06:02:26.000Z</updated>
+    
     <content type="html"><![CDATA[<p>xcode插件目录位于<code>~/Library/Application Support/Developer/Shared/Xcode/Plug-ins</code>，打开此目录就能看到当前XCode装了哪些插件。<br>以下是我目前用到的插件,在github上都可以找到:</p>
 <ol>
 <li>ClangFormat.xcplugin          // 代码格式化</li>
@@ -456,67 +549,82 @@
 <li>XcodeColors.xcplugin         // 控制台颜色输出（配合<code>CocoaLumberjack</code>）</li>
 </ol>
 ]]></content>
+    
     <summary type="html">
-    <![CDATA[<p>xcode插件目录位于<code>~/Library/Application Support/Developer/Shared/Xcode/Plug-ins</code>，打开此目录就能看到当前XCode装了哪些插件。<br>以下是我目前用到的插件,在github上都可以找]]>
+    
+      &lt;p&gt;xcode插件目录位于&lt;code&gt;~/Library/Application Support/Developer/Shared/Xcode/Plug-ins&lt;/code&gt;，打开此目录就能看到当前XCode装了哪些插件。&lt;br&gt;以下是我目前用到的插件,在github上都可以找
+    
     </summary>
     
-      <category term="ios" scheme="http://www.yczmm.com/tags/ios/"/>
     
-      <category term="xcode" scheme="http://www.yczmm.com/tags/xcode/"/>
+      <category term="ios" scheme="http://zhuifeng1017.github.io/tags/ios/"/>
+    
+      <category term="xcode" scheme="http://zhuifeng1017.github.io/tags/xcode/"/>
     
   </entry>
   
   <entry>
-    <title><![CDATA[Mac上抓iphone真机网络数据包]]></title>
-    <link href="http://www.yczmm.com/Mac%E4%B8%8A%E6%8A%93iphone%E7%9C%9F%E6%9C%BA%E7%BD%91%E7%BB%9C%E6%95%B0%E6%8D%AE%E5%8C%85.html"/>
-    <id>http://www.yczmm.com/Mac上抓iphone真机网络数据包.html</id>
+    <title>Mac上抓iphone真机网络数据包</title>
+    <link href="http://zhuifeng1017.github.io/Mac%E4%B8%8A%E6%8A%93iphone%E7%9C%9F%E6%9C%BA%E7%BD%91%E7%BB%9C%E6%95%B0%E6%8D%AE%E5%8C%85.html"/>
+    <id>http://zhuifeng1017.github.io/Mac上抓iphone真机网络数据包.html</id>
     <published>2015-09-15T08:16:54.000Z</published>
     <updated>2015-12-21T05:48:33.000Z</updated>
+    
     <content type="html"><![CDATA[<p>Mac上插有网线的情况下，通过热点共享给手机上网，然后用wireshark转包是我以前一贯做法。但是如果没插网线怎么办？<br>在知乎上找到一篇相关文章，<a href="http://www.zhihu.com/question/24480413" target="_blank" rel="external">如何在 OS X 上架设本地代理服务器对 iOS 流量进行抓包分析</a></p>
 <blockquote>
 <p>通过USB口将iPhone连接到Mac上。<br>使用Xcode的organizer工具获取到iPhone的UDID<br>使用rvictl命令创建RVI接口(remote virtual interface),使用iPhone的UDID作为参数。<br>$ rvictl -s <udid><br>如果想捕获多个设备的网络包，可以使用上述命令创建多个设备的RVI,传递每个iOS设备的UDID作为参数即可。<br>RVI虚拟接口的命名规则为rvi0,rvi1,rvi2,…,可使用ifconfig命令查看<br>$ ifconfig rvi0<br>rvi0: flags=3005<up,debug,link0,link1> mtu 0<br>在Mac上使用任意抓包工具<strong>tcpdump、wireshark</strong>等，监听创建的rvi接口即可。<br>使用完之后需要将创建的虚拟接口移除<br>$ rvictl -x <udid></udid></up,debug,link0,link1></udid></p>
 </blockquote>
 ]]></content>
+    
     <summary type="html">
-    <![CDATA[<p>Mac上插有网线的情况下，通过热点共享给手机上网，然后用wireshark转包是我以前一贯做法。但是如果没插网线怎么办？<br>在知乎上找到一篇相关文章，<a href="http://www.zhihu.com/question/24480413" target="_bl]]>
+    
+      &lt;p&gt;Mac上插有网线的情况下，通过热点共享给手机上网，然后用wireshark转包是我以前一贯做法。但是如果没插网线怎么办？&lt;br&gt;在知乎上找到一篇相关文章，&lt;a href=&quot;http://www.zhihu.com/question/24480413&quot; target=&quot;_bl
+    
     </summary>
     
-      <category term="ios" scheme="http://www.yczmm.com/tags/ios/"/>
     
-      <category term="发现" scheme="http://www.yczmm.com/tags/%E5%8F%91%E7%8E%B0/"/>
+      <category term="ios" scheme="http://zhuifeng1017.github.io/tags/ios/"/>
+    
+      <category term="发现" scheme="http://zhuifeng1017.github.io/tags/%E5%8F%91%E7%8E%B0/"/>
     
   </entry>
   
   <entry>
-    <title><![CDATA[AutoLayout下UILabel显示多行]]></title>
-    <link href="http://www.yczmm.com/AutoLayout%E4%B8%8BUILabel%E6%98%BE%E7%A4%BA%E5%A4%9A%E8%A1%8C.html"/>
-    <id>http://www.yczmm.com/AutoLayout下UILabel显示多行.html</id>
+    <title>AutoLayout下UILabel显示多行</title>
+    <link href="http://zhuifeng1017.github.io/AutoLayout%E4%B8%8BUILabel%E6%98%BE%E7%A4%BA%E5%A4%9A%E8%A1%8C.html"/>
+    <id>http://zhuifeng1017.github.io/AutoLayout下UILabel显示多行.html</id>
     <published>2015-09-15T03:58:35.000Z</published>
     <updated>2015-09-15T08:45:43.000Z</updated>
+    
     <content type="html"><![CDATA[<p><a href="http://www.jianshu.com/p/d5d897ffe118" target="_blank" rel="external">AutoLayout下多行UILabel无法显示多行文本的问题</a><br><a href="http://stackoverflow.com/questions/17491376/ios-autolayout-multi-line-uilabel" target="_blank" rel="external">iOS AutoLayout multi-line UILabel</a></p>
 ]]></content>
+    
     <summary type="html">
-    <![CDATA[<p><a href="http://www.jianshu.com/p/d5d897ffe118" target="_blank" rel="external">AutoLayout下多行UILabel无法显示多行文本的问题</a><br><a href="http://sta]]>
+    
+      &lt;p&gt;&lt;a href=&quot;http://www.jianshu.com/p/d5d897ffe118&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;AutoLayout下多行UILabel无法显示多行文本的问题&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;http://sta
+    
     </summary>
     
-      <category term="autolayout" scheme="http://www.yczmm.com/tags/autolayout/"/>
     
-      <category term="ios" scheme="http://www.yczmm.com/tags/ios/"/>
+      <category term="ios" scheme="http://zhuifeng1017.github.io/tags/ios/"/>
+    
+      <category term="autolayout" scheme="http://zhuifeng1017.github.io/tags/autolayout/"/>
     
   </entry>
   
   <entry>
-    <title><![CDATA[autolayout学习1]]></title>
-    <link href="http://www.yczmm.com/autolayout%E5%AD%A6%E4%B9%A01.html"/>
-    <id>http://www.yczmm.com/autolayout学习1.html</id>
+    <title>autolayout学习1</title>
+    <link href="http://zhuifeng1017.github.io/autolayout%E5%AD%A6%E4%B9%A01.html"/>
+    <id>http://zhuifeng1017.github.io/autolayout学习1.html</id>
     <published>2015-09-14T09:37:21.000Z</published>
     <updated>2015-09-17T03:03:45.000Z</updated>
-    <content type="html"><![CDATA[<h2 id="storyboard/xib中使用autolayout">storyboard/xib中使用autolayout</h2><ul>
+    
+    <content type="html"><![CDATA[<h2 id="storyboard-xib中使用autolayout"><a href="#storyboard-xib中使用autolayout" class="headerlink" title="storyboard/xib中使用autolayout"></a>storyboard/xib中使用autolayout</h2><ul>
 <li>使用<strong>鼠标右键</strong>关联两两之间的约束, 对于简单的布局掌握之后还是弄起来还是比较快的.</li>
 <li>选中控件后，在Mene-&gt;Editor中也可以指定约束</li>
 <li>xcode右下角的几个按钮也可以进行操作：<br><img src="http://iid.oss-cn-hangzhou.aliyuncs.com/iOS%2FACE7829D-7A9B-4370-9CE6-BB126B1FF187.png" alt=" "><br><a href="http://www.cnblogs.com/cxbblog/p/4166876.html" target="_blank" rel="external">iOS 屏幕适配，autoResizing autoLayout和sizeClass图文详解- csdn</a></li>
 </ul>
-<h2 id="用代码手写autolayout">用代码手写autolayout</h2><p>需要掌握<code>Visual Format Language</code>, 初次看到这种写法的时候简直崩溃，一番研究下来还是很快可以掌握。</p>
+<h2 id="用代码手写autolayout"><a href="#用代码手写autolayout" class="headerlink" title="用代码手写autolayout"></a>用代码手写autolayout</h2><p>需要掌握<code>Visual Format Language</code>, 初次看到这种写法的时候简直崩溃，一番研究下来还是很快可以掌握。</p>
 <ul>
 <li>符号: -  ; 代表两个视图之间的间隔,默认的子视图之间的标准间隔是8;子视图与父视图之间默认是20  </li>
 <li>符号:[]; 中括号的里面是视图的名称,如果是属性的话,应该加上 _下划线,例如  [_view]  </li>
@@ -526,8 +634,8 @@
 <li>符号: H , V ;   H代表水平方向 ,V代表垂直方向(水平和垂直的英文首字母) </li>
 </ul>
 <p>一些简写如： <code>@&quot;H:|[view1]|&quot; 等价于 @&quot;H:|-0-[view1]-0-|&quot;</code><br><a href="http://blog.csdn.net/yangbingbinga/article/details/43673817" target="_blank" rel="external">VisualFormat可视化格式字符串构成</a><br><a href="http://www.vienta.me/2014/12/07/AutoLayout-%E5%BF%98%E6%8E%89Frame-%E6%8B%A5%E6%8A%B1Constraint%EF%BC%88I%EF%BC%89/" target="_blank" rel="external">AutoLayout:忘掉Frame,拥抱Constraint（I）</a><br><a href="https://github.com/zhuifeng1017/AutoLayout1" target="_blank" rel="external">例子代码下载&gt;&gt;github</a></p>
-<h2 id="使用Masonry">使用Masonry</h2><p>代码精简，手写autolayout情况下用它爽多了。</p>
-<h2 id="总结">总结</h2><p>确定一个UI控件的位置，在frame时代需要指明(x,y,width,height), 在autolayout时代，本质是一样的，只是换成了相对概念。<br>即需要确定</p>
+<h2 id="使用Masonry"><a href="#使用Masonry" class="headerlink" title="使用Masonry"></a>使用Masonry</h2><p>代码精简，手写autolayout情况下用它爽多了。</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>确定一个UI控件的位置，在frame时代需要指明(x,y,width,height), 在autolayout时代，本质是一样的，只是换成了相对概念。<br>即需要确定</p>
 <ul>
 <li>水平方向相对位置；</li>
 <li>垂直方向相对位置；</li>
@@ -535,48 +643,56 @@
 <li>绝对高，或上下相对位置；<br>在实际开发中，可以xib/stroyboard, Masonry结合使用。对于简单的布局，用xib/stroyboard拖拖拽拽可以搞定就不必Masonry了。</li>
 </ul>
 ]]></content>
+    
     <summary type="html">
-    <![CDATA[<h2 id="storyboard/xib中使用autolayout">storyboard/xib中使用autolayout</h2><ul>
-<li>使用<strong>鼠标右键</strong>关联两两之间的约束, 对于简单的布局掌握之后还是弄起来还是比较快的.</li>]]>
+    
+      &lt;h2 id=&quot;storyboard-xib中使用autolayout&quot;&gt;&lt;a href=&quot;#storyboard-xib中使用autolayout&quot; class=&quot;headerlink&quot; title=&quot;storyboard/xib中使用autolayout&quot;&gt;&lt;/a&gt;story
+    
     </summary>
     
-      <category term="autolayout" scheme="http://www.yczmm.com/tags/autolayout/"/>
     
-      <category term="ios" scheme="http://www.yczmm.com/tags/ios/"/>
+      <category term="ios" scheme="http://zhuifeng1017.github.io/tags/ios/"/>
+    
+      <category term="autolayout" scheme="http://zhuifeng1017.github.io/tags/autolayout/"/>
     
   </entry>
   
   <entry>
-    <title><![CDATA[hexo deploy报错解决]]></title>
-    <link href="http://www.yczmm.com/hexo-deploy%E6%8A%A5%E9%94%99%E8%A7%A3%E5%86%B3.html"/>
-    <id>http://www.yczmm.com/hexo-deploy报错解决.html</id>
+    <title>hexo deploy报错解决</title>
+    <link href="http://zhuifeng1017.github.io/hexo-deploy%E6%8A%A5%E9%94%99%E8%A7%A3%E5%86%B3.html"/>
+    <id>http://zhuifeng1017.github.io/hexo-deploy报错解决.html</id>
     <published>2015-09-13T06:53:02.000Z</published>
     <updated>2015-09-13T08:03:24.000Z</updated>
-    <content type="html"><![CDATA[<p>Mac OS下一切正常，windows下老是如下报错<br><a id="more"></a><br><figure class="highlight smali"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">bash: /dev/tty: No such device<span class="instruction"> or </span>address</span><br><span class="line">error: failed to<span class="instruction"> execute </span>prompt script<span class="function"> (</span>exit code 1<span class="function">)</span></span><br><span class="line">fatal: could<span class="instruction"> not </span>read Username for 'https://github.com': No error</span><br><span class="line">FATAL Something's wrong. Maybe you can find the solution here: http://hexo.io/do</span><br><span class="line">cs/troubleshooting.html</span><br><span class="line">Error: bash: /dev/tty: No such device<span class="instruction"> or </span>address</span><br><span class="line">error: failed to<span class="instruction"> execute </span>prompt script<span class="function"> (</span>exit code 1<span class="function">)</span></span><br><span class="line">fatal: could<span class="instruction"> not </span>read Username for 'https://github.com': No error</span><br><span class="line">    at ChildProcess.&lt;anonymous&gt;<span class="function"> (</span>H:\blog\node_modules\hexo-deployer-git\node_modules\hexo-util\lib\spawn.js:42:17<span class="function">)</span></span><br><span class="line">    at ChildProcess.emit<span class="function"> (</span>events.js:110:17<span class="function">)</span></span><br><span class="line">    at maybeClose<span class="function"> (</span>child_process.js:1015:16<span class="function">)</span></span><br><span class="line">    at Socket.&lt;anonymous&gt;<span class="function"> (</span>child_process.js:1183:11<span class="function">)</span></span><br><span class="line">    at Socket.emit<span class="function"> (</span>events.js:107:17<span class="function">)</span></span><br><span class="line">    at Pipe.close<span class="function"> (</span>net.js:485:12<span class="function">)</span></span><br></pre></td></tr></table></figure></p>
+    
+    <content type="html"><![CDATA[<p>Mac OS下一切正常，windows下老是如下报错<br><a id="more"></a><br><figure class="highlight subunit"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">bash: /dev/tty: No such device or address</div><div class="line"><span class="keyword">error: </span>failed to execute prompt script (exit code 1)</div><div class="line">fatal: could not read Username for 'https://github.com': No error</div><div class="line">FATAL Something's wrong. Maybe you can find the solution here: http://hexo.io/do</div><div class="line">cs/troubleshooting.html</div><div class="line"><span class="keyword">Error: </span>bash: /dev/tty: No such device or address</div><div class="line"><span class="keyword">error: </span>failed to execute prompt script (exit code 1)</div><div class="line">fatal: could not read Username for 'https://github.com': No error</div><div class="line">    at ChildProcess.&lt;anonymous&gt; (H:\blog\node_modules\hexo-deployer-git\node_modules\hexo-util\lib\spawn.js:42:17)</div><div class="line">    at ChildProcess.emit (events.js:110:17)</div><div class="line">    at maybeClose (child_process.js:1015:16)</div><div class="line">    at Socket.&lt;anonymous&gt; (child_process.js:1183:11)</div><div class="line">    at Socket.emit (events.js:107:17)</div><div class="line">    at Pipe.close (net.js:485:12)</div></pre></td></tr></table></figure></p>
 <p>一番研究之后，将https部署改为ssh部署，问题总算解决了。<br>参考链接</p>
 <ul>
 <li><a href="http://eesly.github.io/2014/10/26/%E5%88%A9%E7%94%A8ssh%E7%9C%81%E5%8E%BB%E5%9C%A8hexo-deploy%E8%BE%93%E5%85%A5%E5%AF%86%E7%A0%81/" target="_blank" rel="external">利用SSH省去在hexo deploy输入密码</a></li>
 <li><a href="https://help.github.com/articles/generating-ssh-keys/" target="_blank" rel="external">Generating SSH keys</a></li>
 </ul>
 <hr>
-<p>附上deploy配置<br><figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">deploy</span>:</span><br><span class="line">  <span class="attribute">type</span>: git</span><br><span class="line">- <span class="attribute">repo</span>: <span class="attribute">https</span>:<span class="comment">//github.com/USERNAME/<span class="label">xxxxx.github.io.git</span></span></span><br><span class="line">+ <span class="attribute">repo</span>: git<span class="variable">@github</span>.<span class="attribute">com</span>:USERNAME/xxxREPOSITORY.git</span><br></pre></td></tr></table></figure></p>
+<p>附上deploy配置<br><figure class="highlight less"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="attribute">deploy</span>:</div><div class="line">  <span class="attribute">type</span>: git</div><div class="line">- <span class="attribute">repo</span>: <span class="attribute">https</span>:<span class="comment">//github.com/USERNAME/xxxxx.github.io.git</span></div><div class="line">+ <span class="attribute">repo</span>: git<span class="variable">@github</span>.<span class="attribute">com</span>:USERNAME/xxxREPOSITORY.git</div></pre></td></tr></table></figure></p>
 ]]></content>
+    
     <summary type="html">
-    <![CDATA[<p>Mac OS下一切正常，windows下老是如下报错<br>]]>
+    
+      &lt;p&gt;Mac OS下一切正常，windows下老是如下报错&lt;br&gt;
     
     </summary>
     
-      <category term="hexo" scheme="http://www.yczmm.com/tags/hexo/"/>
+    
+      <category term="hexo" scheme="http://zhuifeng1017.github.io/tags/hexo/"/>
     
   </entry>
   
   <entry>
-    <title><![CDATA[hexo-theme-yilia主题]]></title>
-    <link href="http://www.yczmm.com/yilia%E4%B8%BB%E9%A2%98.html"/>
-    <id>http://www.yczmm.com/yilia主题.html</id>
+    <title>hexo-theme-yilia主题</title>
+    <link href="http://zhuifeng1017.github.io/yilia%E4%B8%BB%E9%A2%98.html"/>
+    <id>http://zhuifeng1017.github.io/yilia主题.html</id>
     <published>2015-09-06T09:30:00.000Z</published>
     <updated>2015-09-12T14:27:01.000Z</updated>
-    <content type="html"><![CDATA[<h3 id="非常感谢litten/hexo-theme-yilia作者提供这么棒的主题，写起博客来更有劲了!_这几天,_为了yilia更完美和实现我个性化的需求，我做了一些改进。">非常感谢litten/hexo-theme-yilia作者提供这么棒的主题，写起博客来更有劲了!  这几天, 为了yilia更完美和实现我个性化的需求，我做了一些改进。</h3><ol>
+    
+    <content type="html"><![CDATA[<h3 id="非常感谢litten-hexo-theme-yilia作者提供这么棒的主题，写起博客来更有劲了-这几天-为了yilia更完美和实现我个性化的需求，我做了一些改进。"><a href="#非常感谢litten-hexo-theme-yilia作者提供这么棒的主题，写起博客来更有劲了-这几天-为了yilia更完美和实现我个性化的需求，我做了一些改进。" class="headerlink" title="非常感谢litten/hexo-theme-yilia作者提供这么棒的主题，写起博客来更有劲了!  这几天, 为了yilia更完美和实现我个性化的需求，我做了一些改进。"></a>非常感谢litten/hexo-theme-yilia作者提供这么棒的主题，写起博客来更有劲了!  这几天, 为了yilia更完美和实现我个性化的需求，我做了一些改进。</h3><ol>
 <li><p>侧边栏的popup菜单改为了segment<br><img src="http://iid.oss-cn-hangzhou.aliyuncs.com/hexo-gif.gif" alt=" "></p>
 </li>
 <li><p>主页增加了<em>显示评论数</em>, 查看效果请点击<a href="/">我的博客</a></p>
@@ -585,99 +701,121 @@
 <hr>
 <p>有任何问题，欢迎大家<a href="/2015/09/06/yilia-md/#comments">留言</a>！github地址: <a href="https://github.com/zhuifeng1017/hexo-theme-yilia" target="_blank" rel="external">https://github.com/zhuifeng1017/hexo-theme-yilia</a></p>
 ]]></content>
+    
     <summary type="html">
-    <![CDATA[<h3 id="非常感谢litten/hexo-theme-yilia作者提供这么棒的主题，写起博客来更有劲了!_这几天,_为了yilia更完美和实现我个性化的需求，我做了一些改进。">非常感谢litten/hexo-theme-yilia作者提供这么棒的主题，写起博客来更有劲了]]>
+    
+      &lt;h3 id=&quot;非常感谢litten-hexo-theme-yilia作者提供这么棒的主题，写起博客来更有劲了-这几天-为了yilia更完美和实现我个性化的需求，我做了一些改进。&quot;&gt;&lt;a href=&quot;#非常感谢litten-hexo-theme-yilia作者提供这么棒的主题，写
+    
     </summary>
     
-      <category term="hexo" scheme="http://www.yczmm.com/tags/hexo/"/>
+    
+      <category term="hexo" scheme="http://zhuifeng1017.github.io/tags/hexo/"/>
     
   </entry>
   
   <entry>
-    <title><![CDATA[机器人行业]]></title>
-    <link href="http://www.yczmm.com/%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%A1%8C%E4%B8%9A.html"/>
-    <id>http://www.yczmm.com/机器人行业.html</id>
+    <title>机器人行业</title>
+    <link href="http://zhuifeng1017.github.io/%E6%9C%BA%E5%99%A8%E4%BA%BA%E8%A1%8C%E4%B8%9A.html"/>
+    <id>http://zhuifeng1017.github.io/机器人行业.html</id>
     <published>2015-09-02T12:06:00.000Z</published>
     <updated>2015-09-12T11:31:53.000Z</updated>
+    
     <content type="html"><![CDATA[<p> <a href="http://www.yicai.com/news/2015/01/4064835.html" target="_blank" rel="external">国产机器人比国外差在哪？</a><br> <a href="http://www.yicai.com/news/2015/06/4632505.html" target="_blank" rel="external">中国工业机器人困局：大而不强</a><br> <a href="http://www.yicai.com/news/2015/08/4668414.html" target="_blank" rel="external">美的与安川电机创机器人合资公司</a><br> <a href="http://www.yicai.com/show_topic/4674615/" target="_blank" rel="external">机器人专题</a><br><a id="more"></a></p>
 ]]></content>
+    
     <summary type="html">
-    <![CDATA[<p> <a href="http://www.yicai.com/news/2015/01/4064835.html">国产机器人比国外差在哪？</a><br> <a href="http://www.yicai.com/news/2015/06/4632505.html">中国工业机器人困局：大而不强</a><br> <a href="http://www.yicai.com/news/2015/08/4668414.html">美的与安川电机创机器人合资公司</a><br> <a href="http://www.yicai.com/show_topic/4674615/">机器人专题</a><br>]]>
+    
+      &lt;p&gt; &lt;a href=&quot;http://www.yicai.com/news/2015/01/4064835.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;国产机器人比国外差在哪？&lt;/a&gt;&lt;br&gt; &lt;a href=&quot;http://www.yicai.com/news/2015/06/4632505.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;中国工业机器人困局：大而不强&lt;/a&gt;&lt;br&gt; &lt;a href=&quot;http://www.yicai.com/news/2015/08/4668414.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;美的与安川电机创机器人合资公司&lt;/a&gt;&lt;br&gt; &lt;a href=&quot;http://www.yicai.com/show_topic/4674615/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;机器人专题&lt;/a&gt;&lt;br&gt;
     
     </summary>
     
-      <category term="机器人" scheme="http://www.yczmm.com/tags/%E6%9C%BA%E5%99%A8%E4%BA%BA/"/>
+    
+      <category term="机器人" scheme="http://zhuifeng1017.github.io/tags/%E6%9C%BA%E5%99%A8%E4%BA%BA/"/>
     
   </entry>
   
   <entry>
-    <title><![CDATA[经济知识学习整理, 持续更新中]]></title>
-    <link href="http://www.yczmm.com/%E7%BB%8F%E6%B5%8E%E7%9F%A5%E8%AF%86%E5%AD%A6%E4%B9%A0%E6%95%B4%E7%90%86.html"/>
-    <id>http://www.yczmm.com/经济知识学习整理.html</id>
+    <title>经济知识学习整理, 持续更新中</title>
+    <link href="http://zhuifeng1017.github.io/%E7%BB%8F%E6%B5%8E%E7%9F%A5%E8%AF%86%E5%AD%A6%E4%B9%A0%E6%95%B4%E7%90%86.html"/>
+    <id>http://zhuifeng1017.github.io/经济知识学习整理.html</id>
     <published>2015-08-27T14:06:47.000Z</published>
     <updated>2015-09-12T11:31:53.000Z</updated>
+    
     <content type="html"><![CDATA[<p> <a href="http://www.zhihu.com/question/20283786" target="_blank" rel="external">央行加息降息如何影响股市？</a><br> <a href="http://finance.people.com.cn/stock/n/2015/0128/c67815-26463269.html" target="_blank" rel="external">人民币暴跌如何影响股市？–财经–人民网</a><br> <a href="http://www.yicai.com/news/2015/08/4668298.html" target="_blank" rel="external">A股如何应对本币贬值？</a><br> <a href="http://www.zhihu.com/question/31848914" target="_blank" rel="external">万一 2015 年股市崩盘，会有什么样的后果？</a></p>
 <hr>
 <p> <a href="http://www.zhihu.com/question/21733410" target="_blank" rel="external">如何通俗地解释 97 年亚洲金融危机发生的原因和过程？</a><br> <a href="http://finance.sina.com.cn/stock/y/20150705/172422594338.shtml" target="_blank" rel="external">揭秘恒生HOMS系统配资真相</a><br> <a href="http://finance.ifeng.com/a/20150630/13807774_0.shtml" target="_blank" rel="external">场外配资崩盘的真相</a><br> <a href="http://www.zhihu.com/question/28778713" target="_blank" rel="external">你是如何从两千多只股票中选出心仪的股票的？</a></p>
 <hr>
 <p> <a href="http://www.zhihu.com/question/20004959" target="_blank" rel="external">中国为什么采用现行的外汇储备政策？有哪些更好的选择？</a><br> <a href="http://www.zhihu.com/question/28716270/answer/54926655" target="_blank" rel="external">希腊最近几年是怎么没落的？</a><br> <a href="http://club.ebusinessreview.cn/blogArticle-224909.html" target="_blank" rel="external">一间玩具厂的倒掉 | 商业评论网</a><br> <a href="http://www.zhihu.com/question/19976358" target="_blank" rel="external">什么是洗钱？为什么洗钱？</a><br> <a href="http://www.zhihu.com/question/20784125" target="_blank" rel="external">有哪些关于经济或金融的纪录片？</a><br><a id="more"></a></p>
 ]]></content>
+    
     <summary type="html">
-    <![CDATA[<p> <a href="http://www.zhihu.com/question/20283786">央行加息降息如何影响股市？</a><br> <a href="http://finance.people.com.cn/stock/n/2015/0128/c67815-26463269.html">人民币暴跌如何影响股市？–财经–人民网</a><br> <a href="http://www.yicai.com/news/2015/08/4668298.html">A股如何应对本币贬值？</a><br> <a href="http://www.zhihu.com/question/31848914">万一 2015 年股市崩盘，会有什么样的后果？</a></p>
-<hr>
-<p> <a href="http://www.zhihu.com/question/21733410">如何通俗地解释 97 年亚洲金融危机发生的原因和过程？</a><br> <a href="http://finance.sina.com.cn/stock/y/20150705/172422594338.shtml">揭秘恒生HOMS系统配资真相</a><br> <a href="http://finance.ifeng.com/a/20150630/13807774_0.shtml">场外配资崩盘的真相</a><br> <a href="http://www.zhihu.com/question/28778713">你是如何从两千多只股票中选出心仪的股票的？</a></p>
-<hr>
-<p> <a href="http://www.zhihu.com/question/20004959">中国为什么采用现行的外汇储备政策？有哪些更好的选择？</a><br> <a href="http://www.zhihu.com/question/28716270/answer/54926655">希腊最近几年是怎么没落的？</a><br> <a href="http://club.ebusinessreview.cn/blogArticle-224909.html">一间玩具厂的倒掉 | 商业评论网</a><br> <a href="http://www.zhihu.com/question/19976358">什么是洗钱？为什么洗钱？</a><br> <a href="http://www.zhihu.com/question/20784125">有哪些关于经济或金融的纪录片？</a><br>]]>
+    
+      &lt;p&gt; &lt;a href=&quot;http://www.zhihu.com/question/20283786&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;央行加息降息如何影响股市？&lt;/a&gt;&lt;br&gt; &lt;a href=&quot;http://finance.people.com.cn/stock/n/2015/0128/c67815-26463269.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;人民币暴跌如何影响股市？–财经–人民网&lt;/a&gt;&lt;br&gt; &lt;a href=&quot;http://www.yicai.com/news/2015/08/4668298.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;A股如何应对本币贬值？&lt;/a&gt;&lt;br&gt; &lt;a href=&quot;http://www.zhihu.com/question/31848914&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;万一 2015 年股市崩盘，会有什么样的后果？&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt; &lt;a href=&quot;http://www.zhihu.com/question/21733410&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;如何通俗地解释 97 年亚洲金融危机发生的原因和过程？&lt;/a&gt;&lt;br&gt; &lt;a href=&quot;http://finance.sina.com.cn/stock/y/20150705/172422594338.shtml&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;揭秘恒生HOMS系统配资真相&lt;/a&gt;&lt;br&gt; &lt;a href=&quot;http://finance.ifeng.com/a/20150630/13807774_0.shtml&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;场外配资崩盘的真相&lt;/a&gt;&lt;br&gt; &lt;a href=&quot;http://www.zhihu.com/question/28778713&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;你是如何从两千多只股票中选出心仪的股票的？&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt; &lt;a href=&quot;http://www.zhihu.com/question/20004959&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;中国为什么采用现行的外汇储备政策？有哪些更好的选择？&lt;/a&gt;&lt;br&gt; &lt;a href=&quot;http://www.zhihu.com/question/28716270/answer/54926655&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;希腊最近几年是怎么没落的？&lt;/a&gt;&lt;br&gt; &lt;a href=&quot;http://club.ebusinessreview.cn/blogArticle-224909.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;一间玩具厂的倒掉 | 商业评论网&lt;/a&gt;&lt;br&gt; &lt;a href=&quot;http://www.zhihu.com/question/19976358&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;什么是洗钱？为什么洗钱？&lt;/a&gt;&lt;br&gt; &lt;a href=&quot;http://www.zhihu.com/question/20784125&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;有哪些关于经济或金融的纪录片？&lt;/a&gt;&lt;br&gt;
     
     </summary>
     
-      <category term="股票" scheme="http://www.yczmm.com/tags/%E8%82%A1%E7%A5%A8/"/>
     
-      <category term="财经" scheme="http://www.yczmm.com/tags/%E8%B4%A2%E7%BB%8F/"/>
+      <category term="股票" scheme="http://zhuifeng1017.github.io/tags/%E8%82%A1%E7%A5%A8/"/>
+    
+      <category term="财经" scheme="http://zhuifeng1017.github.io/tags/%E8%B4%A2%E7%BB%8F/"/>
     
   </entry>
   
   <entry>
-    <title><![CDATA[疯狂的一天]]></title>
-    <link href="http://www.yczmm.com/%E7%96%AF%E7%8B%82%E7%9A%84%E4%B8%80%E5%A4%A9.html"/>
-    <id>http://www.yczmm.com/疯狂的一天.html</id>
+    <title>疯狂的一天</title>
+    <link href="http://zhuifeng1017.github.io/%E7%96%AF%E7%8B%82%E7%9A%84%E4%B8%80%E5%A4%A9.html"/>
+    <id>http://zhuifeng1017.github.io/疯狂的一天.html</id>
     <published>2015-08-24T15:57:28.000Z</published>
     <updated>2015-09-12T11:31:53.000Z</updated>
+    
     <content type="html"><![CDATA[<p><strong> 疯狂的一天 , 暴雨, 暴跌, 暴虐…</strong></p>
 ]]></content>
+    
     <summary type="html">
-    <![CDATA[<p><strong> 疯狂的一天 , 暴雨, 暴跌, 暴虐…</strong></p>
-]]>
+    
+      &lt;p&gt;&lt;strong&gt; 疯狂的一天 , 暴雨, 暴跌, 暴虐…&lt;/strong&gt;&lt;/p&gt;
+
+    
     </summary>
+    
     
   </entry>
   
   <entry>
-    <title><![CDATA[Hexo _posts目录, skip_render 的说明]]></title>
-    <link href="http://www.yczmm.com/hexo-skip_render.html"/>
-    <id>http://www.yczmm.com/hexo-skip_render.html</id>
+    <title>Hexo _posts目录, skip_render 的说明</title>
+    <link href="http://zhuifeng1017.github.io/hexo-skip_render.html"/>
+    <id>http://zhuifeng1017.github.io/hexo-skip_render.html</id>
     <published>2015-08-24T12:10:54.000Z</published>
     <updated>2015-09-12T11:31:53.000Z</updated>
-    <content type="html"><![CDATA[<h1 id="source/_post">source/_post</h1><p>使用<code>hexo new xxxx.md</code>创建的md文件位于<strong>source/_post</strong> 目录下,<br>在执行<code>hexo g</code>后, 该目录下的文件会索引在<strong>public/index.html</strong>中。<br>而<strong>source</strong>下其他目录虽然也会被生成,但是不会索引在<strong>public/index.html</strong>中, 也就是说打开主页的时候是看不到的,只能通过其url进行访问。<br><a id="more"></a><br><img src="http://iid.oss-cn-hangzhou.aliyuncs.com/hexo_posts.png" alt=" "></p>
-<h1 id="skip_render">skip_render</h1><p>意思是不将md文件转化为html, 注意:<em>md文件仍然会被copy到public目录中</em>。<br>例如：配置<code>skip_render: test/*</code>, 则test目录中所有文件不会被转化为html,但仍会被copy,<br>通过<em><a href="http://localhost:4000/test/01.md" target="_blank" rel="external">http://localhost:4000/test/01.md</a></em>仍可访问。<br><img src="http://iid.oss-cn-hangzhou.aliyuncs.com/hexo_posts2.png" alt=" "><br>貌似只能生成后手动删除了。</p>
+    
+    <content type="html"><![CDATA[<h1 id="source-post"><a href="#source-post" class="headerlink" title="source/_post"></a>source/_post</h1><p>使用<code>hexo new xxxx.md</code>创建的md文件位于<strong>source/_post</strong> 目录下,<br>在执行<code>hexo g</code>后, 该目录下的文件会索引在<strong>public/index.html</strong>中。<br>而<strong>source</strong>下其他目录虽然也会被生成,但是不会索引在<strong>public/index.html</strong>中, 也就是说打开主页的时候是看不到的,只能通过其url进行访问。<br><a id="more"></a><br><img src="http://iid.oss-cn-hangzhou.aliyuncs.com/hexo_posts.png" alt=" "></p>
+<h1 id="skip-render"><a href="#skip-render" class="headerlink" title="skip_render"></a>skip_render</h1><p>意思是不将md文件转化为html, 注意:<em>md文件仍然会被copy到public目录中</em>。<br>例如：配置<code>skip_render: test/*</code>, 则test目录中所有文件不会被转化为html,但仍会被copy,<br>通过<em><a href="http://localhost:4000/test/01.md" target="_blank" rel="external">http://localhost:4000/test/01.md</a></em>仍可访问。<br><img src="http://iid.oss-cn-hangzhou.aliyuncs.com/hexo_posts2.png" alt=" "><br>貌似只能生成后手动删除了。</p>
 ]]></content>
+    
     <summary type="html">
-    <![CDATA[<h1 id="source/_post">source/_post</h1><p>使用<code>hexo new xxxx.md</code>创建的md文件位于<strong>source/_post</strong> 目录下,<br>在执行<code>hexo g</code>后, 该目录下的文件会索引在<strong>public/index.html</strong>中。<br>而<strong>source</strong>下其他目录虽然也会被生成,但是不会索引在<strong>public/index.html</strong>中, 也就是说打开主页的时候是看不到的,只能通过其url进行访问。<br>]]>
+    
+      &lt;h1 id=&quot;source-post&quot;&gt;&lt;a href=&quot;#source-post&quot; class=&quot;headerlink&quot; title=&quot;source/_post&quot;&gt;&lt;/a&gt;source/_post&lt;/h1&gt;&lt;p&gt;使用&lt;code&gt;hexo new xxxx.md&lt;/code&gt;创建的md文件位于&lt;strong&gt;source/_post&lt;/strong&gt; 目录下,&lt;br&gt;在执行&lt;code&gt;hexo g&lt;/code&gt;后, 该目录下的文件会索引在&lt;strong&gt;public/index.html&lt;/strong&gt;中。&lt;br&gt;而&lt;strong&gt;source&lt;/strong&gt;下其他目录虽然也会被生成,但是不会索引在&lt;strong&gt;public/index.html&lt;/strong&gt;中, 也就是说打开主页的时候是看不到的,只能通过其url进行访问。&lt;br&gt;
     
     </summary>
     
-      <category term="hexo" scheme="http://www.yczmm.com/tags/hexo/"/>
+    
+      <category term="hexo" scheme="http://zhuifeng1017.github.io/tags/hexo/"/>
     
   </entry>
   
   <entry>
-    <title><![CDATA[多说data-thread-key的设置]]></title>
-    <link href="http://www.yczmm.com/data-thread-key.html"/>
-    <id>http://www.yczmm.com/data-thread-key.html</id>
+    <title>多说data-thread-key的设置</title>
+    <link href="http://zhuifeng1017.github.io/data-thread-key.html"/>
+    <id>http://zhuifeng1017.github.io/data-thread-key.html</id>
     <published>2015-08-24T06:08:43.000Z</published>
     <updated>2015-09-12T11:31:53.000Z</updated>
+    
     <content type="html"><![CDATA[<p>这几天玩<code>hexo</code>搭建博客, 下载了多个theme，包括<code>landscape-plus,next,yilia</code>.试验下来多很不错。<br>在集成多说评论框的时候遇到了一点小问题, 因为不同theme使用的<code>data-thread-key</code>不同, 导致切换theme后，原先评论不见了。<br>于是，解决办法就是设置统一的<code>data-thread-key</code>。<br><a id="more"></a></p>
-<h3 id="在不同的theme中,看到过3种设置:">在不同的theme中,看到过3种设置:</h3><ol>
+<h3 id="在不同的theme中-看到过3种设置"><a href="#在不同的theme中-看到过3种设置" class="headerlink" title="在不同的theme中,看到过3种设置:"></a>在不同的theme中,看到过3种设置:</h3><ol>
 <li><p>data-thread-key=”&lt;%= post.source %&gt;”  //文章原始路径<br>页面上显示为 data-thread-key=”_posts/hello-world.md”</p>
 </li>
 <li><p>data-thread-key=”&lt;%= post.path %&gt;”  // 当前页面的路径（不含根路径）<br>页面上显示为 data-thread-key=”2015/08/20/hello-world/“</p>
@@ -687,32 +825,36 @@
 </ol>
 <p><em>我感觉第1种比较好,因为只要文件名不改变，生成的<code>data-thread-key</code>就不会变。</em></p>
 <hr>
-<p>附上多说评论框代码:<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- 多说评论框 start --&gt;</span><br><span class="line"><span class="xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ds-thread"</span> <span class="attribute">data-thread-key</span>=<span class="value">"&lt;%= post.layout %&gt;-&lt;%= post.slug %&gt;"</span></span><br><span class="line"> <span class="attribute">data-title</span>=<span class="value">"&lt;%= post.title %&gt;"</span> <span class="attribute">data-url</span>=<span class="value">"&lt;%= page.permalink %&gt;"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- 多说评论框 end --&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- 多说公共JS代码 start (一个网页只需插入一次) --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="title">script</span> <span class="attribute">type</span>=<span class="value">"text/javascript"</span>&gt;</span><span class="javascript"></span><br><span class="line">	<span class="keyword">var</span> duoshuoQuery = &#123;short_name:<span class="string">'&lt;%= config.duoshuo_shortname %&gt;'</span>&#125;;</span><br><span class="line">	(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">		<span class="keyword">var</span> ds = <span class="built_in">document</span>.createElement(<span class="string">'script'</span>);</span><br><span class="line">		ds.type = <span class="string">'text/javascript'</span>;ds.async = <span class="literal">true</span>;</span><br><span class="line">		ds.src = (<span class="built_in">document</span>.location.protocol == <span class="string">'https:'</span> ? <span class="string">'https:'</span> : <span class="string">'http:'</span>) + <span class="string">'//static.duoshuo.com/embed.js'</span>;</span><br><span class="line">		ds.charset = <span class="string">'UTF-8'</span>;</span><br><span class="line">		(<span class="built_in">document</span>.getElementsByTagName(<span class="string">'head'</span>)[<span class="number">0</span>]</span><br><span class="line">		|| <span class="built_in">document</span>.getElementsByTagName(<span class="string">'body'</span>)[<span class="number">0</span>]).appendChild(ds);</span><br><span class="line">	&#125;)();</span><br><span class="line"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- 多说公共JS代码 end --&gt;</span></span></span><br></pre></td></tr></table></figure></p>
+<p>附上多说评论框代码:<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">&lt;!-- 多说评论框 start --&gt;</div><div class="line"><span class="xml"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"ds-thread"</span> <span class="attr">data-thread-key</span>=<span class="string">"&lt;%= post.layout %&gt;-&lt;%= post.slug %&gt;"</span></span></span></div><div class="line"> <span class="attr">data-title</span>=<span class="string">"&lt;%= post.title %&gt;"</span> <span class="attr">data-url</span>=<span class="string">"&lt;%= page.permalink %&gt;"</span>&gt;<span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">&lt;!-- 多说评论框 end --&gt;</div><div class="line"><span class="xml"><span class="comment">&lt;!-- 多说公共JS代码 start (一个网页只需插入一次) --&gt;</span></span></div><div class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span><span class="javascript"></span></div><div class="line">	<span class="keyword">var</span> duoshuoQuery = &#123;<span class="attr">short_name</span>:<span class="string">'&lt;%= config.duoshuo_shortname %&gt;'</span>&#125;;</div><div class="line">	(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">		<span class="keyword">var</span> ds = <span class="built_in">document</span>.createElement(<span class="string">'script'</span>);</div><div class="line">		ds.type = <span class="string">'text/javascript'</span>;ds.async = <span class="literal">true</span>;</div><div class="line">		ds.src = (<span class="built_in">document</span>.location.protocol == <span class="string">'https:'</span> ? <span class="string">'https:'</span> : <span class="string">'http:'</span>) + <span class="string">'//static.duoshuo.com/embed.js'</span>;</div><div class="line">		ds.charset = <span class="string">'UTF-8'</span>;</div><div class="line">		(<span class="built_in">document</span>.getElementsByTagName(<span class="string">'head'</span>)[<span class="number">0</span>]</div><div class="line">		|| <span class="built_in">document</span>.getElementsByTagName(<span class="string">'body'</span>)[<span class="number">0</span>]).appendChild(ds);</div><div class="line">	&#125;)();</div><div class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="comment">&lt;!-- 多说公共JS代码 end --&gt;</span></div></pre></td></tr></table></figure></p>
 <blockquote>
 <p><a href="http://dev.duoshuo.com/docs/5003ecd94cab3e7250000008" target="_blank" rel="external">参考多说上对data-thread-key的解释 &gt;&gt;&gt;</a></p>
 </blockquote>
 ]]></content>
+    
     <summary type="html">
-    <![CDATA[<p>这几天玩<code>hexo</code>搭建博客, 下载了多个theme，包括<code>landscape-plus,next,yilia</code>.试验下来多很不错。<br>在集成多说评论框的时候遇到了一点小问题, 因为不同theme使用的<code>data-thread-key</code>不同, 导致切换theme后，原先评论不见了。<br>于是，解决办法就是设置统一的<code>data-thread-key</code>。<br>]]>
+    
+      &lt;p&gt;这几天玩&lt;code&gt;hexo&lt;/code&gt;搭建博客, 下载了多个theme，包括&lt;code&gt;landscape-plus,next,yilia&lt;/code&gt;.试验下来多很不错。&lt;br&gt;在集成多说评论框的时候遇到了一点小问题, 因为不同theme使用的&lt;code&gt;data-thread-key&lt;/code&gt;不同, 导致切换theme后，原先评论不见了。&lt;br&gt;于是，解决办法就是设置统一的&lt;code&gt;data-thread-key&lt;/code&gt;。&lt;br&gt;
     
     </summary>
     
-      <category term="hexo" scheme="http://www.yczmm.com/tags/hexo/"/>
     
-      <category term="多说" scheme="http://www.yczmm.com/tags/%E5%A4%9A%E8%AF%B4/"/>
+      <category term="hexo" scheme="http://zhuifeng1017.github.io/tags/hexo/"/>
+    
+      <category term="多说" scheme="http://zhuifeng1017.github.io/tags/%E5%A4%9A%E8%AF%B4/"/>
     
   </entry>
   
   <entry>
-    <title><![CDATA[打开阿里云OSS图片URL直接下载]]></title>
-    <link href="http://www.yczmm.com/%E9%98%BF%E9%87%8C%E4%BA%91OSS%E5%9B%BE%E7%89%87.html"/>
-    <id>http://www.yczmm.com/阿里云OSS图片.html</id>
+    <title>打开阿里云OSS图片URL直接下载</title>
+    <link href="http://zhuifeng1017.github.io/%E9%98%BF%E9%87%8C%E4%BA%91OSS%E5%9B%BE%E7%89%87.html"/>
+    <id>http://zhuifeng1017.github.io/阿里云OSS图片.html</id>
     <published>2015-08-23T02:00:00.000Z</published>
     <updated>2015-09-12T11:31:53.000Z</updated>
+    
     <content type="html"><![CDATA[<p>这几天用<em>hexo</em>搭建博客,为了加快速度,我将图片放在了<em>阿里云OSS</em>上,就是申请域名免费赠送的几G存储空间。<br>因为博客网页上显示图片较小,我想右键在新标签页查看图片时，坑爹了，图片直接下载, 想在浏览器上看大图都不行,一图胜千言啊。<br>然后查原因,抓包发现响应头里面<br><a id="more"></a></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Content-Disposition: attachment; filename=&#34;markdown.png&#34; // &#38463;&#37324;&#20113;oss&#36820;&#22238;&#30340;&#21709;&#24212;&#22836;&#10;# &#23581;&#35797;&#22312;&#38463;&#37324;&#20113;&#19978;&#35774;&#32622;&#22270;&#29255;&#30340;HTTP&#22836;&#23646;&#24615; &#10;Content-Disposition = inline;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">Content-Disposition: attachment; filename=&quot;markdown.png&quot; // 阿里云oss返回的响应头</div><div class="line"># 尝试在阿里云上设置图片的HTTP头属性 </div><div class="line">Content-Disposition = inline;</div></pre></td></tr></table></figure>
 <p>还是不行。后来上网查资料，在知乎上看到了解释:</p>
-<h2 id="怎么浏览器打开图片的url默认是下载?"><strong><em><a href="http://www.zhihu.com/question/23528976" target="_blank" rel="external">怎么浏览器打开图片的url默认是下载?</a></em></strong></h2><p>  通过OSS默认的域名来访问OSS的文件全部默认为下载，而HTTP头相关参数如Content-Disposition=inline的设置都是无效的；<br>  要直接显示而不是下载，需要绑定用户自己的域名即可；<br>  通过测试，总结如下： </p>
+<h2 id="怎么浏览器打开图片的url默认是下载"><a href="#怎么浏览器打开图片的url默认是下载" class="headerlink" title="怎么浏览器打开图片的url默认是下载?"></a><strong><em><a href="http://www.zhihu.com/question/23528976" target="_blank" rel="external">怎么浏览器打开图片的url默认是下载?</a></em></strong></h2><p>  通过OSS默认的域名来访问OSS的文件全部默认为下载，而HTTP头相关参数如Content-Disposition=inline的设置都是无效的；<br>  要直接显示而不是下载，需要绑定用户自己的域名即可；<br>  通过测试，总结如下： </p>
 <ol>
 <li>绑定了自己的域名： <ul>
 <li>图片显示：通过绑定域名访问图片文件，确实是直接显示； </li>
@@ -724,24 +866,28 @@
 <hr>
 <p>阿里云论坛上也找到了一篇资料：<br><strong><em><a href="http://bbs.aliyun.com/read/146012.html?spm=0.0.0.0.PL4CGj" target="_blank" rel="external">OSS学院：为什么我的图片会被下载？怎么在线播放影音？</a></em></strong></p>
 ]]></content>
+    
     <summary type="html">
-    <![CDATA[<p>这几天用<em>hexo</em>搭建博客,为了加快速度,我将图片放在了<em>阿里云OSS</em>上,就是申请域名免费赠送的几G存储空间。<br>因为博客网页上显示图片较小,我想右键在新标签页查看图片时，坑爹了，图片直接下载, 想在浏览器上看大图都不行,一图胜千言啊。<br>然后查原因,抓包发现响应头里面<br>]]>
+    
+      &lt;p&gt;这几天用&lt;em&gt;hexo&lt;/em&gt;搭建博客,为了加快速度,我将图片放在了&lt;em&gt;阿里云OSS&lt;/em&gt;上,就是申请域名免费赠送的几G存储空间。&lt;br&gt;因为博客网页上显示图片较小,我想右键在新标签页查看图片时，坑爹了，图片直接下载, 想在浏览器上看大图都不行,一图胜千言啊。&lt;br&gt;然后查原因,抓包发现响应头里面&lt;br&gt;
     
     </summary>
     
-      <category term="OSS" scheme="http://www.yczmm.com/tags/OSS/"/>
     
-      <category term="阿里云" scheme="http://www.yczmm.com/tags/%E9%98%BF%E9%87%8C%E4%BA%91/"/>
+      <category term="阿里云" scheme="http://zhuifeng1017.github.io/tags/%E9%98%BF%E9%87%8C%E4%BA%91/"/>
+    
+      <category term="OSS" scheme="http://zhuifeng1017.github.io/tags/OSS/"/>
     
   </entry>
   
   <entry>
-    <title><![CDATA[markdown简明语法图示]]></title>
-    <link href="http://www.yczmm.com/markdown%E8%AF%AD%E6%B3%95.html"/>
-    <id>http://www.yczmm.com/markdown语法.html</id>
+    <title>markdown简明语法图示</title>
+    <link href="http://zhuifeng1017.github.io/markdown%E8%AF%AD%E6%B3%95.html"/>
+    <id>http://zhuifeng1017.github.io/markdown语法.html</id>
     <published>2015-08-21T20:30:00.000Z</published>
     <updated>2015-09-12T11:31:53.000Z</updated>
-    <content type="html"><![CDATA[<h3 id="markdown语法很简单,主要包括以下部分">markdown语法很简单,主要包括以下部分</h3><ol>
+    
+    <content type="html"><![CDATA[<h3 id="markdown语法很简单-主要包括以下部分"><a href="#markdown语法很简单-主要包括以下部分" class="headerlink" title="markdown语法很简单,主要包括以下部分"></a>markdown语法很简单,主要包括以下部分</h3><ol>
 <li>强调</li>
 <li>链接</li>
 <li>图片</li>
@@ -754,94 +900,109 @@
 </ol>
 <hr>
 <p><img src="http://iid.oss-cn-hangzhou.aliyuncs.com/20150429145445557.jpeg" alt=" "></p>
-<h4 id="参考链接:_http://blog-csdn-net/fabian4/article/details/45219613">参考链接: <a href="http://blog.csdn.net/fabian4/article/details/45219613" target="_blank" rel="external"><em>http://blog.csdn.net/fabian4/article/details/45219613</em></a></h4><hr>
-<h4 id="—html对照表">—html对照表</h4><h2 id=""><img src="http://iid.oss-cn-hangzhou.aliyuncs.com/markdown.png" alt=" "></h2><hr>
-<h4 id="—效果实例">—效果实例</h4><h2 id="-1"><img src="http://iid.oss-cn-hangzhou.aliyuncs.com/20150116224244144.jpeg" alt=" "></h2><h2 id="-2"><img src="http://iid.oss-cn-hangzhou.aliyuncs.com/20150116230538132.jpeg" alt=" "></h2><p><img src="http://iid.oss-cn-hangzhou.aliyuncs.com/synta.jpg" alt=" "></p>
+<h4 id="参考链接-http-blog-csdn-net-fabian4-article-details-45219613"><a href="#参考链接-http-blog-csdn-net-fabian4-article-details-45219613" class="headerlink" title="参考链接: http://blog.csdn.net/fabian4/article/details/45219613"></a>参考链接: <a href="http://blog.csdn.net/fabian4/article/details/45219613" target="_blank" rel="external"><em>http://blog.csdn.net/fabian4/article/details/45219613</em></a></h4><hr>
+<h4 id="—html对照表"><a href="#—html对照表" class="headerlink" title="—html对照表"></a>—html对照表</h4><h2 id=""><a href="#" class="headerlink" title=""></a><img src="http://iid.oss-cn-hangzhou.aliyuncs.com/markdown.png" alt=" "></h2><hr>
+<h4 id="—效果实例"><a href="#—效果实例" class="headerlink" title="—效果实例"></a>—效果实例</h4><h2 id="-1"><a href="#-1" class="headerlink" title=""></a><img src="http://iid.oss-cn-hangzhou.aliyuncs.com/20150116224244144.jpeg" alt=" "></h2><h2 id="-2"><a href="#-2" class="headerlink" title=""></a><img src="http://iid.oss-cn-hangzhou.aliyuncs.com/20150116230538132.jpeg" alt=" "></h2><p><img src="http://iid.oss-cn-hangzhou.aliyuncs.com/synta.jpg" alt=" "></p>
 ]]></content>
+    
     <summary type="html">
-    <![CDATA[<h3 id="markdown语法很简单,主要包括以下部分">markdown语法很简单,主要包括以下部分</h3><ol>
-<li>强调</li>
-<li>链接</li>
-<li>图片</li>
-<li>标题]]>
+    
+      &lt;h3 id=&quot;markdown语法很简单-主要包括以下部分&quot;&gt;&lt;a href=&quot;#markdown语法很简单-主要包括以下部分&quot; class=&quot;headerlink&quot; title=&quot;markdown语法很简单,主要包括以下部分&quot;&gt;&lt;/a&gt;markdown语法很简单,主要包括以下部分&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;强调&lt;/li&gt;
+&lt;li&gt;链接&lt;/li&gt;
+&lt;li&gt;图片&lt;/li&gt;
+&lt;li&gt;标题
     
     </summary>
     
-      <category term="markdown" scheme="http://www.yczmm.com/tags/markdown/"/>
+    
+      <category term="markdown" scheme="http://zhuifeng1017.github.io/tags/markdown/"/>
     
   </entry>
   
   <entry>
-    <title><![CDATA[CentOS下安装vsftp]]></title>
-    <link href="http://www.yczmm.com/vsftp%E5%AE%89%E8%A3%85.html"/>
-    <id>http://www.yczmm.com/vsftp安装.html</id>
+    <title>CentOS下安装vsftp</title>
+    <link href="http://zhuifeng1017.github.io/vsftp%E5%AE%89%E8%A3%85.html"/>
+    <id>http://zhuifeng1017.github.io/vsftp安装.html</id>
     <published>2015-08-21T09:20:30.000Z</published>
     <updated>2015-09-12T11:31:53.000Z</updated>
-    <content type="html"><![CDATA[<h2 id="机器环境：CentOS6-5_64位">机器环境：CentOS6.5 64位</h2><p>1, yum在线安装vsftpd<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost]<span class="comment"># yum -y install vsftpd</span></span><br></pre></td></tr></table></figure></p>
+    
+    <content type="html"><![CDATA[<h2 id="机器环境：CentOS6-5-64位"><a href="#机器环境：CentOS6-5-64位" class="headerlink" title="机器环境：CentOS6.5 64位"></a>机器环境：CentOS6.5 64位</h2><p>1, yum在线安装vsftpd<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">[root@localhost]<span class="comment"># yum -y install vsftpd</span></div></pre></td></tr></table></figure></p>
 <a id="more"></a>
-<p>2, 启动vsftpd<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost]<span class="comment"># service vsftpd start</span></span><br><span class="line">启动成功后使用`netstat -lptn`查看vsftpd是否启动成功</span><br></pre></td></tr></table></figure></p>
-<p>3, 配置vsftpd.config （配置之前最好备份一下）<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost]<span class="comment"># vi /etc/vsftpd/vsftpd.conf </span></span><br><span class="line">作如下修改</span><br><span class="line">anonymous_<span class="built_in">enable</span>=YES  --&gt;  anonymous_<span class="built_in">enable</span>=NO           //不允许匿名用户访问，默认是允许。</span><br><span class="line">chroot_list_<span class="built_in">enable</span>=YES  --&gt;  chroot_list_<span class="built_in">enable</span>=NO      //不允许FTP用户离开自己主目录</span><br></pre></td></tr></table></figure></p>
-<p>4, 配置ftp用户<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">a. 创建ftp用户组</span><br><span class="line">[root@localhost]<span class="comment"># groupadd ftpusers</span></span><br><span class="line">b. 创建ftp主目录</span><br><span class="line">[root@localhost]<span class="comment"># mkdir /www</span></span><br><span class="line">c. 修改/www权限让ftpusers组有权限访问</span><br><span class="line">[root@localhost]<span class="comment"># chmod 770 /www</span></span><br><span class="line">[root@localhost]<span class="comment"># chown -R root:ftpusers /www</span></span><br><span class="line">d. 创建ftp用户,并指定主目录</span><br><span class="line">[root@localhost]<span class="comment"># useradd -g ftpusers -d /www -s /sbin/nologin ftp1</span></span><br><span class="line">[root@localhost]<span class="comment"># useradd -g ftpusers -d /www -s /sbin/nologin ftp2</span></span><br><span class="line">e. 设定密码 </span><br><span class="line">[root@localhost]<span class="comment"># passwd ftp1</span></span><br><span class="line">[root@localhost]<span class="comment"># passwd ftp2</span></span><br></pre></td></tr></table></figure></p>
+<p>2, 启动vsftpd<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">[root@localhost]<span class="comment"># service vsftpd start</span></div><div class="line">启动成功后使用`netstat -lptn`查看vsftpd是否启动成功</div></pre></td></tr></table></figure></p>
+<p>3, 配置vsftpd.config （配置之前最好备份一下）<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">[root@localhost]<span class="comment"># vi /etc/vsftpd/vsftpd.conf </span></div><div class="line">作如下修改</div><div class="line">anonymous_enable=YES  --&gt;  anonymous_enable=NO           //不允许匿名用户访问，默认是允许。</div><div class="line">chroot_list_enable=YES  --&gt;  chroot_list_enable=NO      //不允许FTP用户离开自己主目录</div></pre></td></tr></table></figure></p>
+<p>4, 配置ftp用户<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">a. 创建ftp用户组</div><div class="line">[root@localhost]<span class="comment"># groupadd ftpusers</span></div><div class="line">b. 创建ftp主目录</div><div class="line">[root@localhost]<span class="comment"># mkdir /www</span></div><div class="line">c. 修改/www权限让ftpusers组有权限访问</div><div class="line">[root@localhost]<span class="comment"># chmod 770 /www</span></div><div class="line">[root@localhost]<span class="comment"># chown -R root:ftpusers /www</span></div><div class="line">d. 创建ftp用户,并指定主目录</div><div class="line">[root@localhost]<span class="comment"># useradd -g ftpusers -d /www -s /sbin/nologin ftp1</span></div><div class="line">[root@localhost]<span class="comment"># useradd -g ftpusers -d /www -s /sbin/nologin ftp2</span></div><div class="line">e. 设定密码 </div><div class="line">[root@localhost]<span class="comment"># passwd ftp1</span></div><div class="line">[root@localhost]<span class="comment"># passwd ftp2</span></div></pre></td></tr></table></figure></p>
 <p>5, 重启vsftpd service vsftpd restart</p>
-<h2 id="6,_配置防火墙，开启21端口_(略)">6, 配置防火墙，开启21端口 (略)</h2><h1 id="———-注意可能出现的问题————"><strong><em>———-注意可能出现的问题————</em></strong></h1><ol>
-<li><h3 id="500_OOPS:_could_not_read_chroot()_list_file:/etc/vsftpd/chroot_list">500 OOPS: could not read chroot() list file:/etc/vsftpd/chroot_list</h3><p>解决办法：查看/etc/vsftpd/vsftpd.conf<br>chroot_list_file=/etc/vsftpd/chroot_list<br>如果磁盘中不存在/etc/vsftpd/chroot_list，则touch chroot_list</p>
+<h2 id="6-配置防火墙，开启21端口-略"><a href="#6-配置防火墙，开启21端口-略" class="headerlink" title="6, 配置防火墙，开启21端口 (略)"></a>6, 配置防火墙，开启21端口 (略)</h2><h1 id="———-注意可能出现的问题————"><a href="#———-注意可能出现的问题————" class="headerlink" title="———-注意可能出现的问题————"></a><strong><em>———-注意可能出现的问题————</em></strong></h1><ol>
+<li><h3 id="500-OOPS-could-not-read-chroot-list-file-etc-vsftpd-chroot-list"><a href="#500-OOPS-could-not-read-chroot-list-file-etc-vsftpd-chroot-list" class="headerlink" title="500 OOPS: could not read chroot() list file:/etc/vsftpd/chroot_list"></a>500 OOPS: could not read chroot() list file:/etc/vsftpd/chroot_list</h3><p>解决办法：查看/etc/vsftpd/vsftpd.conf<br>chroot_list_file=/etc/vsftpd/chroot_list<br>如果磁盘中不存在/etc/vsftpd/chroot_list，则touch chroot_list</p>
 </li>
-<li><h3 id="命令行能连，而FileZilla等客户端工具连接失败的情况。">命令行能连，而FileZilla等客户端工具连接失败的情况。</h3><p>解决办法：修改/etc/vsftpd/vsftpd.conf文件<br>pasv_enable=NO</p>
+<li><h3 id="命令行能连，而FileZilla等客户端工具连接失败的情况。"><a href="#命令行能连，而FileZilla等客户端工具连接失败的情况。" class="headerlink" title="命令行能连，而FileZilla等客户端工具连接失败的情况。"></a>命令行能连，而FileZilla等客户端工具连接失败的情况。</h3><p>解决办法：修改/etc/vsftpd/vsftpd.conf文件<br>pasv_enable=NO</p>
 </li>
-<li><h3 id="如果出现只能get无法put的情况时">如果出现只能get无法put的情况时</h3><p>可能的解决办法：<br>a. <em>确认目录权限</em><br>b. <em><a href="http://zhangge.net/3987.html" target="_blank" rel="external">http://zhangge.net/3987.html</a></em><br>最终，在一个linux论坛才找到了如下解决办法：<br>作者说这个问题在Centos上才会出现，Redhat就没有，难怪我在公司都没见过这问题。<br>解决办法：<br>①、查看ftp的Selinux状态：<code>sestatus -b | grep ftp</code><br>②、在结果中可以看到： <code>ftp_home_dir  off</code><br>③、将状态改为on：<code>setsebool -P  ftp_home_dir  on</code><br>④、重启vsftp服务：<code>service vsftpd restart</code><br>有点纳闷的是，他的服务器根本就没开selinux，所以第②步根本没结果，理论上，这个解决办法应该没效果才对，可实际上，全部执行完成之后，发现可以上传文件和新建文件夹了。我去，还真是诡异，总之解决了问题就好。</p>
+<li><h3 id="如果出现只能get无法put的情况时"><a href="#如果出现只能get无法put的情况时" class="headerlink" title="如果出现只能get无法put的情况时"></a>如果出现只能get无法put的情况时</h3><p>可能的解决办法：<br>a. <em>确认目录权限</em><br>b. <em><a href="http://zhangge.net/3987.html" target="_blank" rel="external">http://zhangge.net/3987.html</a></em><br>最终，在一个linux论坛才找到了如下解决办法：<br>作者说这个问题在Centos上才会出现，Redhat就没有，难怪我在公司都没见过这问题。<br>解决办法：<br>①、查看ftp的Selinux状态：<code>sestatus -b | grep ftp</code><br>②、在结果中可以看到： <code>ftp_home_dir  off</code><br>③、将状态改为on：<code>setsebool -P  ftp_home_dir  on</code><br>④、重启vsftp服务：<code>service vsftpd restart</code><br>有点纳闷的是，他的服务器根本就没开selinux，所以第②步根本没结果，理论上，这个解决办法应该没效果才对，可实际上，全部执行完成之后，发现可以上传文件和新建文件夹了。我去，还真是诡异，总之解决了问题就好。</p>
 </li>
 </ol>
 <hr>
-<h3 id="供参考命令">供参考命令</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">usermod -G ftpusers ftp1  // 修改用户所属用户组</span><br><span class="line">chown -R ftp1 <span class="string">'/www’  // 为用户ftp1配置目录权限</span></span><br></pre></td></tr></table></figure>]]></content>
+<h3 id="供参考命令"><a href="#供参考命令" class="headerlink" title="供参考命令"></a>供参考命令</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">usermod -G ftpusers ftp1  // 修改用户所属用户组</div><div class="line">chown -R ftp1 <span class="string">'/www’  // 为用户ftp1配置目录权限</span></div></pre></td></tr></table></figure>]]></content>
+    
     <summary type="html">
-    <![CDATA[<h2 id="机器环境：CentOS6-5_64位">机器环境：CentOS6.5 64位</h2><p>1, yum在线安装vsftpd<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost]<span class="comment"># yum -y install vsftpd</span></span><br></pre></td></tr></table></figure></p>]]>
+    
+      &lt;h2 id=&quot;机器环境：CentOS6-5-64位&quot;&gt;&lt;a href=&quot;#机器环境：CentOS6-5-64位&quot; class=&quot;headerlink&quot; title=&quot;机器环境：CentOS6.5 64位&quot;&gt;&lt;/a&gt;机器环境：CentOS6.5 64位&lt;/h2&gt;&lt;p&gt;1, yum在线安装vsftpd&lt;br&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;[root@localhost]&lt;span class=&quot;comment&quot;&gt;# yum -y install vsftpd&lt;/span&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
     
     </summary>
     
-      <category term="vsftp" scheme="http://www.yczmm.com/tags/vsftp/"/>
+    
+      <category term="vsftp" scheme="http://zhuifeng1017.github.io/tags/vsftp/"/>
     
   </entry>
   
   <entry>
-    <title><![CDATA[EME的日子]]></title>
-    <link href="http://www.yczmm.com/EME%E7%9A%84%E6%97%A5%E5%AD%90.html"/>
-    <id>http://www.yczmm.com/EME的日子.html</id>
+    <title>EME的日子</title>
+    <link href="http://zhuifeng1017.github.io/EME%E7%9A%84%E6%97%A5%E5%AD%90.html"/>
+    <id>http://zhuifeng1017.github.io/EME的日子.html</id>
     <published>2015-08-20T09:20:30.000Z</published>
     <updated>2015-09-12T11:31:53.000Z</updated>
+    
     <content type="html"><![CDATA[<p>此处略去1000字………………<br><a id="more"></a></p>
-<h3 id="传说中团队工作计划">传说中团队工作计划</h3><h2 id=""><img src="http://iid.oss-cn-hangzhou.aliyuncs.com/2.pic.jpg" alt=" "></h2><h3 id="最后的会议">最后的会议</h3><p><img src="http://iid.oss-cn-hangzhou.aliyuncs.com/1.pic.jpg" alt=" "></p>
+<h3 id="传说中团队工作计划"><a href="#传说中团队工作计划" class="headerlink" title="传说中团队工作计划"></a>传说中团队工作计划</h3><h2 id=""><a href="#" class="headerlink" title=""></a><img src="http://iid.oss-cn-hangzhou.aliyuncs.com/2.pic.jpg" alt=" "></h2><h3 id="最后的会议"><a href="#最后的会议" class="headerlink" title="最后的会议"></a>最后的会议</h3><p><img src="http://iid.oss-cn-hangzhou.aliyuncs.com/1.pic.jpg" alt=" "></p>
 ]]></content>
+    
     <summary type="html">
-    <![CDATA[<p>此处略去1000字………………<br>]]>
+    
+      &lt;p&gt;此处略去1000字………………&lt;br&gt;
     
     </summary>
     
-      <category term="EME" scheme="http://www.yczmm.com/tags/EME/"/>
+    
+      <category term="EME" scheme="http://zhuifeng1017.github.io/tags/EME/"/>
     
   </entry>
   
   <entry>
-    <title><![CDATA[Hello World]]></title>
-    <link href="http://www.yczmm.com/hello_world.html"/>
-    <id>http://www.yczmm.com/hello_world.html</id>
+    <title>Hello World</title>
+    <link href="http://zhuifeng1017.github.io/hello_world.html"/>
+    <id>http://zhuifeng1017.github.io/hello_world.html</id>
     <published>2015-08-19T16:00:00.000Z</published>
     <updated>2015-08-31T13:50:12.000Z</updated>
+    
     <content type="html"><![CDATA[<p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick_Start">Quick Start</h2><h3 id="Create_a_new_post">Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
 <a id="more"></a>
 <p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run_server">Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
 <p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate_static_files">Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
 <p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy_to_remote_sites">Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
 <p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
 ]]></content>
+    
     <summary type="html">
-    <![CDATA[<p>Welcome to <a href="http://hexo.io/">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick_Start">Quick Start</h2><h3 id="Create_a_new_post">Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>]]>
+    
+      &lt;p&gt;Welcome to &lt;a href=&quot;http://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;http://hexo.io/docs/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;http://hexo.io/docs/troubleshooting.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;Quick-Start&quot;&gt;&lt;a href=&quot;#Quick-Start&quot; class=&quot;headerlink&quot; title=&quot;Quick Start&quot;&gt;&lt;/a&gt;Quick Start&lt;/h2&gt;&lt;h3 id=&quot;Create-a-new-post&quot;&gt;&lt;a href=&quot;#Create-a-new-post&quot; class=&quot;headerlink&quot; title=&quot;Create a new post&quot;&gt;&lt;/a&gt;Create a new post&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;$ hexo new &lt;span class=&quot;string&quot;&gt;&quot;My New Post&quot;&lt;/span&gt;&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
     
     </summary>
+    
     
   </entry>
   

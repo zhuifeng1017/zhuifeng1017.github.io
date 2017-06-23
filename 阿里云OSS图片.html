@@ -6,9 +6,10 @@
   <title>打开阿里云OSS图片URL直接下载 | 大风的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="这几天用hexo搭建博客,为了加快速度,我将图片放在了阿里云OSS上,就是申请域名免费赠送的几G存储空间。因为博客网页上显示图片较小,我想右键在新标签页查看图片时，坑爹了，图片直接下载, 想在浏览器上看大图都不行,一图胜千言啊。然后查原因,抓包发现响应头里面">
+<meta name="keywords" content="阿里云,OSS">
 <meta property="og:type" content="article">
 <meta property="og:title" content="打开阿里云OSS图片URL直接下载">
-<meta property="og:url" content="http://www.yczmm.com/阿里云OSS图片.html">
+<meta property="og:url" content="http://zhuifeng1017.github.io/阿里云OSS图片.html">
 <meta property="og:site_name" content="大风的博客">
 <meta property="og:description" content="这几天用hexo搭建博客,为了加快速度,我将图片放在了阿里云OSS上,就是申请域名免费赠送的几G存储空间。因为博客网页上显示图片较小,我想右键在新标签页查看图片时，坑爹了，图片直接下载, 想在浏览器上看大图都不行,一图胜千言啊。然后查原因,抓包发现响应头里面">
 <meta property="og:updated_time" content="2015-09-12T11:31:53.000Z">
@@ -21,7 +22,7 @@
   
     <link rel="icon" href="/favicon.png">
   
-  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
   <div id="container">
@@ -183,9 +184,9 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>这几天用<em>hexo</em>搭建博客,为了加快速度,我将图片放在了<em>阿里云OSS</em>上,就是申请域名免费赠送的几G存储空间。<br>因为博客网页上显示图片较小,我想右键在新标签页查看图片时，坑爹了，图片直接下载, 想在浏览器上看大图都不行,一图胜千言啊。<br>然后查原因,抓包发现响应头里面<br><a id="more"></a></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Content-Disposition: attachment; filename=&#34;markdown.png&#34; // &#38463;&#37324;&#20113;oss&#36820;&#22238;&#30340;&#21709;&#24212;&#22836;&#10;# &#23581;&#35797;&#22312;&#38463;&#37324;&#20113;&#19978;&#35774;&#32622;&#22270;&#29255;&#30340;HTTP&#22836;&#23646;&#24615; &#10;Content-Disposition = inline;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">Content-Disposition: attachment; filename=&quot;markdown.png&quot; // 阿里云oss返回的响应头</div><div class="line"># 尝试在阿里云上设置图片的HTTP头属性 </div><div class="line">Content-Disposition = inline;</div></pre></td></tr></table></figure>
 <p>还是不行。后来上网查资料，在知乎上看到了解释:</p>
-<h2 id="怎么浏览器打开图片的url默认是下载?"><strong><em><a href="http://www.zhihu.com/question/23528976" target="_blank" rel="external">怎么浏览器打开图片的url默认是下载?</a></em></strong></h2><p>  通过OSS默认的域名来访问OSS的文件全部默认为下载，而HTTP头相关参数如Content-Disposition=inline的设置都是无效的；<br>  要直接显示而不是下载，需要绑定用户自己的域名即可；<br>  通过测试，总结如下： </p>
+<h2 id="怎么浏览器打开图片的url默认是下载"><a href="#怎么浏览器打开图片的url默认是下载" class="headerlink" title="怎么浏览器打开图片的url默认是下载?"></a><strong><em><a href="http://www.zhihu.com/question/23528976" target="_blank" rel="external">怎么浏览器打开图片的url默认是下载?</a></em></strong></h2><p>  通过OSS默认的域名来访问OSS的文件全部默认为下载，而HTTP头相关参数如Content-Disposition=inline的设置都是无效的；<br>  要直接显示而不是下载，需要绑定用户自己的域名即可；<br>  通过测试，总结如下： </p>
 <ol>
 <li>绑定了自己的域名： <ul>
 <li>图片显示：通过绑定域名访问图片文件，确实是直接显示； </li>
@@ -245,7 +246,7 @@
 
 <div class="comments" id="comments"></div>
 <!-- 多说评论框 start -->
-<div class="ds-thread" data-thread-key="_posts%2F%E9%98%BF%E9%87%8C%E4%BA%91OSS%E5%9B%BE%E7%89%87.md" data-title="打开阿里云OSS图片URL直接下载" data-url="http://www.yczmm.com/阿里云OSS图片.html"></div>
+<div class="ds-thread" data-thread-key="_posts%2F%E9%98%BF%E9%87%8C%E4%BA%91OSS%E5%9B%BE%E7%89%87.md" data-title="打开阿里云OSS图片URL直接下载" data-url="http://zhuifeng1017.github.io/阿里云OSS图片.html"></div>
 <!-- 多说评论框 end -->
 <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 <script type="text/javascript">
@@ -266,7 +267,7 @@
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2016 大风
+    		&copy; 2017 大风
     	</div>
       	<div class="footer-right">
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
@@ -290,8 +291,8 @@
 		open_in_new: false
 	}
 </script>
-<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js" type="text/javascript"></script>
-<script src="/js/main.js" type="text/javascript"></script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script src="/js/main.js"></script>
 
 
 
