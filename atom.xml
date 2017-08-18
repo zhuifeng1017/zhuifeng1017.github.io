@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zhuifeng1017.github.io/"/>
-  <updated>2016-07-28T10:20:59.000Z</updated>
+  <updated>2017-08-12T11:12:50.000Z</updated>
   <id>http://zhuifeng1017.github.io/</id>
   
   <author>
@@ -14,6 +14,56 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>快速查看ipa信息.md</title>
+    <link href="http://zhuifeng1017.github.io/%E5%BF%AB%E9%80%9F%E6%9F%A5%E7%9C%8Bipa%E4%BF%A1%E6%81%AF.html"/>
+    <id>http://zhuifeng1017.github.io/快速查看ipa信息.html</id>
+    <published>2017-12-22T07:26:00.000Z</published>
+    <updated>2017-08-12T11:12:50.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>参考链接: <a href="https://www.npmjs.com/package/ipa-metadata" target="_blank" rel="external">ipa-metadata</a></p>
+<p>修改.bash_profile<br><code>alias ipainfo=&#39;node /usr/local/lib/node_modules/ipa-metadata/cli.js&#39;</code></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;参考链接: &lt;a href=&quot;https://www.npmjs.com/package/ipa-metadata&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;ipa-metadata&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;修改.bash_profile&lt;br&gt;&lt;cod
+    
+    </summary>
+    
+    
+      <category term="npm" scheme="http://zhuifeng1017.github.io/tags/npm/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Fixing npm permissions</title>
+    <link href="http://zhuifeng1017.github.io/Fixing%20npm%20permissions.html"/>
+    <id>http://zhuifeng1017.github.io/Fixing npm permissions.html</id>
+    <published>2017-08-12T10:26:00.000Z</published>
+    <updated>2017-08-12T10:45:04.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>参考链接: <a href="https://docs.npmjs.com/getting-started/fixing-npm-permissions" target="_blank" rel="external">Fixing npm permissions</a></p>
+<ol>
+<li><p>Find the path to npm’s directory:<br><code>npm config get prefix</code></p>
+</li>
+<li><p>Change the owner of npm’s directories to the name of the current user (your username!):<br><code>sudo chown -R $(whoami) $(npm config get prefix)/{lib/node_modules,bin,share}</code></p>
+</li>
+</ol>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;参考链接: &lt;a href=&quot;https://docs.npmjs.com/getting-started/fixing-npm-permissions&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Fixing npm permissions&lt;/a&gt;&lt;/
+    
+    </summary>
+    
+    
+      <category term="npm" scheme="http://zhuifeng1017.github.io/tags/npm/"/>
+    
+  </entry>
   
   <entry>
     <title>provisioning profile 在另外一台Mac上显示UUID</title>
@@ -452,9 +502,9 @@
     </summary>
     
     
-      <category term="发现" scheme="http://zhuifeng1017.github.io/tags/%E5%8F%91%E7%8E%B0/"/>
-    
       <category term="ImageMagick" scheme="http://zhuifeng1017.github.io/tags/ImageMagick/"/>
+    
+      <category term="发现" scheme="http://zhuifeng1017.github.io/tags/%E5%8F%91%E7%8E%B0/"/>
     
   </entry>
   
