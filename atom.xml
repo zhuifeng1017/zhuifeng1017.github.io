@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zhuifeng1017.github.io/"/>
-  <updated>2017-08-12T11:12:50.000Z</updated>
+  <updated>2017-08-18T07:00:35.000Z</updated>
   <id>http://zhuifeng1017.github.io/</id>
   
   <author>
@@ -16,20 +16,51 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>快速查看ipa信息.md</title>
+    <title>sublime搭建python开发环境</title>
+    <link href="http://zhuifeng1017.github.io/sublime%E6%90%AD%E5%BB%BApython%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83.html"/>
+    <id>http://zhuifeng1017.github.io/sublime搭建python开发环境.html</id>
+    <published>2017-08-18T06:26:00.000Z</published>
+    <updated>2017-08-18T07:00:35.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>安装插件<br><em>1. SublimeREPL</em></p>
+<h2 id="2-Anaconda"><a href="#2-Anaconda" class="headerlink" title="2. Anaconda"></a><em>2. Anaconda</em></h2><ul>
+<li>SublimeREPL, 提供一个命令行界面， 高亮语法显示。很方便的查看python帮助<br><img src="images/temp1.jpg" alt="启用SublimeREPL"><br><img src="images/temp2.jpg" alt="命令行界面"></li>
+</ul>
+<hr>
+<ul>
+<li>Anaconda<br>提供代码自动提示, 对于我这种对API一点不熟悉的人来讲，实在是太方便了。<br><img src="images/temp3.jpg" alt=""></li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;安装插件&lt;br&gt;&lt;em&gt;1. SublimeREPL&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&quot;2-Anaconda&quot;&gt;&lt;a href=&quot;#2-Anaconda&quot; class=&quot;headerlink&quot; title=&quot;2. Anaconda&quot;&gt;&lt;/a&gt;&lt;em&gt;2. Anaconda&lt;
+    
+    </summary>
+    
+    
+      <category term="python" scheme="http://zhuifeng1017.github.io/tags/python/"/>
+    
+      <category term="sublime" scheme="http://zhuifeng1017.github.io/tags/sublime/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>快速查看ipa信息</title>
     <link href="http://zhuifeng1017.github.io/%E5%BF%AB%E9%80%9F%E6%9F%A5%E7%9C%8Bipa%E4%BF%A1%E6%81%AF.html"/>
     <id>http://zhuifeng1017.github.io/快速查看ipa信息.html</id>
-    <published>2017-12-22T07:26:00.000Z</published>
-    <updated>2017-08-12T11:12:50.000Z</updated>
+    <published>2017-08-15T07:26:00.000Z</published>
+    <updated>2017-08-18T06:45:07.000Z</updated>
     
-    <content type="html"><![CDATA[<p>参考链接: <a href="https://www.npmjs.com/package/ipa-metadata" target="_blank" rel="external">ipa-metadata</a></p>
+    <content type="html"><![CDATA[<p>参考链接: <a href="https://www.npmjs.com/package/ipa-metadata" target="_blank" rel="external">node编写的小工具ipa-metadata</a></p>
 <p>修改.bash_profile<br><code>alias ipainfo=&#39;node /usr/local/lib/node_modules/ipa-metadata/cli.js&#39;</code></p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;参考链接: &lt;a href=&quot;https://www.npmjs.com/package/ipa-metadata&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;ipa-metadata&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;修改.bash_profile&lt;br&gt;&lt;cod
+      &lt;p&gt;参考链接: &lt;a href=&quot;https://www.npmjs.com/package/ipa-metadata&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;node编写的小工具ipa-metadata&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;修改.bash_profi
     
     </summary>
     
@@ -174,6 +205,31 @@
   </entry>
   
   <entry>
+    <title>SIP (System Integrity Protection) with OS X 10.11, El Capitan</title>
+    <link href="http://zhuifeng1017.github.io/SIP%20(System%20Integrity%20Protection)%20with%20OS%20X%2010.11,%20El%20Capitan.html"/>
+    <id>http://zhuifeng1017.github.io/SIP (System Integrity Protection) with OS X 10.11, El Capitan.html</id>
+    <published>2016-02-25T06:00:00.000Z</published>
+    <updated>2016-03-21T02:02:36.000Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote>
+<p>SIP功能是Apple在OSX上推出的系统完整性保护功能，对于普通MAC用户来说是一项安全保护功能，如果不了解他的作用请不要随意关闭，对于开发者来说，因为会使用到很多的第三方辅助工具（例如：Cocoapods、Homebrew），而这些工具可能会修改系统目录，在这些工具未推出适应OSX 10.11的版本时，有必要临时关闭SIP以确保开发工具的使用。</p>
+</blockquote>
+<p><a href="http://www.jianshu.com/p/0572336a0771" target="_blank" rel="external">&gt;&gt;&gt;如何关闭OSX 10.11 SIP (System Integrity Protection)</a> </p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;SIP功能是Apple在OSX上推出的系统完整性保护功能，对于普通MAC用户来说是一项安全保护功能，如果不了解他的作用请不要随意关闭，对于开发者来说，因为会使用到很多的第三方辅助工具（例如：Cocoapods、Homebrew），而这些工具可能会修
+    
+    </summary>
+    
+    
+      <category term="mac" scheme="http://zhuifeng1017.github.io/tags/mac/"/>
+    
+  </entry>
+  
+  <entry>
     <title>git检出标签</title>
     <link href="http://zhuifeng1017.github.io/git%E6%A3%80%E5%87%BA%E6%A0%87%E7%AD%BE.html"/>
     <id>http://zhuifeng1017.github.io/git检出标签.html</id>
@@ -196,31 +252,6 @@
     
     
       <category term="git" scheme="http://zhuifeng1017.github.io/tags/git/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>SIP (System Integrity Protection) with OS X 10.11, El Capitan</title>
-    <link href="http://zhuifeng1017.github.io/SIP%20(System%20Integrity%20Protection)%20with%20OS%20X%2010.11,%20El%20Capitan.html"/>
-    <id>http://zhuifeng1017.github.io/SIP (System Integrity Protection) with OS X 10.11, El Capitan.html</id>
-    <published>2016-02-25T06:00:00.000Z</published>
-    <updated>2016-03-21T02:02:36.000Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote>
-<p>SIP功能是Apple在OSX上推出的系统完整性保护功能，对于普通MAC用户来说是一项安全保护功能，如果不了解他的作用请不要随意关闭，对于开发者来说，因为会使用到很多的第三方辅助工具（例如：Cocoapods、Homebrew），而这些工具可能会修改系统目录，在这些工具未推出适应OSX 10.11的版本时，有必要临时关闭SIP以确保开发工具的使用。</p>
-</blockquote>
-<p><a href="http://www.jianshu.com/p/0572336a0771" target="_blank" rel="external">&gt;&gt;&gt;如何关闭OSX 10.11 SIP (System Integrity Protection)</a> </p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;blockquote&gt;
-&lt;p&gt;SIP功能是Apple在OSX上推出的系统完整性保护功能，对于普通MAC用户来说是一项安全保护功能，如果不了解他的作用请不要随意关闭，对于开发者来说，因为会使用到很多的第三方辅助工具（例如：Cocoapods、Homebrew），而这些工具可能会修
-    
-    </summary>
-    
-    
-      <category term="mac" scheme="http://zhuifeng1017.github.io/tags/mac/"/>
     
   </entry>
   
