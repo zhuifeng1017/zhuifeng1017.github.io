@@ -5,17 +5,17 @@
   
   <title>git检出标签 | 大风的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="在 Git 中你并不能真的检出一个标签，因为它们并不能像分支一样来回移动。 如果你想要工作目录与仓库中特定的标签版本完全一样，可以使用 git checkout -b [branchname] [tagname] 在特定的标签上创建一个新分支： 12$ git checkout -b version2 v2.0.0Switched to a new branch &apos;version2&apos; 当然，如果">
+  <meta name="description" content="在 Git 中你并不能真的检出一个标签，因为它们并不能像分支一样来回移动。 如果你想要工作目录与仓库中特定的标签版本完全一样，可以使用 git checkout -b [branchname] [tagname] 在特定的标签上创建一个新分支：   12$ git checkout -b version2 v2.0.0Switched to a new branch &apos;version2&apos;  当然">
 <meta name="keywords" content="git">
 <meta property="og:type" content="article">
 <meta property="og:title" content="git检出标签">
 <meta property="og:url" content="http://zhuifeng1017.github.io/git检出标签.html">
 <meta property="og:site_name" content="大风的博客">
-<meta property="og:description" content="在 Git 中你并不能真的检出一个标签，因为它们并不能像分支一样来回移动。 如果你想要工作目录与仓库中特定的标签版本完全一样，可以使用 git checkout -b [branchname] [tagname] 在特定的标签上创建一个新分支： 12$ git checkout -b version2 v2.0.0Switched to a new branch &apos;version2&apos; 当然，如果">
-<meta property="og:updated_time" content="2016-04-07T06:23:20.000Z">
+<meta property="og:description" content="在 Git 中你并不能真的检出一个标签，因为它们并不能像分支一样来回移动。 如果你想要工作目录与仓库中特定的标签版本完全一样，可以使用 git checkout -b [branchname] [tagname] 在特定的标签上创建一个新分支：   12$ git checkout -b version2 v2.0.0Switched to a new branch &apos;version2&apos;  当然">
+<meta property="og:updated_time" content="2017-08-22T12:16:09.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="git检出标签">
-<meta name="twitter:description" content="在 Git 中你并不能真的检出一个标签，因为它们并不能像分支一样来回移动。 如果你想要工作目录与仓库中特定的标签版本完全一样，可以使用 git checkout -b [branchname] [tagname] 在特定的标签上创建一个新分支： 12$ git checkout -b version2 v2.0.0Switched to a new branch &apos;version2&apos; 当然，如果">
+<meta name="twitter:description" content="在 Git 中你并不能真的检出一个标签，因为它们并不能像分支一样来回移动。 如果你想要工作目录与仓库中特定的标签版本完全一样，可以使用 git checkout -b [branchname] [tagname] 在特定的标签上创建一个新分支：   12$ git checkout -b version2 v2.0.0Switched to a new branch &apos;version2&apos;  当然">
   
     <link rel="alternative" href="/atom.xml" title="大风的博客" type="application/atom+xml">
   
@@ -184,7 +184,10 @@
     <div class="article-entry" itemprop="articleBody">
       
         <blockquote>
-<p>在 Git 中你并不能真的检出一个标签，因为它们并不能像分支一样来回移动。 如果你想要工作目录与仓库中特定的标签版本完全一样，可以使用 git checkout -b [branchname] [tagname] 在特定的标签上创建一个新分支：<br> <figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ git checkout -<span class="selector-tag">b</span> version2 v2.<span class="number">0.0</span></div><div class="line">Switched to <span class="selector-tag">a</span> new branch <span class="string">'version2'</span></div></pre></td></tr></table></figure></p>
+<p>在 Git 中你并不能真的检出一个标签，因为它们并不能像分支一样来回移动。 如果你想要工作目录与仓库中特定的标签版本完全一样，可以使用 git checkout -b [branchname] [tagname] 在特定的标签上创建一个新分支：</p>
+</blockquote>
+ <figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ git checkout -<span class="selector-tag">b</span> version2 v2.<span class="number">0.0</span></div><div class="line">Switched to <span class="selector-tag">a</span> new branch <span class="string">'version2'</span></div></pre></td></tr></table></figure>
+<blockquote>
 <p>当然，如果在这之后又进行了一次提交，version2 分支会因为改动向前移动了，那么 version2 分支就会和 v2.0.0 标签稍微有些不同，这时就应该当心了。</p>
 </blockquote>
 <p><a href="https://git-scm.com/book/zh/v2/Git-%E5%9F%BA%E7%A1%80-%E6%89%93%E6%A0%87%E7%AD%BE" target="_blank" rel="external">参考连接</a> </p>
