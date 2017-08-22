@@ -5,20 +5,20 @@
   
   <title>sublime搭建python开发环境 | 大风的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="安装插件1. SublimeREPL 2. Anaconda SublimeREPL, 提供一个命令行界面， 高亮语法显示。很方便的查看python帮助    Anaconda代码提示, 代码lint功能，非常好用。   贴一段anaconda setting12345678&amp;#123;	// Anaconda.sublime-settings,https://github.com/DamnWid">
+  <meta name="description" content="安装插件1. SublimeREPL2. Anaconda 配置Anaconda settings配置python代码lint功能，不然sublime会出现各种白框提示。比如‘=’周围没有格，缩进用了tab而不是空格，代码后面有太多个空行 ….贴一下我目前设置的settings12345678&amp;#123; 	// Anaconda.sublime-settings,https://github.c">
 <meta name="keywords" content="python,sublime">
 <meta property="og:type" content="article">
 <meta property="og:title" content="sublime搭建python开发环境">
 <meta property="og:url" content="http://zhuifeng1017.github.io/sublime搭建python开发环境.html">
 <meta property="og:site_name" content="大风的博客">
-<meta property="og:description" content="安装插件1. SublimeREPL 2. Anaconda SublimeREPL, 提供一个命令行界面， 高亮语法显示。很方便的查看python帮助    Anaconda代码提示, 代码lint功能，非常好用。   贴一段anaconda setting12345678&amp;#123;	// Anaconda.sublime-settings,https://github.com/DamnWid">
+<meta property="og:description" content="安装插件1. SublimeREPL2. Anaconda 配置Anaconda settings配置python代码lint功能，不然sublime会出现各种白框提示。比如‘=’周围没有格，缩进用了tab而不是空格，代码后面有太多个空行 ….贴一下我目前设置的settings12345678&amp;#123; 	// Anaconda.sublime-settings,https://github.c">
 <meta property="og:image" content="http://zhuifeng1017.github.io/images/temp1.jpg">
 <meta property="og:image" content="http://zhuifeng1017.github.io/images/temp2.jpg">
 <meta property="og:image" content="http://zhuifeng1017.github.io/images/temp3.jpg">
-<meta property="og:updated_time" content="2017-08-19T03:24:00.000Z">
+<meta property="og:updated_time" content="2017-08-22T12:11:35.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="sublime搭建python开发环境">
-<meta name="twitter:description" content="安装插件1. SublimeREPL 2. Anaconda SublimeREPL, 提供一个命令行界面， 高亮语法显示。很方便的查看python帮助    Anaconda代码提示, 代码lint功能，非常好用。   贴一段anaconda setting12345678&amp;#123;	// Anaconda.sublime-settings,https://github.com/DamnWid">
+<meta name="twitter:description" content="安装插件1. SublimeREPL2. Anaconda 配置Anaconda settings配置python代码lint功能，不然sublime会出现各种白框提示。比如‘=’周围没有格，缩进用了tab而不是空格，代码后面有太多个空行 ….贴一下我目前设置的settings12345678&amp;#123; 	// Anaconda.sublime-settings,https://github.c">
 <meta name="twitter:image" content="http://zhuifeng1017.github.io/images/temp1.jpg">
   
     <link rel="alternative" href="/atom.xml" title="大风的博客" type="application/atom+xml">
@@ -155,7 +155,7 @@
   
     <div class="article-meta">
       <a href="/sublime搭建python开发环境.html" class="article-date">
-  	<time datetime="2017-08-18T06:26:00.000Z" itemprop="datePublished">2017-08-18</time>
+  	<time datetime="2017-08-20T06:26:00.000Z" itemprop="datePublished">2017-08-20</time>
 </a>
     </div>
   
@@ -187,8 +187,10 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>安装插件<br><em>1. SublimeREPL</em></p>
-<h2 id="2-Anaconda"><a href="#2-Anaconda" class="headerlink" title="2. Anaconda"></a><em>2. Anaconda</em></h2><ul>
+        <h4 id="安装插件"><a href="#安装插件" class="headerlink" title="安装插件"></a>安装插件</h4><p><em>1. SublimeREPL</em><br><em>2. Anaconda</em></p>
+<h4 id="配置Anaconda-settings"><a href="#配置Anaconda-settings" class="headerlink" title="配置Anaconda settings"></a>配置Anaconda settings</h4><p>配置python代码lint功能，不然sublime会出现各种白框提示。比如‘=’周围没有格，缩进用了tab而不是空格，代码后面有太多个空行 ….<br>贴一下我目前设置的settings<br><figure class="highlight clojure"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">&#123; </div><div class="line">	// Anaconda.sublime-settings,https://github.com/DamnWidget/anaconda/blob/master/Anaconda.sublime-settings</div><div class="line">	<span class="string">"pep8_max_line_length"</span> : <span class="number">200</span>,</div><div class="line">	<span class="string">"auto_formatting"</span> : <span class="literal">false</span>,</div><div class="line">	<span class="string">"anaconda_linting"</span> : <span class="literal">true</span>,</div><div class="line">	<span class="string">"anaconda_linting_behaviour"</span> : <span class="string">"always"</span>,</div><div class="line">	<span class="string">"pep8_ignore"</span> : [<span class="string">"E501"</span>, <span class="string">"E251"</span>, <span class="string">"E225"</span>, <span class="string">"E303"</span>, <span class="string">"W191"</span>]	</div><div class="line"> &#125;</div></pre></td></tr></table></figure></p>
+<p>参考链接: <a href="https://stackoverflow.com/questions/23383699/sublime-text-3-disable-python-checker-warning-indentation-contains-tabs" target="_blank" rel="external">Sublime Text 3 - Disable Python Checker warning “indentation contains tabs”</a><br><a id="more"></a></p>
+<ul>
 <li>SublimeREPL, 提供一个命令行界面， 高亮语法显示。很方便的查看python帮助<br><img src="images/temp1.jpg" alt="启用SublimeREPL"><br><img src="images/temp2.jpg" alt="命令行界面"></li>
 </ul>
 <hr>
